@@ -1,0 +1,27 @@
+AMS:
+  title: Amsterdam Schiphol International Airport
+  major: true
+  country: nl
+  matchers:
+    - "Amsterdam"
+    - "NL"
+    - "Schiphol"
+
+LHR:
+  name: Heathrow International Airport
+  major: true
+  country: uk
+  matchers:
+    - "Heathrow"
+
+ORY:
+  name: Paris Orly Airport
+  country: fr
+  matchers:
+    - "Orly"
+
+PRG:
+  name: Prague International Airport
+  country: cz
+  matchers:
+    - "Prague"

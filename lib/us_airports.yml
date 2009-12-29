@@ -1,0 +1,215 @@
+ABQ:
+  title: Albuquerque International Airport
+  major: true
+  country: us
+  matchers: 
+    - "Albuquerque"
+    - "New Mexico"
+
+ATL:
+  title: Hartsfield-Jackson International Airport
+  major: true
+  country: us
+  matchers:
+    - "Atlanta"
+    - "Hotlanta"
+    - "Hartsfield"
+
+BIL:
+  title: Billings Airport
+  major: false
+  country: us
+  matchers:
+    - "Billings"
+
+CLT:
+  title: Charlotte International Airport
+  country: us
+  matchers:
+    - Charlotte
+
+CMH:
+  title: Columbus Airport
+  country: us
+  matchers:
+    - "Columbus"
+
+DAL:
+  title: "Dallas Love Field"
+  major: true
+  country: us
+  match_priority: 100
+  matchers:
+    - "Love Field"
+    - "Dallas Love"
+
+DEN:
+  title: Denver Stapleton Airport
+  country: us
+  matchers:
+    - "Denver"
+    - "Stapleton"
+    - "the Mile High City"
+
+DFW:
+  title: Dallas-Fort Worth International Airport
+  major: true
+  country: us
+  matchers:
+    - "Dallas"
+
+EWR:
+  title: Newark International Airport
+  country: us
+  matchers:
+    - "Newark"
+    - "NJ"
+
+FLL:
+  title: Fort Lauderdale International Airport
+  major: true
+  country: us
+  matchers:
+    - "Ft Lauderdale"
+    - "Ft. Lauderdale"
+    - "Fort Lauderdale"
+
+JFK:
+  name: John F. Kennedy International Airport
+  major: true
+  country: us
+  matchers:
+    - "JFK"
+    - "J.F.K."
+    - "Kennedy Airport"
+    
+LAS:
+  name: Las Vegas
+  major: true
+  country: us
+  matchers:
+    - "Las Vegas"
+    - "Vegas"
+
+LAX:
+  name: Los Angeles International Airport
+  major: true
+  country: us
+  matchers:
+    - "LA"
+    - "L.A."
+    - "Los Angeles"
+    
+LIT:
+  name: Little Rock National Airport
+  city: Little Rock
+  country: us
+  url: http://www.fly-lit.com/
+  matchers:
+    - "Adams Field"
+    - "Little Rock"
+    
+LGA:
+  name: LaGuardia International Airport
+  major: true
+  country: us
+  matchers:
+    - "LaGuardia"
+
+MIA:
+  name: Miami International Airport
+  major: true
+  country: us
+  matchers:
+    - "Miami"
+    
+NYC:
+  name: New York City
+  country: us
+  matchers:
+    - "NY"
+    - "New York"
+    - "New York City"
+    - "NYC"
+    - "N.Y.C"
+
+OAK:
+  name: Oakland International Airport
+  country: us
+  matchers:
+    - "Oakland"
+    
+ORD:
+  name: "Chicago O'Hare International Airport"
+  country: us
+  matchers:
+    - "Chicago"
+    - "Chitown"
+    - "Chi"
+    - "O'Hare"
+    - "Ohare"
+    
+PDX:
+  name: Portland International Airport
+  country: us
+  url: http://www.flypdx.com/
+  matchers:
+    - "Portland"
+
+PHX:
+  name: Phoenix Sky Harbor International Airport
+  country: us
+  url: http://www.skyharbor.com/
+  matchers:
+    - "Phoenix"
+    - "Pheonix"
+    - "Sky Harbor"
+
+PWM:
+  name: Portland International Jetport
+  country: us
+  match_priority: 100
+  url: http://www.portlandjetport.org/
+  matchers:
+    - "Portland, ME"
+    - "Portland ME"
+    - "Portland Maine"
+    - "Portland, Maine"
+
+RDU:
+  name: Raleigh-Durham International Airport
+  country: us
+  matchers:
+    - "Raleigh"
+    - "Raleigh-Durham"
+
+SEA:
+  name: Seattle-Tacoma International Airport
+  country: us
+  matchers:
+    - "Seattle"
+    - "SeaTac"
+
+SDF:
+  name: Louisville
+  country: us
+  matchers:
+    - "Louisville"
+    
+SFO:
+  name: San Francisco International Airport
+  country: us
+  matchers:
+    - "San Francisco"
+    - "S.F."
+    - "SF"
+    - "San Fran"
+
+STL:
+  name: St. Louis International Airport
+  country: us
+  matchers:
+    - "St. Louis"
+    - "St.Louis"
+    - "Saint Louis"
+
