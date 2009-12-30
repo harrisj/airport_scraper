@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "airport_scraper"
-    gem.summary = %Q{A gem for extracting airport codes from text}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A gem for extracting airports from mentions in text}
+    gem.description = %Q{A gem for extracting airport codes from text}
     gem.email = "jharris@nytimes.com"
     gem.homepage = "http://github.com/harrisj/airport_scraper"
     gem.authors = ["Jacob Harris"]
