@@ -1,0 +1,102 @@
+YCD:
+  - "On a flight to Nanaimo"
+
+YEG:
+  - "Flying from NYC to YEG"
+  - "Landing in Edmonton now. Oh Canada!"
+  - "On the plane to Alberta"
+
+YFC:
+  - "Touched down in Fredericton. Now to drive home."
+
+YGK:
+  - "On the plane to Kingston Ontario"
+  - "Landing in Kingston, ON"
+  - "Flying from New York City to Kingston, Ontario"
+
+YHZ:
+  - "Landed in Halifax. Now to find the Trailer Park Boys"
+    
+YKF:
+  - "On a jet to Kitchener."
+
+YMQ:
+  - "Landing in Montreal next stop: Poutine"
+
+YOW:
+  - "Just touched down in Ottawa"
+    
+YUL:
+  - "Landing at Montreal Dorval airport"
+  - "Landed at Dorval and ready to leave the plane"
+
+YQB:
+  - "On a flight to Quebec City"
+
+YQM:
+  - "Landing in Moncton, you probably don't know where this is"
+
+YQR:
+  - "On a turboprop to Regina"
+    
+YQT:
+  - "Landed in Thunder Bay"
+
+YVR:
+  - "Flying to Vancouver tomorrow for the Winter Olympics."
+
+YWG:
+  - "Landing in Winnipeg."
+
+YYZ:
+  - "Good times flying from YYZ to SFO today. Why is our security so reactive? Fear? If terror was Umar Farouk's goal, then Mission Accomplished."
+  - "flying back to Toronto this morning. Sad"
+    
+# YXU:
+#   city: "London, ON"
+#   match_priority: 100
+#   matchers:
+#     - "London, ON"
+#     - "London Ontario"
+#     - "London, Ontario"
+
+# YXY:
+#   city: "Whitehorse, YT"
+#   matchers:
+#     - "Whitehorse"
+#     
+# YYC:
+#   city: Calgary
+#   county: ca
+#   matchers:
+#     - Calgary
+#     
+# YYG:
+#   city: "Charlottetown, PEI"
+#   country: ca
+#   matchers:
+#     - "Charlottetown"
+#     - "Prince Edward Island"
+#     - "P.E.I."
+# 
+# YYJ:
+#   city: "Victoria, BC"
+#   matchers:
+#     - "Victoria"
+# 
+# YYT:
+#   city: "Saint Johns, NL"
+#   matchers:
+#     - "Saint Johns"
+#     - "St. Johns"
+#     - "St.Johns"
+# 
+# YYZ:
+#   city: Toronto
+#   matchers:
+#     - "Toronto"
+# 
+# YZF:
+#   city: "Yellowknife, NT"
+#   matchers:
+#     - "Yellowknife"

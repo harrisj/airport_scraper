@@ -1,7 +1,9 @@
 require 'helper'
 require 'yaml'
 
-SINGLE_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "single_tests.yml"))
+CA_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "ca_airports_tests.yml"))
+US_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "us_airports_tests.yml"))
+INTL_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "intl_airports_tests.yml"))
 
 class TestAirportScraper < Test::Unit::TestCase
   context "new" do
@@ -74,15 +76,29 @@ class TestAirportScraper < Test::Unit::TestCase
       end
     end
     
-    context "single airport examples" do      
-      SINGLE_TESTS.keys.each do |code|
-        SINGLE_TESTS[code].each do |str|
-          should "return the airport #{code} for phrase '#{str}'" do
-            airport = @scrape.airport(code)
-            assert_contains @scrape.extract_airports(str), airport
-          end
+    context "Airport code tests" do
+      setup do
+        @scrape = AirportScraper.new
+      end
+      
+      should_eventually "be able to match the airport codes" do
+        @scrape.airports.each do |airport|
+          assert_contains @scrape.extract_airports("Just landed in #{airport['code']}."), airport
         end
       end
     end
+    
+    context "More specific name tests" do
+      [US_TESTS, CA_TESTS, INTL_TESTS].each do |tests|
+        tests.keys.each do |code|
+          tests[code].each do |str|
+            should "return the airport #{code} for phrase '#{str}'" do
+              airport = @scrape.airport(code)
+              assert_contains @scrape.extract_airports(str), airport
+            end
+          end
+        end
+      end
+    end    
   end
 end

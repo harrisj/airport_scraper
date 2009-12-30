@@ -1,215 +1,1505 @@
+ABI:
+  city: "Abilene, TX"
+  matchers:
+    - "Abilene"
+
+ABE:
+  city: "Allentown, PA"
+  matchers:
+    - "Allentown"
+
 ABQ:
-  title: Albuquerque International Airport
-  major: true
-  country: us
-  matchers: 
-    - "Albuquerque"
+  city: "Albuquerque"
+  matchers:
+    - Albuquerque
     - "New Mexico"
 
-ATL:
-  title: Hartsfield-Jackson International Airport
-  major: true
-  country: us
+ACK:
+  city: "Nantucket, MA"
   matchers:
-    - "Atlanta"
-    - "Hotlanta"
-    - "Hartsfield"
+    - Nantucket
+
+ACV:
+  city: "Arcata, CA"
+  matchers:
+    - Arcata
+    - Eureka
+
+AGS:
+  city: "Augusta, GA"
+  matchers:
+    - Augusta
+
+AIY:
+  city: "Atlantic City, NJ"
+  matchers:
+    - Atlantic City
+
+ALB:
+  city: "Albany"
+  matchers:
+    - Albany
+
+ALW:
+  city: "Walla Walla, WA"
+  matchers:
+    - "Walla Walla"
+
+AMA:
+  city: "Amarillo, TX"
+  matchers:
+    - Amarillo
+
+ANC:
+  city: "Anchorage, AK"
+  matchers:
+    - Anchorage
+
+AOO:
+  city: "Altoona, PA"
+  matchers:
+    - Altoona
+
+AVL:
+  city: "Asheville, NC"
+  matchers:
+    - Asheville
+
+ASE:
+  city: "Aspen, CO"
+  matchers:
+    - Aspen
+
+AHN:
+  city: "Athens, GA"
+  match_priority: 100
+  matchers:
+    - "Athens, GA"
+    - "Athens, Georgia"
+
+ATL:
+  city: Atlanta
+  matchers:
+    - Atlanta
+    - Hotlanta
+
+AUG:
+  city: "Augusta, ME"
+  match_priority: 80
+  matchers:
+    - "Augusta Maine"
+    - "Augusta ME"
+    - "Augusta, Maine"
+    - "Augusta, ME"
+
+AUS:
+  city: "Austin, TX"
+  matchers:
+    - "Austin"
+    - "ATX"
+
+CAK:
+  city: "Akron, OH"
+  matchers:
+    - Akron
+    - Canton
+
+BED:
+  city: "Bedford, MA"
+  matchers:
+    - "Bedford"
+
+BEH:
+  city: "Benton Harbor, MI"
+  matchers:
+    - "Benton Harbor"
+
+BFL:
+  city: "Bakersfield, CA"
+  matchers:
+    - "Bakersfield"
+
+BGM:
+  city: "Binghamton, NY"
+  matchers:
+    - "Binghamton"
+    
+BGR:
+  city: "Bangor, ME"
+  matchers:
+    - "Bangor"
+
+BHB:
+  city: "Bar Harbour, ME"
+  matchers:
+    - "Bar Harbor"
+    - "Bar Harbour"
+
+BHM:
+  city: "Birmingham"
+  matchers:
+    - "Birmingham, AL"
+    - "Birmingham, Alabama"
+
+BID:
+  city: "Block Island, RI"
+  matchers:
+    - "Block Island"
+
+BIS:
+  city: "Bismarck, ND"
+  matchers:
+    - Bismarck
 
 BIL:
-  title: Billings Airport
-  major: false
-  country: us
+  city: "Billings, MT"
   matchers:
-    - "Billings"
+    - Billings
+
+BJI:
+  city: "Bemidji, MN"
+  matchers:
+    - Bemidji
+    
+BKX:
+  city: "Brookings, SD"
+  matchers:
+    - Brookings
+    
+BLF:
+  city: "Bluefield, WV"
+  matchers:
+    - Bluefield
+
+BLI:
+  city: "Bellingham, WA"
+  matchers:
+    - Bellingham
+
+BMI:
+  city: "Bloomington, IL"
+  matchers:
+    - Bloomington
+
+BOI:
+  city: "Boise, ID"
+  matchers:
+    - "Boise"
+
+BOS:
+  name: "Logan International Airport"
+  city: "Boston, MA"
+  matchers:
+    - Boston
+    - Logan
+    
+BPT:
+  city: "Beaumont/Port Arthur, TX"
+  matchers:
+    - Beaumont
+    - Port Arthur
+
+BQK:
+  city: "Brunswick, GA"
+  matchers:
+    - "Brunswick"
+
+BRO:
+  city: "Brownsville, TX"
+  matchers:
+    - Brownsville
+
+BRD:
+  city: "Brainerd, MN"
+  matchers:
+    - Brainerd
+    
+BRW:
+  city: "Barrow, AK"
+  matchers:
+    - "Barrow"
+
+BTM:
+  city: "Butte, MT"
+  matchers:
+    - "Butte"
+
+BTR:
+  city: "Baton Rouge, LA"
+  matchers:
+    - "Baton Rouge"
+
+BTV:
+  city: "Burlington, VT"
+  matchers:
+    - Burlington
+
+BUF:
+  city: "Buffalo, NY"
+  matchers:
+    - Buffalo
+
+BUR:
+  city: "Burbank, CA"
+  matchers:
+    - Burbank
+
+BWG:
+  city: "Bowling Green, KY"
+  matchers:
+    - "Bowling Green"
+
+BWI:
+  city: Baltimore
+  matchers:
+    - "Baltimore"
+
+BZN:
+  city: "Bozeman, MT"
+  matchers:
+    - Bozeman
+
+GPT:
+  city: "Biloxi/Gulfport, MS"
+  matchers:
+    - Biloxi
+    - Gulfport
+
+WBU:
+  city: "Boulder, CO"
+  matchers:
+    - Boulder
+
+# Carbondale, IL (MDH)
+# Carlsbad, CA (CLD)
+# Carmel, CA (MRY)
+# Casper, WY (CPR)
+# Cedar City, UT (CDC)
+# Cedar Rapids, IA (CID)
+# Central, AK (CEM)
+# Chadron, NE (CDR)
+# Champaign/Urbana, IL (CMI)
+
+CMI:
+  city: "Champaign/Urbana, IL"
+  matchers:
+    - "Champaign"
+    - "Urbana"
+
+# Charleston, SC (CHS)
+# Charleston, WV (CRW)
+
+CHI:
+  name: "Chicago (all airports)"
+  city: "Chicago, IL"
+  matchers:
+    - Chicago
+    - Chitown
+    - Chi-town
+    - The Windy City
 
 CLT:
-  title: Charlotte International Airport
-  country: us
+  city: "Charlotte, NC"
   matchers:
     - Charlotte
 
-CMH:
-  title: Columbus Airport
-  country: us
+CHO:
+  city: "Charlottesville, VA"
   matchers:
-    - "Columbus"
+    - "Charlottesville"
+
+CHA:
+  city: "Chattanooga, TN"
+  matchers:
+    - "Chattanooga"
+    
+CYS:
+  city: "Cheyenne, WY"
+  matchers:
+    - "Cheyenne"
+
+MDW:
+  city: "Chicago, IL"
+  name: "Chicago Midway Airport"
+  matchers:
+    - "Midway"
+
+# Chisholm/Hibbing, MN (HIB)
+
+CVG:
+  city: "Cincinnati, OH"
+  matchers:
+    - "Cincinnati"
+    - "Cincy"
+
+# Clarksburg, WV (CKB)
+# Clearwater/St Petersburg, FL (PIE)
+# Cleveland, OH (CLE)
+# Clovis, NM (CVN)
+# Cody/Yellowstone, WY (COD)
+# Coffee Point, AK (CFA)
+# Coffman Cove, AK (KCC)
+# College Station, TX (CLL)
+# Colorado Springs, CO (COS)
+# Columbia, MO (COU)
+# Columbia, SC (CAE)
+
+CMH:
+  city: "Columbus, OH"
+  matchers:
+    - Columbus
+    
+CSG:
+  city: "Columbus, GA"
+  match_priority: 90
+  matchers:
+    - "Columbus GA"
+    - "Columbus, GA"
+    - "Columbus, Georgia"
+
+CCR:
+  city: "Concord, CA"
+  matchers:
+    - "Concord"
+
+# Concordia, KS (CNK)
+# Cordova, AK (CDV)
+
+CRP:
+  city: "Corpus Christi, TX"
+  matchers:
+    - "Corpus Christi"
+
+CEZ:
+  city: "Cortez, CO"
+  matchers:
+    - "Cortez"
+
+# Crescent City, CA (CEC)
+# Crooked Creek, AK (CKO)
+# Cube Cove, AK (CUW)
+# Cumberland, MD (CBE)
+# return to top
+# D
 
 DAL:
-  title: "Dallas Love Field"
-  major: true
-  country: us
+  name: "Love Field"
+  city: "Dallas, TX"
   match_priority: 100
   matchers:
-    - "Love Field"
     - "Dallas Love"
+    - "Love Field"
+
+DBQ:
+  city: "Dubuque, IA"
+  matchers:
+    - Dubuque
 
 DEN:
-  title: Denver Stapleton Airport
-  country: us
+  name: Denver Stapleton International Airport
+  city: "Denver, CO"
   matchers:
-    - "Denver"
-    - "Stapleton"
-    - "the Mile High City"
+    - Denver
+    - Stapleton
 
 DFW:
-  title: Dallas-Fort Worth International Airport
-  major: true
-  country: us
+  name: "Dallas/Ft Worth International Airport"
+  city: "Dallas, TX"
   matchers:
     - "Dallas"
+    - "Fort Worth"
+    - "Ft. Worth"
+    - "Ft.Worth"
+    
+DAY:
+  city: "Dayton, OH"
+  matchers:
+    - "Dayton"
+    
+# Daytona Beach, FL (DAB)
+
+DEC:
+  city: "Decatur, IL"
+  matchers:
+    - "Decatur"
+ 
+# Deering, AK (DRG)
+# Del Reo, TX (DRT)
+# Delta Junction, AK (DJN)
+
+DSM:
+  city: "Des Moines, IA"
+  matchers:
+    - "Des Moines"
+
+DTW:
+  city: "Detroit, MI"
+  matchers:
+    - "Detroit"
+
+# Devil's Lake, ND (DVL)
+# Dickinson, ND (DIK)
+# Dillingham, AK (DLG)
+# Dodge City, KS (DDC)
+
+
+DLH:
+  city: "Duluth, MN"
+  matchers:
+    - Duluth
+
+# Durango, CO (DRO)
+
+RDU:
+  city: "Raleigh/Durham, NC"
+  matchers:
+    - Raleigh
+    - Durham
+
+# Dutch Harbor, AK (DUT)
+# return to top
+# E
+
+# El Centro, CA (IPL)
+# El Dorado, AR (ELD)
+
+ELP:
+  city: "El Paso, TX"
+  matchers:
+    - El Paso
+    
+ELM:
+  city: "Elmira, NY"
+  matchers:
+    - Elmira
+
+ERI:
+  city: "Erie, PA"
+  matchers:
+    - "Erie"
+
+EUG:
+  city: "Eugene, OR"
+  matchers:
+    - "Eugene"
+    
+EVV:
+  city: "Evansville, IN"
+  matchers:
+    - "Evansville"
 
 EWR:
-  title: Newark International Airport
-  country: us
+  name: "Newark International Airport"
+  city: "Newark, NJ"
   matchers:
     - "Newark"
     - "NJ"
+    - "N.J."
+    
+EYW:
+  city: "Key West, FL"
+  matchers:
+    - "Key West"
+
+FAI:
+  city: "Fairbanks, AK"
+  matchers:
+    - Fairbanks
+
+FAR:
+  city: "Fargo, ND"
+  matchers:
+    - Fargo
+
+FAT:
+  city: "Fresno, CA"
+  matchers:
+    - Fresno
+
+# Farmington, NM (FMN)
+# Fayetteville, AR - Municipal/Drake (FYV)
+# Fayetteville, AR - Northwest Arkansas Regional (XNA)
+# Fayetteville, NC (FAY)
+
+FLG:
+  city: "Flagstaff, AZ"
+  matchers:
+    - "Flagstaff"
+
+# Flint, MI (FNT)
+# Florence, SC (FLO)
+# Florence/Muscle Shoals/Sheffield, AL (MSL)
+# Fort Collins/Loveland, CO - Municipal Airport (FNL)
+# Fort Collins/Loveland, CO - Bus service (QWF)
+# Fort Dodge, IA (FOD)
 
 FLL:
-  title: Fort Lauderdale International Airport
-  major: true
-  country: us
+  city: "Fort Lauderdale, FL"
   matchers:
-    - "Ft Lauderdale"
-    - "Ft. Lauderdale"
     - "Fort Lauderdale"
+    - "Ft. Lauderdale"
+    - "Ft.Lauderdale"
+
+# Fort Leonard Wood, MO (TBN)
+# Fort Myers, FL (RSW)
+
+RSW:
+  city: "Fort Myers, FL"
+  matchers:
+    - "Fort Myers"
+    - "Ft. Myers"
+    - "Ft Myers"
+    
+# Fort Smith, AR (FSM)
+# Fort Walton Beach, FL (VPS)
+# Fort Wayne, IN (FWA)
+# Franklin, PA (FKL)
+
+
+
+# return to top
+# G
+# Gainesville, FL (GNV)
+# Gallup, NM (GUP)
+# Garden City, KS (GCK)
+# Gary, IN (GYY)
+# Gillette, WY (GCC)
+# Gladewater/Kilgore, TX (GGG)
+# Glasgow, MT (GGW)
+# Glendive, MT (GDV)
+# Golovin, AK (GLV)
+# Goodnews Bay, AK (GNU)
+# Grand Canyon, AZ - Heliport (JGC)
+# Grand Canyon, AZ - National Park (GCN)
+# Grand Forks, ND (GFK)
+# Grand Island, NE (GRI)
+# Grand Junction, CO (GJT)
+
+GRR:
+  city: "Grand Rapids, MI"
+  matchers:
+    - "Grand Rapids"
+
+# Grand Rapids, MN (GPZ)
+# Grayling, AK (KGX)
+# Great Falls, MT (GTF)
+
+GRB:
+  city: "Green Bay, WI"
+  matchers:
+    - "Green Bay"
+
+# Greensboro, NC (GSO)
+# Greenville, MS (GLH)
+# Greenville, NC (PGV)
+# Greenville/Spartanburg, SC (GSP)
+
+GON:
+  city: "Groton/New London, CT"
+  matchers:
+    - Groton
+    - "New London"
+
+# Hagerstown, MD (HGR)
+# Hailey, ID (SUN)
+# Haines, AK (HNS)
+# Hampton, VA (PHF)
+# Hana, HI - Island of Maui (HNM)
+# Hanapepe, HI (PAK)
+# Hancock, MI (CMX)
+# Hanover, NH (LEB)
+# Harlingen, TX (HRL)
+# Harrisburg, PA (MDT)
+# Harrison, AR (HRO)
+# Hartford, CT (BDL)
+# Havasupai, AZ (HAE)
+# Havre, MT (HVR)
+# Hayden, CO (HDN)
+# Hays, KS (HYS)
+# Healy Lake, AK (HKB)
+# Helena, MT (HLN)
+# Hendersonville, NC (AVL)
+# Hibbing/Chisholm, MN (HIB)
+# Hickory, NC (HKY)
+# High Point, NC (GSO)
+# Hilo, HI - Island of Hawaii (ITO)
+# Hilton Head, SC (HHH)
+# Hobbs, NM (HBB)
+# Hollis, AK (HYL)
+# Holy Cross, AK (HCR)
+
+HOM:
+  city: "Homer, AK"
+  matchers:
+    - "Homer"
+
+# Honolulu, HI - Island of Oahu (HNL)
+# Hoolehua, HI - Island of Molokai (MKK)
+
+HNH:
+  city: "Hoonah, AK"
+  matchers:
+    - "Hoonah"
+
+# Hooper Bay, AK (HPB)
+
+HOT:
+  city: "Hot Springs, AR"
+  matchers:
+    - "Hot Springs"
+    
+HOU:
+  name: "Houston, TX (all airports)"
+  city: "Houston, TX"
+  matchers:
+    - "Houston"
+    
+# Houston, TX - Hobby (HOU)
+# Houston, TX - Intercontinental (IAH)
+# Hughes, AK (HUS)
+# Huntington, WV/Ashland, KY (HTS)
+# Huntsville, AL (HSV)
+# Huron, SD (HON)
+# Huslia, AK (HSL)
+# Hyannis, MA (HYA)
+# Hydaburg, AK (HYG)
+# return to top
+# I
+# Idaho Falls, ID (IDA)
+# Igiugig, AK (IGG)
+# Iliamna, AK (ILI)
+# Imperial, CA (IPL)
+# Indianapolis, IN (IND)
+# International Falls, MN (INL)
+# Inyokern, CA (IYK)
+# Iron Mountain, MI (IMT)
+# Ironwood, MI (IWD)
+# Islip, NY (ISP)
+
+ITH:
+  city: "Ithaca, NY"
+  matchers:
+    - Ithaca
+
+# return to top
+# J
+# Jackson Hole, WY (JAC)
+# Jackson, MS (JAN)
+# Jackson, TN (MKL)
+# Jacksonville, FL (JAX)
+# Jacksonville, NC (OAJ)
+# Jamestown, ND (JMS)
+# Jamestown, NY (JHW)
+# Janesville, WI (JVL)
+# Johnson City, NY (BGM)
+# Johnson City, TN (TRI)
+# Johnstown, PA (JST)
+# Jonesboro, AR (JBR)
+# Joplin, MO (JLN)
+# Juneau, AK (JNU)
+# return to top
 
 JFK:
   name: John F. Kennedy International Airport
-  major: true
-  country: us
+  city: "New York, NY"
   matchers:
-    - "JFK"
+    - "jfk"
     - "J.F.K."
-    - "Kennedy Airport"
+    - "Kennedy"
+    - "Idlewild"
     
+JNU:
+  name: "Juneau, Alaska"
+  matchers:
+    - Juneau
+    
+# K
+# Kahului, HI - Island of Maui, (OGG)
+# Kake, AK (KAE)
+# Kakhonak, AK (KNK)
+# Kalamazoo, MI (AZO)
+# Kalaupapa, HI - Island of Molokai, (LUP)
+# Kalskag, AK (KLG)
+# Kaltag, AK (KAL)
+# Kamuela, HI - Island of Hawaii, (MUE)
+
+MCI:
+  city: "Kansas City, MO"
+  matchers:
+    - "Kansas City"
+    - "KC MO"
+
+# Kapalua, HI - Island of Maui, (JHM)
+# Kasaan, AK (KXA)
+# Kasigluk, AK (KUK)
+# Kauai Island/Lihue, HI (LIH)
+# Kearney, NE (EAR)
+
+EEN:
+  city: "Keene, NH"
+  matchers:
+    - "Keene"
+
+ENA:
+  city: "Kenai, AK"
+  matchers:
+    - Kenai
+
+KTN:
+  city: "Ketchikan, AK"
+  matchers:
+    - Ketchikan
+
+# Kiana, AK (IAN)
+# Kilgore/Gladewater, TX (GGG)
+
+ILE:
+  city: "Killeen, TX"
+  matchers:
+    - "Killeen"
+    - "Fort Hood"
+    - "Ft. Hood"
+    - "Ft Hood"
+    
+
+# King Cove, AK (KVC)
+# King Salmon, AK (AKN)
+# Kingman, AZ (IGM)
+# Kingsport, TN (TRI)
+# Kipnuk, AK (KPN)
+# Kirksville, MO (IRK)
+# Kivalina, AK (KVL)
+# Klamath Falls, OR (LMT)
+# Klawock, AK (KLW)
+
+TYS:
+  city: "Knoxville, TN"
+  matchers:
+    - Knoxville
+
+# Kobuk, AK (OBU)
+# Kodiak, AK (ADQ)
+# Kona, HI - Island of Hawaii (KOA)
+# Kongiganak, AK (KKH)
+# Kotlik, AK (KOT)
+# Kotzebue, AK (OTZ)
+# Koyukuk, AK (KYU)
+# Kwethluk, AK (KWT)
+# Kwigillingok, AK (KWK)
+# return to top
+# L
+# La Crosse, WI (LSE)
+# Lafayette, IN (LAF)
+# Lafayette, LA (LFT)
+
+LGA:
+  name: La Guardia International Airport
+  city: "New York, NY"
+  matchers:
+    - "Laguardia"
+    - "La Guardia"
+
+# Lake Charles, LA (LCH)
+# Lake Havasu City, AZ (HII)
+# Lake Minchumina, AK (LMA)
+# Lanai City, HI - Island of Lanai (LNY)
+# Lancaster, PA (LNS)
+# Lansing, MI (LAN)
+# Laramie, WY (LAR)
+
+LRD:
+  city: "Laredo, TX"
+  matchers:
+    - "Laredo"
+
 LAS:
-  name: Las Vegas
-  major: true
-  country: us
+  city: "Las Vegas, NV"
   matchers:
     - "Las Vegas"
     - "Vegas"
+    - "Sin City"
+
+# Latrobe, PA (LBE)
+# Laurel, MS (PIB)
+# Lawton, OK (LAW)
+# Lebanon, NH (LEB)
+# Levelock, AK (KLL)
+# Lewisburg, WV (LWB)
+# Lewiston, ID (LWS)
+# Lewistown, MT (LWT)
+# Lexington, KY (LEX)
+# Liberal, KS (LBL)
+# Lihue, HI - Island of Kaui (LIH)
+# Lincoln, NE (LNK)
+# Little Rock, AR (LIT)
+# Long Beach, CA (LGB)
+# Longview, TX (GGG)
+# Lopez Island, WA (LPS)
+# Los Angeles, CA (LAX)
 
 LAX:
-  name: Los Angeles International Airport
-  major: true
-  country: us
+  name: "Los Angeles International Airport"
+  city: "Los Angeles, CA"
   matchers:
-    - "LA"
-    - "L.A."
     - "Los Angeles"
+    - "L.A."
+    - "LA"
+    - "the city of angels"
     
 LIT:
-  name: Little Rock National Airport
-  city: Little Rock
-  country: us
-  url: http://www.fly-lit.com/
+  city: "Little Rock, AR"
   matchers:
-    - "Adams Field"
     - "Little Rock"
-    
-LGA:
-  name: LaGuardia International Airport
-  major: true
-  country: us
+
+# Louisville, KY (SDF)
+# Loveland/Fort Collins, CO - Municipal Airport (FNL)
+# Loveland/Fort Collins, CO - Bus service (QWF)
+# Lubbock, TX (LBB)
+# return to top
+# M
+# Macon, GA (MCN)
+# Madison, WI (MSN)
+# Madras, OR (MDJ)
+# Manchester, NH (MHT)
+# Manhattan, KS (MHK)
+# Manistee, MI (MBL)
+# Mankato, MN (MKT)
+# Manley Hot Springs, AK (MLY)
+# Manokotak, AK (KMO)
+# Marietta, OH/Parkersburg, WV (PKB)
+# Marion, IL (MWA)
+# Marquette, MI (MQT)
+# Marshall, AK (MLL)
+# Martha's Vineyard, MA (MVY)
+# Martinsburg, PA (AOO)
+# Mason City, IA (MCW)
+# Massena, NY (MSS)
+# Maui, HI (OGG)
+# Mcallen, TX (MFE)
+# Mccook, NE (MCK)
+# Mcgrath, AK (MCG)
+# Medford, OR (MFR)
+# Mekoryuk, AK (MYU)
+# Melbourne, FL (MLB)
+# Memphis, TN (MEM)
+# Merced, CA (MCE)
+# Meridian, MS (MEI)
+# Metlakatla, AK (MTM)
+# Meyers Chuck, AK (WMK)
+# Miami, FL - International (MIA)
+
+MCO:
+  city: "Orlando, FL"
   matchers:
-    - "LaGuardia"
+    - Orlando
 
 MIA:
-  name: Miami International Airport
-  major: true
-  country: us
+  name: "Miami International Airport"
+  city: "Miami, FL"
   matchers:
     - "Miami"
-    
-NYC:
-  name: New York City
-  country: us
+
+# Midland, MI (MBS)
+# Midland/Odessa, TX (MAF)
+# Miles City, MT (MLS)
+
+MKE:
+  city: "Milwaukee, WI"
   matchers:
-    - "NY"
+    - "Milwaukee"
+
+MSP:
+  city: "Minneapolis, MN"
+  matchers:
+    - "Minneapolis"
+    - "St. Paul"
+    - "The Twin Cities"
+    - "Minnesota"
+
+# Minot, ND (MOT)
+# Minto, AK (MNT)
+# Mission, TX (MFE)
+# Missoula, MT (MSO)
+# Moab, UT (CNY)
+# Mobile, AL (MOB)
+# Modesto, CA (MOD)
+# Moline, IL (MLI)
+# Monroe, LA (MLU)
+# Monterey, CA (MRY)
+# Montgomery, AL (MGM)
+# Montrose, CO (MTJ)
+# Morgantown, WV (MGW)
+# Moses Lake, WA (MWH)
+# Mountain Home, AR (WMH)
+# Mountain Village, AK (MOU)
+# Muscle Shoals, AL (MSL)
+# Muskegon, MI (MKG)
+# Myrtle Beach, SC (MYR)
+# return to top
+# N
+# Napakiak, AK (WNA)
+# Napaskiak, AK (PKA)
+# Naples, FL (APF)
+# Nashville, TN (BNA)
+# Naukiti, AK (NKI)
+# Nelson Lagoon, AK (NLG)
+# New Chenega, AK (NCN)
+# New Haven, CT (HVN)
+# New Koliganek, AK (KGK)
+# New London/Groton (GON)
+# New Orleans, LA (MSY)
+# New Stuyahok, AK (KNW)
+# New York, NY - All airports (NYC)
+
+NYC:
+  name: "New York, all airports"
+  city: "New York, NY"
+  matchers:
     - "New York"
     - "New York City"
     - "NYC"
-    - "N.Y.C"
+    - "NY"
+    - "N.Y."
+    - "N.Y.C."
+    - "the Big Apple"
 
+
+# Newburgh/Stewart Field, NY (SWF)
+# Newport News, VA (PHF)
+# Newtok, AK (WWT)
+# Nightmute, AK (NME)
+# Nikolai, AK (NIB)
+# Nikolski, AK (IKO)
+# Noatak, AK (WTK)
+# Nome, AK (OME)
+# Nondalton, AK (NNL)
+# Noorvik, AK (ORV)
+# Norfolk, NE (OFK)
+# Norfolk, VA (ORF)
+# North Bend, OR (OTH)
+# North Platte, NE (LBF)
+# Northway, AK (ORT)
+# Nuiqsut, AK (NUI)
+# Nulato, AK (NUL)
+# Nunapitchuk, AK (NUP)
+# return to top
+# O
+# Oakland, CA (OAK)
 OAK:
-  name: Oakland International Airport
-  country: us
+  city: "Oakland, CA"
   matchers:
-    - "Oakland"
-    
+    - Oakland
+
 ORD:
   name: "Chicago O'Hare International Airport"
-  country: us
+  city: "Chicago, IL"
   matchers:
-    - "Chicago"
-    - "Chitown"
-    - "Chi"
     - "O'Hare"
     - "Ohare"
-    
-PDX:
-  name: Portland International Airport
-  country: us
-  url: http://www.flypdx.com/
+
+# Odessa/Midland, TX (MAF)
+# Ogdensburg, NY (OGS)
+# Oklahoma City, OK (OKC)
+# Omaha, NE (OMA)
+# Ontario, CA (ONT)
+# Orange County, CA (SNA)
+# Orlando, FL - Herndon (ORL)
+# Oshkosh, WI (OSH)
+# Ottumwa, IA (OTM)
+# Owensboro, KY (OWB)
+# Oxnard/Ventura, CA (OXR)
+# return to top
+# P
+# Paducah, KY (PAH)
+# Page, AZ (PGA)
+# Palm Springs, CA (PSP)
+# Panama City, FL (PFN)
+# Parkersburg, WV/Marietta, OH (PKB)
+# Pasco, WA (PSC)
+# Pedro Bay, AK (PDB)
+# Pelican, AK (PEC)
+# Pellston, MI (PLN)
+# Pendleton, OR (PDT)
+# Pensacola, FL (PNS)
+# Peoria, IL (PIA)
+# Perryville, AK (KPV)
+# Petersburg, AK (PSG)
+
+PAH:
+  city: "Paducah, KY"
   matchers:
-    - "Portland"
+    - Paducah
+
+PDX:
+  name: "Portland International Airport"
+  city: "Portland, OR"
+  matchers:
+    - Portland
+
+PFN:
+  city: "Panama City, FL"
+  matchers:
+    - "Panama City"
+
+PHL:
+  city: "Philadelphia, PA"
+  matchers:
+    - Philadelphia
+    - Philly
+    - Phila
 
 PHX:
-  name: Phoenix Sky Harbor International Airport
-  country: us
-  url: http://www.skyharbor.com/
+  city: "Phoenix, AZ"
   matchers:
-    - "Phoenix"
-    - "Pheonix"
-    - "Sky Harbor"
+    - Phoenix
+    - Pheonix
+
+PIR:
+  city: "Pierre, SD"
+  matchers:
+    - Pierre
+
+PIT:
+  city: "Pittsburgh, PA"
+  matchers:
+    - Pitt
+    - Pittsburg
+    - Pittsburgh
+
+# Plattsburgh, NY (PLB)
+# Pocatello, ID (PIH)
+# Point Baker, AK (KPB)
+# Point Hope, AK (PHO)
+# Point Lay, AK (PIZ)
+# Ponca City, OK (PNC)
+# Ponce, Puerto Rico (PSE)
+# Port Alsworth, AK (PTA)
+# Port Angeles, WA (CLM)
+# Port Arthur/Beaumont, TX (BPT)
+# Port Clarence, AK (KPC)
+# Port Heiden, AK (PTH)
+# Port Moller, AK (PML)
+# Port Protection, AK (PPV)
+# Portage Creek, AK (PCA)
+
+POU:
+  city: "Poughkeepsie, NY"
+  matchers:
+    - Poughkeepsie
+
+PVC:
+  city: "Provincetown, MA"
+  matchers:
+    - Provincetown
+
+PVD:
+  city: "Providence, RI"
+  matchers:
+    - Providence
 
 PWM:
-  name: Portland International Jetport
-  country: us
+  name: "Portland International Jetport"
+  city: "Portland, ME"
   match_priority: 100
-  url: http://www.portlandjetport.org/
   matchers:
-    - "Portland, ME"
-    - "Portland ME"
     - "Portland Maine"
     - "Portland, Maine"
+    - "Portland, ME"
+    - "Portland ME"
 
-RDU:
-  name: Raleigh-Durham International Airport
-  country: us
+# Portsmouth, NH (PSM)
+# Prescott, AZ (PRC)
+# Presque Isle, ME (PQI)
+# Princeton, WV (BLF)
+# Prudhoe Bay/Deadhorse, AK (SCC)
+# Pueblo, CO (PUB)
+# Pullman, WA (PUW)
+# return to top
+# Rampart, AK (RMP)
+# Rapid City, SD (RAP)
+# Reading, PA (RDG)
+# Red Devil, AK (RDV)
+# Redding, CA (RDD)
+# Redmond, OR (RDM)
+# Reno, NV (RNO)
+# Rhinelander, WI, (RHI)
+# Richmond, VA (RIC)
+# Riverton, WY (RIW)
+# Roanoke, VA (ROA)
+# Roche Harbor, WA (RCE)
+# Rochester, MN (RST)
+# Rochester, NY (ROC)
+# Rock Springs, WY (RKS)
+# Rockford, IL (RFD)
+# Rockland, ME (RKD)
+# Rosario, WA (RSJ)
+
+RBY:
+  city: "Ruby, AK"
   matchers:
-    - "Raleigh"
-    - "Raleigh-Durham"
+    - Ruby
+
+RFD:
+  city: "Rockford, IL"
+  matchers:
+    - Rockford
+
+RNO:
+  city: "Reno, Nevada"
+  matches:
+    - "Reno"
+
+ROW:
+  city: "Roswell, NM"
+  matchers:
+    - Roswell
+
+# Russian Mission, AK (RSH)
+# Rutland, VT (RUT)
+# return to top
+# S
+# Sacramento, CA (SMF)
+# Saginaw, MI (MBS)
+# Saint Cloud, MN (STC)
+# Saint George Island, AK (STG)
+# Saint George, UT (SGU)
+# Saint Louis, MO (STL)
+
+SLC:
+  city: "Salt Lake City, UT"
+  matchers:
+    - "Salt Lake"
+
+STL:
+  city: "Saint Louis, MO"
+  matchers:
+    - "Saint Louis"
+    - "St. Louis"
+    - "St.Louis"
+
+# Saint Mary's, AK (KSM)
+# Saint Michael, AK (SMK)
+# Saint Paul Island, AK (SNP)
+# Salem, OR (SLE)
+# Salina, KS (SLN)
+# Salisbury-Ocean City, MD (SBY)
+# Salt Lake City, UT (SLC)
+# San Angelo, TX (SJT)
+# San Antonio, TX (SAT)
+# San Diego, CA (SAN)
+# San Jose, CA (SJC)
+
+SJU:
+  city: "San Juan, Puerto Rico"
+  matchers:
+    - "San Juan"
+    - "Puerto Rico"
+    - "PR"
+    - "P.R."
+    
+SBP:
+  city: "San Luis Obispo, CA"
+  matchers:
+    - "San Luis Obispo"
+
+# Sand Point, AK (SDP)
+# Sanford, FL (SFB)
+# Santa Ana, CA (SNA)
+# Santa Barbara, CA (SBA)
+
+SAF:
+  city: "Santa Fe, NM"
+  matchers:
+    - "Santa Fe"
+
+# Santa Maria, CA (SMX)
+# Santa Rosa, CA (STS)
+# Saranac Lake, NY (SLK)
+
+SRQ:
+  city: "Sarasota, FL"
+  matchers:
+    - "Sarasota"
+    
+# Sault Ste Marie, MI, (CIU)
+# Savannah, GA (SAV)
+# Savoonga, AK (SVA)
+# Scammon Bay, AK (SCM)
+# Scottsbluff, NE (BFF)
+
+AVP:
+  city: "Scranton, PA"
+  matchers:
+    - "Scranton"
+
+SDF:
+  city: "Louisville, KY"
+  matchers:
+    - Louisville
 
 SEA:
-  name: Seattle-Tacoma International Airport
-  country: us
+  name: "Seattle/Tacoma International Airport"
+  city: "Seattle, WA"
   matchers:
     - "Seattle"
     - "SeaTac"
 
-SDF:
-  name: Louisville
-  country: us
-  matchers:
-    - "Louisville"
-    
 SFO:
-  name: San Francisco International Airport
-  country: us
+  name: "San Francisco International Airport"
+  city: "San Francisco, CA"
   matchers:
     - "San Francisco"
+    - "San Fran"
     - "S.F."
     - "SF"
-    - "San Fran"
 
-STL:
-  name: St. Louis International Airport
-  country: us
+SGY:
+  city: "Skagway, AK"
   matchers:
-    - "St. Louis"
-    - "St.Louis"
-    - "Saint Louis"
+    - Skagway
 
+SHV:
+  city: "Shreveport, LA"
+  matchers:
+    - Shreveport
+
+# Selawik, AK (WLK)
+# Seward, AK (SWD)
+# Shageluk, AK (SHX)
+# Shaktoolik, AK (SKK)
+# Sheffield/Florence/Muscle Shoals, AL (MSL)
+# Sheldon Point, AK (SXP)
+# Sheridan, WY (SHR)
+# Shishmaref, AK (SHH)
+# Shungnak, AK (SHG)
+# Silver City, NM (SVC)
+# Sioux City, IA (SUX)
+
+SUX:
+  city: "Sioux City, IA"
+  matchers:
+    - Sioux City
+
+# Sioux Falls, SD (FSD)
+# Sitka, AK (SIT)
+# Sleetmore, AK (SLQ)
+# South Bend, IN (SBN)
+# South Naknek, AK (WSN)
+# Southern Pines, NC (SOP)
+# Spartanburg/Greenville, SC (GSP)
+# Spokane, WA (GEG)
+# Springfield, IL (SPI)
+# Springfield, MO (SGF)
+# St Petersburg/Clearwater, FL (PIE)
+# State College/University Park, PA (SCE)
+# Staunton, VA (SHD)
+
+SBS:
+  city: "Steamboat Springs, CO"
+  matchers:
+    - "Steamboat Springs"
+
+# Stebbins, AK (WBB)
+# Stevens Point/Wausau, WI (CWA)
+# Stevens Village, AK (SVS)
+# Stewart Field/Newburgh, NY (SWF)
+# Stockton, CA (SCK)
+# Stony River, AK (SRV)
+# Sun Valley, ID (SUN)
+
+SYR:
+  city: "Syracuse, NY"
+  matchers:
+    - "Syracuse"
+
+TLH:
+  city: "Tallahassee, FL"
+  matchers:
+    - "Tallahassee"
+
+TPA:
+  city: "Tampa, FL"
+  matchers:
+    - Tampa
+
+TSM:
+  city: "Taos, NM"
+  matchers:
+    - Taos
+    
+# Tanana, AK (TAL)
+# Tatitlek, AK (TEK)
+# Teller Mission, AK (KTS)
+# Telluride, CO (TEX)
+# Tenakee Springs, AK (TKE)
+# Terre Haute, IN (HUF)
+# Tetlin, AK (TEH)
+# Texarkana, AR (TXK)
+# Thief River Falls, MN (TVF)
+# Thorne Bay, AK (KTB)
+# Tin City, AK (TNC)
+# Togiak Village, AK (TOG)
+# Tok, AK (TKJ)
+# Toksook Bay, AK (OOK)
+# Toledo, OH (TOL)
+# Topeka, KS (FOE)
+# Traverse City, MI (TVC)
+# Trenton/Mercer, NJ (TTN)
+# Tucson, AZ (TUS)
+# Tulsa, OK (TUL)
+# Tuluksak, AK (TLT)
+# Tuntutuliak, AK (WTL)
+# Tununak, AK (TNK)
+# Tupelo, MS (TUP)
+
+TCL:
+  city: "Tuscaloosa, AL"
+  matchers:
+    - "Tuscaloosa"
+
+TWF:
+  city: "Twin Falls, ID"
+  matchers:
+    - "Twin Falls"
+
+# Twin Hills, AK (TWA)
+# Tyler, TX (TYR)
+# return to top
+# U
+# Unalakleet, AK (UNK)
+# Utica, NY (UCA)
+# Utopia Creek, AK (UTO)
+# return to top
+# V
+
+EGE:
+  city: "Vail, CO"
+  matchers:
+    - "Vail"
+
+VDZ:
+  city: "Valdez, AK"
+  matchers:
+    - "Valdez"
+
+VLD:
+  city: "Valdosta, GA"
+  matchers:
+    - "Valdosta"
+
+VPS:
+  city: "Valparaiso, FL"
+  matchers:
+    - Valparaiso
+
+OXR:
+  city: "Ventura/Oxnard, CA"
+  matchers:
+    - "Ventura"
+    - "Oxnard"
+
+# Vernal, UT (VEL)
+# Victoria, TX (VCT)
+# Visalia, CA (VIS)
+# return to top
+
+ACT:
+  city: "Waco, TX"
+  matchers:
+    - "Waco"
+
+# Wainwright, AK (AIN)
+# Wales, AK (WAA)
+# Walla Walla, WA (ALW)
+
+WAS:
+  name: "Washington, DC (all airports)"
+  city: "Washington, DC"
+  matchers:
+    - "DC"
+    - "D.C."
+
+IAD:
+  name: "Dulles Inernational Airport"
+  city: "Washington, DC"
+  matchers:
+    - "Dulles"
+    
+DCA:
+  name: "National Airport"
+  city: "Washington, DC"
+  matchers:
+    - "National"
+    - "Reagan"
+    - "Ronald Reagan"
+
+# Waterfall, AK (KWF)
+# Waterloo, IA (ALO)
+# Watertown, NY (ART)
+# Watertown, SD (ATY)
+# Wausau/Stevens Point, WI (CWA)
+# Wenatchee, WA (EAT)
+
+PBI:
+  city: "West Palm Beach, FL"
+  matchers:
+    - "West Palm Beach"
+    - "Palm Beach"
+
+# West Yellowstone, MT (WYS)
+
+HPN:
+  city: "Westchester County, NY"
+  matchers:
+    - "Westchester"
+
+# Westerly, RI (WST)
+# Westsound, WA (WSX)
+# Whale Pass, AK (WWP)
+# White Mountain, AK (WMO)
+# White River, VT (LEB)
+# Wichita Falls, TX (SPS)
+
+ICT:
+  city: "Wichita, KS"
+  matchers:
+    - "Wichita"
+
+AVP:
+  city: "Wilkes Barre, PA"
+  matchers:
+    - "Wilkes Barre"
+
+# Williamsburg, VA (PHF)
+# Williamsport, PA (IPT)
+# Williston, ND (ISN)
+
+ILM:
+  city: "Wilmington, NC"
+  matchers:
+    - Wilmington
+
+BDL:
+  city: "Windsor Locks, CT"
+  matchers:
+    - "Windsor Locks"
+
+# Worcester, MA (ORH)
+# Worland, WY (WRL)
+# Wrangell, AK (WRG)
+# return to top
+# Y
+# Yakima, WA (YKM)
+# Yakutat, AK (YAK)
+# Yellowstone/Cody, WY (COD)
+# Youngstown, OH (YNG)
+
+YKM:
+  city: "Yakima, WA"
+  matchers:
+    - Yakima
+
+YUM:
+  city: "Yuma, AZ"
+  matchers:
+    - Yuma

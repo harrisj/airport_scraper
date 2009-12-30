@@ -1,5 +1,133 @@
-YYZ:
-  name: Toronto Pearson International Airport
+YCD:
+  city: "Nanaimo, BC"
+  matchers:
+    - Nanaimo
+
+YEG:
+  city: "Edmonton"
+  matchers:
+    - "Edmonton"
+    - "Alberta"
+
+YFC:
+  city: "Fredericton, NB"
+  matchers:
+    - "Fredericton"
+
+YGK:
+  name: "Norman Rogers Airport"
+  city: "Kingston, ON"
+  match_priority: 100
+  matchers:
+    - "Kingston, ON"
+    - "Kingston ON"
+    - "Kingston Ontario"
+    - "Kingston, Ontario"
+
+YHZ:
+  city: "Halifax, NS"
+  matchers:
+    - "Halifax"
+    
+YKF:
+  city: "Kitchener, ON"
+  matchers:
+    - Kitchener
+
+YMQ:
+  city: "Montreal, QC (All Airports)"
+  matchers:
+    - Montreal
+
+YOW:
+  city: Ottawa
+  matchers:
+    - Ottawa
+    
+YUL:
+  name: "Montreal Dorval Airport"
+  city: "Montreal, QC"
+  match_priority: 50
+  matchers:
+    - "Dorval"
+    - "Montreal Dorval"
+
+YQB:
+  city: Quebec City
+  matchers:
+    - Quebec City
+
+YQM:
+  city: "Moncton, NB"
+  matchers:
+    - "Moncton"
+
+YQR:
+  city: "Regina, SK"
+  matchers:
+    - "Regina"
+    
+YQT:
+  city: "Thunder Bay, ON"
+  matchers:
+    - Thunder Bay
+
+YVR:
+  name: Vancouver International Airport
+  city: "Vancouver, BC"
+  matchers:
+    - "Vancouver"
+
+YWG:
+  city: "Winnipeg"
+  matchers:
+    - Winnipeg
+
+YXU:
+  city: "London, ON"
+  match_priority: 100
+  matchers:
+    - "London, ON"
+    - "London Ontario"
+    - "London, Ontario"
+
+YXY:
+  city: "Whitehorse, YT"
+  matchers:
+    - "Whitehorse"
+    
+YYC:
+  city: Calgary
+  county: ca
+  matchers:
+    - Calgary
+    
+YYG:
+  city: "Charlottetown, PEI"
   country: ca
   matchers:
+    - "Charlottetown"
+    - "Prince Edward Island"
+    - "P.E.I."
+
+YYJ:
+  city: "Victoria, BC"
+  matchers:
+    - "Victoria"
+
+YYT:
+  city: "Saint Johns, NL"
+  matchers:
+    - "Saint Johns"
+    - "St. Johns"
+    - "St.Johns"
+
+YYZ:
+  city: Toronto
+  matchers:
     - "Toronto"
+
+YZF:
+  city: "Yellowknife, NT"
+  matchers:
+    - "Yellowknife"
