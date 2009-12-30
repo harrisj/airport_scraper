@@ -23,30 +23,42 @@ class AirportScraper
       @airports.merge!(YAML.load_file(File.join(File.dirname(__FILE__), "#{file}.yml")))
     end
     
+    @matcher_prefixes = {}
+    
     @airports.each do |key, value|
       value['code'] = key
-      value['match_priority'] ||= 0
+      value['major'] ||= false
+      value['match_priority'] ||= value['major'] ? 10 : 0
       value['name'] ||= value['city']
+      value['matchers'] ||= []
       value['regex'] = regex_from_matchers(value['matchers'])
+
+      prefixes = value['matchers'].map {|x| prefix_from_match(x)}.uniq
+      prefixes.each do |p| 
+        @matcher_prefixes[p] ||= []
+        @matcher_prefixes[p] << value
+      end
     end
     
     @airport_codes = @airports.keys
+
+    @matcher_prefixes.values.each do |airports|
+      airports.sort! {|a, b| b['match_priority'] <=> a['match_priority'] }
+    end
+    
+#    raise @matcher_prefixes.inspect
+  end
+  
+  def prefix_from_match(str)
+    str[0,2].downcase
   end
 
   def create_regexes
-    #@code_regex = /#{@airport_codes.join('|')}/
-
-    @airports_by_priority = @airports.values.sort {|a, b| b['match_priority'] <=> a['match_priority'] }
-
-    #@name_regex = /#{@airports_by_priority.map{|x| x['regex']}.join("|")}/i
-    
     @code_match_regex = /([A-Z]{3})\b/
+
     flight_regex = /(flight|flying|plane|jet|turboprop)(\s(back|again|over))?/i
     airport_regex = /(.+)/
     
-    # puts @airport_regex.inspect
-    #@name_matchers = @airports.values.sort {|a,b| a['match_priority'].to_i > b['match_priority'].to_i}.map {|a| /^(#{a['matchers'].join("|")]
-
     @trans_regex = /(\sto\s)|(\s?->\s?)|(\s?>\s?)|(\s?✈\s?)/
     @via_regex = /,?\s?(via|by way of)\s/
 
@@ -91,16 +103,21 @@ class AirportScraper
         # puts "Text: #{text}"
         # puts "Regex: #{regex.inspect}"
         matches.each do |match|
+          next if match.nil? || match.length < 2
+
           if match =~ /^#{@code_match_regex}/
             # puts "MATCH: #{match}"
             airport = @airports[$1]
             airports << airport unless airport.nil?
           else
-            @airports_by_priority.each do |a|
-              next if a['regex'].nil?
-              if match =~ /#{a['regex']}\b/
-                airports << a
-                break
+            possible_airports = @matcher_prefixes[prefix_from_match(match)]
+            unless possible_airports.nil?
+              possible_airports.each do |a|
+                next if a['regex'].nil?
+                if match =~ /#{a['regex']}\b/
+                  airports << a
+                  break
+                end
               end
             end
           end

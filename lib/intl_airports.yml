@@ -218,16 +218,30 @@ BNP:
   city: "Bannu, Pakistan"
   matchers:
     - Bannu
-    
-     # Banqui, Central African Republic (BGF)
+
+BGF:
+  city: "Banqui, Central African Republic"
+  matchers:
+    - "Banqui"
 
 BSD:
   city: "Baoshan, China"
   matchers: "BSD"
-  
-     # Baotou, China (BAV)
-     # Baracoa, Cuba (BCA)
-     # Barcaldine, Australia (BCI)
+
+BAV:
+  city: "Baotou, China"
+  matchers:
+    - "Baotou"
+
+BCA:
+  city: "Baracoa, Cuba"
+  matchers:
+    - "Baracoa"
+
+BCI:
+  city: "Barcaldine, Australia"
+  matchers:
+    - "Barcaldine"
 
 BCN:
   city: "Barcelona, Spain"
@@ -291,9 +305,14 @@ BEY:
      # Belaga, Mozambique (BLG)
      # Belem, Brazil (BEL)
      # Belep Island, New Caledonia (BMY)
-     # Belfast, Northern Ireland, United Kingdom (BFS)
-     # Belfast, United Kingdom (BHD)
-     # Belgorod, Russia (EGO)
+     
+BFS:
+  city: "Belfast, Northern Ireland"
+  matchers:
+    - "Belfast"
+
+BHD:
+  city: "Belfast, UK"
 
 BEG:
   city: "Belgrade, Serbia and Montenegro"
@@ -309,7 +328,12 @@ BZE:
      # Belize City, Belize - International (BZE)
      # Belize City, Belize - Municipal (TZA)
      # Bellona, Solomon Islands (BNY)
-     # Belo, Madagascar (BMD)
+
+BMD:
+  city: "Belo, Madagascar"
+  matchers:
+    - "Belo"
+
      # Belo Horizonte, Brazil - Tancredo Neves Intl. (CNF)
      # Belo Horizonte, Brazil - Pampulha (PLU)
      # Benbecula, United Kingdom (BEB)
@@ -549,13 +573,22 @@ CUN:
   matchers:
     - Cancun
 
-     # Cannes, France - Mandelieu (CEQ)
-     # Cannes, France - Coisette Heliport (JCA)
-     # Cannes, France - Vieux Port (QYW)
+CEQ:
+  name: "Mandelieu Airport"
+  city: "Cannes, France"
+  matchers:
+    - "Cannes"
+    - "Mandelieu"
+    
      # Canouan, Saint Vincent and the Grenadines (CIW)
      # Cap Haitien, Haiti (CAP)
-     # Cape Orford, Papua New Guinea (CPI)
-     # Cape Town, South Africa (CPT)
+
+CPT:
+  city: "Cape Town, South Africa"
+  matchers:
+    - "Cape Town"
+    - "Capetown"
+
      # Cape Vogel, Papua New Guinea (CVL)
 
 CCS:
@@ -602,8 +635,13 @@ CEB:
      # Ceuta, Spain and Canary Islands (JCU)
      # Chah-Bahar, Iran (ZBR)
      # Chambery, France (CMF)
-     # Chandigarh, India (IXC)
-     # Changchun, China (CGQ)
+
+IXC:
+  city: "Chandigarh, India"
+  matchers:
+    - "Chandigarh"
+
+   # Changchun, China (CGQ)
      # Changde, China (CGD)
      # Changuinda, Panama (CHX)
      # Changzhou, China (CZX)
@@ -679,11 +717,28 @@ COK:
      # Coimbatore, India (CJB)
      # Colima, Mexico (CLQ)
      # Cologne, Germany - Rail service (QKL)
-     # Cologne, Germany - Cologne/Bonn (CGN)
-     # Colombo, Sri Lanka (CMB)
+
+CGN:
+  city: "Cologne, Germany"
+  matchers:
+    - "Cologne"
+    - "Köln"
+    - "Koln"
+
+CMB:
+  city: "Colombo, Sri Lanka"
+  matchers:
+    - "Colombo"
+    - "Sri Lanka"
+
      # Colon, Panama (ONX)
      # Conakry, Guinea (CKY)
-     # Concepcion, Chile (CCP)
+     
+CCP:
+  city: "Concepcion, Chile"
+  matchers:
+    - "Concepcion"
+
      # Concordia, Argentina (COC)
      # Condoto, Colombia (COG)
      # Constanta, Romania (CND)
@@ -693,7 +748,6 @@ COK:
      # Cooktown, Australia (CTN)
      # Cooma, NS, Australia (OOM)
      # Coonamble, Australia (CNB)
-     # Copenhagen, Denmark (CPH)
      
 CPH:
   city: "Copenhagen, Denmark"
@@ -713,7 +767,12 @@ ORK:
      # Corumba, Brazil (CMG)
      # Corvo Island, Portugal (CVU)
      # Cotabato, Philippines (CBO)
-     # Cotarou, Benin (COC)
+     
+COC:
+  city: "Cotarou, Benin"
+  matchers:
+    - "Cotarou"
+
      # Cox's Bazar, Bangladesh (CXB)
      
 CZM:
@@ -765,19 +824,37 @@ DAR:
 
      # Darnley Island, QL, Australia (NLF)
      # Daru, Papua New Guinea (DAU)
-     # Darwin, Northern Territory, Australia (DRW)
+DRW:
+  city: "Darwin, Australia"
+  matchers:
+    - "Darwin"
+
      # Datadawai, Indonesia (DTD)
      # Davao, Philipines - Mati (DVO)
      # David, Panama (DAV)
      # Dawe, Myanmar (TVY)
-     # Daxian, China (DAX)
-     # Dayang, China (DYG)
+
+DAX:
+  city: "Daxian, China"
+  matchers:
+    - "Daxian"
+
+DYG:
+  city: "Dayang, China"
+  matchers:
+    - "Dayang"
+
      # Daydream Is, Australia (DDI)
      # Deauville, France (DOL)
      # Debra Marcos, Ethiopia (DBM)
      # Debra Tabor, Ethiopia (DBT)
      # Deirezzor, Syria - Al Jafrah (DEZ)
-     # Delhi, India (DEL)
+     
+DEL:
+  city: "Delhi, India"
+  matchers:
+    - "Delhi"
+
      # Dembidollo, Ethiopia (DEM)
      # Denham, Australia (DNM)
      # Denizli, Turkey (DNZ)
@@ -798,8 +875,18 @@ DAC:
     - "Bangladesh"
 
      # Dibrugarn, India (DIB)
-     # Dien Bien Phu, Viet Nam - Gialam (DIN)
-     # Dijon, France (DIJ)
+
+DIN:
+  name: "Gialam International Airport"
+  matchers:
+     - "Dien Bien Phu"
+     - "Gialam"
+
+DIJ:
+  name: "Dijon, France"
+  matchers:
+    - "Dijon"
+
      # Dili, Indonesia (DIL)
      # Dillons Bay, Vanuata (DLY)
      # Dimapur, India (DMU)
@@ -810,7 +897,12 @@ DAC:
      # Diyarbakir, Turkey (DIY)
      # Djanet, Algeria (DJG)
      # Djerba, Tunisia (DJE)
-     # Djibouti, Djibouti (JIB)
+
+JIB:
+  name: "Djibouti"
+  matchers:
+    - "Djibouti"
+
      # Dnepropetrovsk, Ukraine (DNK)
      # Dobo, Indonesia (DOB)
      # Dodoma, Tanzania (DOD)
@@ -824,14 +916,23 @@ DOH:
 
      # Dominica, Dominica - Cane Field (DCF)
      # Dominica, Dominica - Melville Hall (DOM)
-     # Donegal, Ireland (CFN)
+
+CFN:
+  name: "Donegal, Ireland"
+  matchers:
+    - "Donegal"
+
      # Donetsk, Ukraine (DOK)
      # Dongola, Sudan (DOG)
      # Doomadgee, Australia (DMD)
      # Dortmund, Germany (DTM)
      # Dourados, Brazil (DOU)
      # Dovala, Cameroon (DLA)
-     # Dresden, Germany (DRS)
+
+DRS:
+  name: "Dresden, Germany"
+  matchers:
+    - "Dresden"
 
 DXB:
   city: "Dubai, United Arab Emirates"
@@ -839,7 +940,6 @@ DXB:
     - "Dubai"
 
      # Dubbo, Australia (DBO)
-     # Dublin, Ireland (DUB)
 DUB:
   city: "Dublin, Ireland"
   matchers:
@@ -854,21 +954,44 @@ DBV:
      # Dumai, Indonesia (DUM)
      # Dundee, United Kingdom (DND)
      # Dunedin, New Zealand (DUD)
-     # Dunhuang, China (DNH)
+     
+DNH:
+  city: "Dunhuang, China"
+  matchers:
+    - "Dunhuang"
+
      # Dunk Island, Australia (DKI)
      # Durango, Mexico (DGO)
-     # Durban, South Africa (DUR)
+
+DUR:
+  city: "Durban, South Africa"
+  matchers:
+    - "Durban"
+
      # Dushanbe, Tajikistan (DYU)
-     # Dusseldorf, Germany - International (DUS)
-     # Dusseldorf, Germany - Moenchen-Gl. (MGL)
-     # Dusseldorf, Germany - Rail service (QDU)
-     # Dzaoudzi, Mayotte (DZA)
+     
+DUS:
+  city: "Dusseldorf, Germany"
+  matchers:
+    - "Dusseldorf"
+
+DZA:
+  city: "Dzaoudzi, Mayotte"
+  matchers:
+    - "Dzaoudzi"
+    - "Mayotte"
+
      # return to top
      # E
      # East London, South Africa (ELS)
      # Ebon, Marshall Islands (EBO)
      # Eday, United Kingdom (EOI)
-     # Edinburgh, United Kingdom (EDI)
+     
+EDI:
+  city: "Edinburgh, United Kingdom"
+  matchers:
+    - "Edinburgh"
+
      # Edremit, Turkey (EDO)
      # Edward River, Australia (EDR)
      # Egilsstadir, Iceland (EGS)
@@ -906,7 +1029,12 @@ ELH:
      # Enewetak Island, Marshall Islands (ENT)
      # Enontekio, Finland (ENF)
      # Enshi, China (ENH)
-     # Entebbe, Uganda (EBB)
+
+EBB:
+  city: "Entebbe, Uganda"
+  matchers:
+    - "Entebbe"
+
      # Enugu, Nigeria (ENU)
      # Epinal, France (EPL)
      # Ercan, Cyprus (ECN)
@@ -915,7 +1043,12 @@ ELH:
      # Erzurum, Turkey (ERZ)
      # Esbjerg, Denmark - Esbjerg Airport (EBJ)
      # Esbjerg, Denmark - Rail service (ZBB)
-     # Esmeraldas, Ecuador (ESM)
+     
+ESM:
+  city: "Esmeraldas, Ecuador"
+  matchers:
+    - "Esmeraldas"
+
      # Esperance, Australia (EPR)
      # Espiritu Santo, Vanuatu (SON)
      # Esquel, Argentina (EQS)
@@ -931,12 +1064,22 @@ ELH:
      # Fak Fak, Indonesia (FKQ)
      # Fakarava, French Polynesia (FAV)
      # Farafangana, Madagascar (RVA)
-     # Faro, Portugal (FAO)
+
+FAO:
+  city: "Faro, Portugal"
+  matchers:
+    - "Faro"
+
      # Faroe Islands, Faroe Islands (FAE)
      # Fera Island, Solomon Islands (FRE)
      # Fergana, Uzbekistan (FEG)
      # Fernando De Noronha, Brazil (FEN)
-     # Fez, Morocco (FEZ)
+     
+FEZ:
+  city: "Fez, Morocco"
+  matchers:
+    - "Fez"
+
      # Fianarantsoa, Madagascar (WFI)
      # Figari, France (FSC)
      # Filton, United Kingdom (FZO)
@@ -949,6 +1092,7 @@ FLR:
   city: "Florence, Italy"
   matchers:
     - "Florence"
+    - "Firenze"
 
      # Florencia, Colombia (FLA)
      # Flores Island, Portugal (FLW)
@@ -965,9 +1109,19 @@ FLR:
      # Franceville, Gabon (MVB)
      # Francistown, Botswana (FRW)
      # Frankfurt, Germany - Hahn (HHN)
-     # Frankfurt, Germany - International (FRA)
+     
+FRA:
+  city: "Frankfurt, Germany"
+  matchers:
+    - "Frankfurt"
+
      # Fredericia, Denmark (ZBJ)
-     # Freeport, Bahamas (FPO)
+
+FPO:
+  city: "Freeport, Bahamas"
+  matchers:
+    - "Freeport"
+
      # Freetown, Sierra Leone - Lungi Intl (FNA)
      # Friedrichshafer, Germany (FDH)
      # Fuerteventura, Spain (FUE)
@@ -985,9 +1139,20 @@ FLR:
      # Gaborone, Botswana (GBE)
      # Gafsa, Tunisia (GAF)
      # Gagnoa, Cote D'Ivoire (GGN)
-     # Galapagos, Ecuador (GPS)
+     
+GPS:
+  city: "Galapagos, Ecuador"
+  matchers:
+    - "Galapagos"
+    - "The Galapagos"
+
      # Gallivare, Sweden (GEV)
-     # Galway, Ireland (GWY)
+
+GWY:
+  city: "Galway, Ireland"
+  matchers:
+    - "Galway"
+
      # Gamba, Gabon (GAX)
      # Gambela, Ethiopia (GMB)
      # Gan Island, Maldives (GAN)
@@ -1023,7 +1188,6 @@ FLR:
      # Gizan, Saudi Arabia (GIZ)
      # Gizo, Solomon Islands (GZO)
      # Gladstone, Australia (GLT)
-     # Glasgow, United Kingdom - Glasgow International (GLA)
 
 GLA:
   name: "Glasgow International Airport"
@@ -1410,9 +1574,20 @@ GOI:
      # Lages, SC, Brazil (LAJ)
      # Lago Agrio, Ecuador (LGQ)
      # Lago Argentina, Argentina (ING)
-     # Lagos, Nigeria (LOS)
+
+LOS:
+  city: "Lagos, Nigeria"
+  matchers:
+    - "Lagos"
+    - "Nigeria"
+
      # Lahadbatu, Malaysia (LDU)
-     # Lahore, Pakistan (LHE)
+
+LHE:
+  city: "Lahore, Pakistan"
+  matchers:
+    - "Lahore"
+
      # Lakeba, Fiji (LKB)
      # Lakselv, Norway (LKL)
      # Lalibela, Ethiopia (LLI)
@@ -1471,7 +1646,12 @@ GOI:
      # Lille, France - Lesquin (LIL)
      # Lille, France - Rail service (XDB)
      # Lilongwe, Malawi (LLW)
-     # Lima, Peru (LIM)
+
+LIM:
+  name: "Lima, Peru"
+  matchers:
+    - "Lima"
+
      # Limbang, Malaysia (LMN)
      # Limoges, France (LIG)
      # Lindeman Island, QL, Australia (LDC)
@@ -1490,15 +1670,41 @@ GOI:
      # Loen, Marshall Islands (LOF)
      # Loja, Ecuador (LOH)
      # Lome, Togo (LFW)
-     # London, United Kingdom - All airports (LON)
-     # London, United Kingdom - Biggin Hill (BQH)
-     # London, United Kingdom - Gatwick (LGW)
-     # London, United Kingdom - Heathrow (LHR)
+
+
+LON:
+  name: "London, UK (all airports)"
+  city: "London, UK"
+  matchers:
+    - "London"
+    - "LDN"
+
+LGW:
+  name: "Gatwick Airport"
+  city: "London, UK"
+  matchers:
+    - "Gatwick"
+
+LHR:
+  name: "Heathrow Airport"
+  city: "London, UK"
+  matchers:
+    - "Heathrow"
+
+LTN:
+  name: "Luton Airport"
+  city: "London, UK"
+  matchers:
+    - "Luton"
+    
+STN:
+  name: "Stansted Airport"
+  city: "London, UK"
+  matchers:
+    - "Stansted"
+    
      # London, United Kingdom - London City (LCY)
-     # London, United Kingdom - Luton (LTN)
-     # London, United Kingdom - Stansted (STN)
      # Londonderry, United Kingdom (LDY)
-     # London-Paddington, United Kingdom - Rail service (QQP)
      # Londrina, PR, Brazil (LDB)
      # Long Apung, Indonesia (LPU)
      # Long Banga, Malaysia (LBP)
@@ -1542,7 +1748,12 @@ GOI:
      # Lyon, France - Lyon Part-Dieu Rail service (XYD)
      # return to top
      # M
-     # Maastricht, Netherlands (MST)
+
+MST:
+  city: "Maastricht, Netherlands"
+  matchers:
+    - Maastricht
+
      # Mabuiag Island, QL, Australia (UBB)
      # Macapa, AP, Brazil (MCP)
      # Macas, Ecuador (XMS)
@@ -1580,13 +1791,31 @@ GOI:
      # Male, Maldives (MLE)
      # Malindi, Kenya (MYD)
      # Malmo, Sweden (MMX)
+
+MMX:
+  city: "Malmö, Sweden"
+  matchers:
+    - "Malmo"
+    - "Malmö"
+
      # Maloelap Island, Marshall Islands (MAV)
      # Malololailai, Fiji (PTF)
-     # Malta, Malta (MLA)
+
+MLA:
+  city: "Malta"
+  matchers:
+    - "Malta"
+
      # Mampikony, Madagascar (WMP)
      # Mana Island, Fiji (MNF)
      # Manado, Indonesia (MDC)
-     # Managua, Nicaragua (MGA)
+
+MGA:
+  city: "Managua, Nicaragua"
+  matchers:
+    - Managua
+    - Nicaragua
+
      # Manakara, Madagascar (WVK)
      # Mananara, Madagascar (WMR)
      # Manang, Nepal (NGX)
@@ -1681,7 +1910,12 @@ GOI:
      # Mersa Matruh, Egypt (MUH)
      # Metz/Nancy, France (ETZ)
      # Mexicali, Mexico (MXL)
-     # Mexico City, Mexico (MEX)
+
+MEX:
+  city: "Mexico City, Mexico"
+  matchers:
+    - "Mexico City"
+
      # Mfume, Zambia (MFU)
      # Miandrivazo, Madagascar (ZVA)
      # Middle Caicos, Turks and Caicos (MDS)
@@ -1690,7 +1924,14 @@ GOI:
      # Mikonos, Greece (JMK)
      # Milan, Italy - Orio Al Serio (BGY)
      # Milan, Italy - Linate (LIN)
-     # Milan, Italy - Malpensa (MXP)
+     
+MXP:
+  name: "Malpensa International Airport"
+  city: "Milan, Italy"
+  matchers:
+    - "Milan"
+    - "Malpensa"
+
      # Milan, Italy - Parma (PMF)
      # Mildura, VI, Australia (MQL)
      # Mili Island, Marshall Islands (MIJ)
@@ -1727,8 +1968,19 @@ GOI:
      # Monclova, Mexico (LOV)
      # Monkey Mia, WA, Australia (MJK)
      # Mono, Solomon Islands (MNY)
-     # Monrovia, Liberia (ROB)
-     # Monte Carlo, Monaco (MCM)
+
+ROB:
+  city: "Monrovia, Liberia"
+  matchers:
+    - "Monrovia"
+    - "Liberia"
+
+MCM:
+  city: "Monte Carlo, Monaco"
+  matchers:
+    - "Monte Carlo"
+    - "Monaco"
+
      # Monte Dourado, PA, Brazil (MEU)
      # Montego Bay, Jamaica (MBJ)
      # Monteria, Colombia (MTR)
@@ -1952,6 +2204,12 @@ GOI:
      # Oshima, Japan (OIM)
      # Osijek, Croatia (OSI)
      # Oskarshamn, Sweden (OSK)
+     
+OSL:
+  city: "Oslo, Norway"
+  matchers:
+    - "Oslo"
+
      # Oslo, Norway (OSL)
      # Torp Airport Oslo, Norway - Sandefjord (TRF)
      # Ostersund, Sweden (OSD)
@@ -2003,9 +2261,26 @@ GOI:
      # Paramaribo, Suriname - Zorg En Hoop (ORG)
      # Parana, ER, Argentina (PRA)
      # Parasi, Solomon Islands (PRS)
-     # Paris, France - All airports (PAR)
-     # Paris, France - Charles Degaulle (CDG)
-     # Paris, France - Orly (ORY)
+     
+PAR:
+  name: "Paris (all airports)"
+  city: "Paris, France"
+  matchers:
+    - "Paris"
+
+CDG:
+  name: "Charles Degaulle International Airport"
+  city: "Paris, France"
+  matchers:
+    - "Defauller"
+    - "Charles Degaulle"
+
+ORY:
+  city: "Paris, France"
+  name: "Orly International Airport"
+  matchers:
+    - "Orly"
+
      # Paris, France - Beauvais-Tille (BVA)
      # Parma/Milan, Italy (PMF)
      # Parnaiba, PI, Brazil (PHB)
@@ -2023,27 +2298,59 @@ GOI:
      # Pelotas, RS, Brazil (PET)
      # Pemba, Mozambique (POL)
      # Pemba, Tanzania - Wawi (PMA)
-     # Penang, Malaysia (PEN)
+     
+PEN:
+  city: "Penang, Malaysia"
+  matchers:
+    - "Penang"
+
      # Penrhyn Island, Cook Islands (PYE)
-     # Penzance, United Kingdom (PZE)
+
+PZE:
+  city: "Penzance, United Kingdom"
+  matchers:
+    - "Penzance"
+
      # Pereira, Colombia (PEI)
      # Perigueux, France (PGX)
      # Perito Moreno, SC, Argentina (PMQ)
      # Perm, Russia (PEE)
      # Perpignan, France (PGF)
      # Perth, Western Australia, Australia (PER)
-     # Perugia, Italy (PEG)
+
+PEG:
+  city: "Perugia, Italy"
+  matchers:
+    - "Perugia"
+
      # Pescara, Italy (PSR)
-     # Peshawar, Pakistan (PEW)
+
+PEW:
+  city: "Peshawar, Pakistan"
+  matchers:
+    - "Peshawar"
+
      # Petrolina, PE, Brazil (PNZ)
      # Petropaulousk-Kamchats, Russia (PKC)
      # Petrozavodsk, Russia (PES)
      # Phalaborwa, South Africa (PHW)
      # Phitsanulok, Thailand (PHS)
-     # Phnom Penh, Cambodia (PNH)
+
+PNH:
+  city: "Phnom Penh, Cambodia"
+  matchers:
+    - "Phnom Penh"
+    - "Cambodia"
+    - "Kampuchea"
+    
      # Phrae, Thailand (PRH)
      # Phu Quoc, Viet Nam - Duong Dang (PQC)
-     # Phuket, Thailand (HKT)
+
+HKT:
+  city: "Phuket, Thailand"
+  matchers:
+    - Phuket
+
      # Pico Island, Portugal (PIX)
      # Piedras Negras, Mexico (PDS)
      # Pietermaritzburg, South Africa (PZB)
@@ -2100,7 +2407,12 @@ GOI:
      # Posadas, MI, Argentina (PSS)
      # Poza Rico, Mexico (PAZ)
      # Poznan, Poland (POZ)
-     # Prague, Czech Republic (PRG)
+
+PRG:
+  city: "Prague, Czech Republic"
+  matchers:
+    - "Prague"
+
      # Praia, Cape Verde (RAI)
      # Pres. Roque Saenz Pena, CH, Argentina (PRQ)
      # Presidente Prudente, SP, Brazil (PPB)
@@ -2128,7 +2440,12 @@ GOI:
      # Pula, Croatia (PUY)
      # Pune, India (PNQ)
      # Punta Arenas, Chile (PUQ)
-     # Punta Cana, Dominican Republic (PUJ)
+
+PUJ:
+  city: "Punta Cana, Dominican Republic"
+  matchers:
+    - "Punta Cana"
+
      # Punta Del Este, Uruguay (PDP)
      # Punta Gorda, Belize (PND)
      # Punta Islita, Costa Rica (PBP)
@@ -2137,8 +2454,17 @@ GOI:
      # Pyongyang, North Korea (FNJ)
      # return to top
      # Q
-     # Qaisumah, Saudi Arabia (AQI)
-     # Qaqortoq, Greenland (JJU)
+     
+AQI:
+  city: "Qaisumah, Saudi Arabia"
+  matchers:
+    - "Qaisumah"
+
+JJU:
+  city: "Qaqortoq, Greenland"
+  matchers:
+    - "Qaqortoq"
+
      # Qiemo, China (IQM)
      # Qingdao, China (TAO)
      # Qiqihar, China (NDG)
@@ -2151,11 +2477,20 @@ GOI:
      # Quibdo, Colombia (UIB)
      # Quimper, France (UIP)
      # Quipi, QL, Australia (ULP)
-     # Quito, Ecuador (UIO)
-     # return to top
+
+UIO:
+  city: "Quito, Ecuador"
+  matchers:
+    - "Quito"
+
      # R
      # Rabaraba, Papua New Guinea (RBP)
-     # Rabat, Morocco (RBA)
+
+RBA:
+  city: "Rabat, Morocco"
+  matchers:
+    - "Rabat"
+
      # Rabaul, Papua New Guinea (RAB)
      # Rach Gia, Viet Nam (VKG)
      # Raduzhnyi, Russia (RAT)
@@ -2174,21 +2509,40 @@ GOI:
      # Ratanakiri, Cambodia (RBE)
      # Rawala Kot, Pakistan (RAZ)
      # Rebun, Japan (RBJ)
-     # Recife, PE, Brazil (REC)
+
+REC:
+  city: "Recife, Brazil"
+  matchers:
+    - "Recife"
+
      # Reconquista, SF, Argentina (RCQ)
      # Reggio Calabria, Italy (REG)
      # Rennell, Solomon Islands (RNL)
      # Rennes, France (RNS)
      # Resistencia, CW, Argentina (RES)
      # Reus, Spain and Canary Islands (REU)
-     # Reykjavik, Iceland (KEF)
+
+KEF:
+  name: "Keflavik International Attribute"
+  city: "Reykjavik, Iceland"
+  matchers:
+    - "Reykjavik"
+    - "Keflavik"
+    - "Iceland"
+
      # Reynossa, Mexico (REX)
      # Rhodes, Gabon (RHO)
      # Ribeirao Preto, SP, Brazil (RAO)
      # Riberalta, Bolivia (RIB)
      # Richards Bay, South Africa (RCB)
      # Richmond, QL, Australia (RCM)
-     # Riga, Latvia (RIX)
+
+RIX:
+  city: "Riga, Latvia"
+  matchers:
+    - "Riga"
+    - "Latvia"
+
      # Rijeka, Croatia (RJK)
      # Rimini, Italy (RMI)
      # Rio Branco, AC, Brazil (RBR)
@@ -2201,7 +2555,12 @@ GOI:
      # Rio Verde, GO, Brazil (RVD)
      # Riohacha, Colombia (RCH)
      # Rishiri, Japan (RIS)
-     # Riyadh, Saudi Arabia (RUH)
+
+RUH:
+  city: "Riyadh, Saudi Arabia"
+  matchers:
+    - "Riyadh"
+
      # Riyan Mukalla, Yemen (RIY)
      # Roane, France (RNE)
      # Roatan, Honduras (RTB)
@@ -2213,9 +2572,29 @@ GOI:
      # Roervik, Norway (RVK)
      # Rognan, Norway (ZXM)
      # Roma, QL, Australia (RMA)
-     # Rome, Italy - All airports (ROM)
-     # Rome, Italy - Ciampino (CIA)
-     # Rome, Italy - Leonardo Da Vinci/Fiumicino (FCO)
+
+ROM:
+  name: "Rome, Italy (all airports)"
+  city: "Rome, Italy"
+  matchers:
+    - "Rome"
+    - "Roma"
+
+CIA:
+  name: "Ciampino Airport"
+  city: "Rome, Italy"
+  match_priority: 100
+  matchers:
+    - "Ciampino"
+    - "Rome Ciampino"
+    
+FCO:
+  name: "Leonardo Da Vinci International Airport"
+  city: "Rome, Italy"
+  matchers:
+    - "Leonardo Da Vinci"
+    - "Fiumicino"
+
      # Rongelap Island, Marshall Islands (RNP)
      # Ronneby, Sweden (RNB)
      # Roros, Norway (RRS)
@@ -2227,6 +2606,12 @@ GOI:
      # Rostov, Russia (ROV)
      # Rota, Northern Mariana Islands (ROP)
      # Rotorua, New Zealand (ROT)
+
+RTM:
+  city: "Rotterdam, Netherlands"
+  matchers:
+    - "Rotterdam"
+
      # Rotterdam, Netherlands (RTM)
      # Rouen, France (URO)
      # Rovaniemi, Finland (RVN)
@@ -2234,11 +2619,24 @@ GOI:
      # S
      # S. Cristobal del Casas, Mexico (SZT)
      # Saarbruecken, Germany (QFZ)
-     # Saint Croix, U.S. Virgin Islands (STX)
-     # Saint Lucia, ST. LUCIA (SLU)
+     
+STX:
+  city: "Saint Croix, U.S. Virgin Islands"
+  matchers:
+    - "Saint Croix"
+    - "St. Croix"
+    - "St Croix"
+
+SLU:
+  city: "Saint Lucia"
+  matchers:
+    - "Saint Lucia"
+    - "St. Lucia"
+    - "St Lucia"
+
      # Saint Maarten, Netherlands Antilles (SXM)
      # Saint Petersburg, Russia - Pulkovo (LED)
-     # Saint Thomas, U.S. Virgin Islands (STT)
+
      # Saint Tropez, France - La Mole (LTT)
      # Saint Tropez, France (XPZ)
      # Saipan, Northern Mariana Islands (SPN)
@@ -2247,7 +2645,12 @@ GOI:
      # Salt Cay, Turks and Caicos Islands (SLX)
      # Saltillo, Mexico (SLW)
      # Salvadore, BA, Brazil (SSA)
-     # Salzburg, Austria (SZG)
+     
+SZG:
+  city: "Salzburg, Austria"
+  matchers:
+    - "Salzburg"
+
      # Samara, Russia (KUF)
      # Sambaua, Madagascar (SVB)
      # Samburu, Kenya (UAS)
@@ -2294,6 +2697,13 @@ GOI:
      # Sao Nicolau, Cape Verde (SNE)
      # Sao Paulo, Brazil - Congonhas (CGH)
      # Sao Paulo, Brazil - Viracopos (VCP)
+     
+GRU:
+  city: "Sao Paulo, Brazil"
+  matchers:
+    - "Guaralhos"
+    - "Sao Paulo"
+
      # Sao Paulo, Brazil - Guarulhos Intl (GRU)
      # Sao Tome Is., Sao Tome and Principe (TMS)
      # Sao Vicente, Cape Verde (VXE)
@@ -2315,9 +2725,27 @@ GOI:
      # Selje, Norway (QFK)
      # Semarang, Indonesia (SRG)
      # Senggo, Indonesia (ZEG)
-     # Seoul, South Korea - All Airports (SEL)
-     # Seoul, South Korea - Gimpo International (GMP)
-     # Seoul, South Korea - Incheon International (ICN)
+
+SEL:
+  name: "Seoul, South Korea (all airports)"
+  city: "Seoul, South Korea"
+  matchers:
+    - "Seoul"
+    - "South Korea"
+    - "Korea"
+
+GMP:
+  name: "Gimpo International Airport"
+  city: "Seoul, South Korea"
+  matchers:
+    - "Gimpo"
+
+ICN:
+  name: "Incheon International Airport"
+  city: "Seoul, South Korea"
+  matchers:
+    - "Incheon"
+
      # Servi, Indonesia (ZRI)
      # Sesriem, Namibia (SZM)
      # Sevilla, Spain and Canary Islands (SVQ)
@@ -2405,13 +2833,36 @@ STT:
      # Stavropol, Russia (STW)
      # Stavanger, Norway (SVG)
      # Stella Maris, Bahamas (SML)
-     # Stockholm, Sweden - All airports (STO)
-     # Stockholm, Sweden - Arlanda (ARN)
-     # Stockholm, Sweden - Bromma (BMA)
+
+STO:
+  name: "Stockholm, Sweden (all airports)"
+  city: "Stockholm, Sweden"
+  matchers:
+    - "Stockholm"
+    - "Sweden"
+
+ARN:
+  name: "Arlanda International Airport"
+  city: "Stockholm, Sweden"
+  matchers:
+    - "Arlanda"
+
+BMA:
+  name: "Bromma International Airport"
+  city: "Stockholm, Sweden"
+  matchers:
+    - "Bromma"
+
      # Stornoway, United Kingdom (SYY)
      # Storuman, Sweden (SQO)
      # Strasbourg, France - Bus service (XER)
-     # Strasbourg, France - Entzheim (SXB)
+     
+SXB:
+  city: "Strasbourg, France"
+  matchers:
+    - "Strasbourg"
+    - "Entzheim"
+
      # Stronsay, United Kingdom (SOY)
      # Stung Treng, Cambodia (TNX)
      # Stuttgart, Germany - Echterdingen (STR)
@@ -2492,9 +2943,26 @@ SYD:
      # Te Anau, New Zealand (TEU)
      # Teesside, United Kingdom (MME)
      # Tefe, AM, Brazil (TFF)
-     # Tegucigalpa, Honduras (TGU)
-     # Tehran, Iran - Mehrabad (THR)
+
+TGU:
+  city: "Tegucigalpa, Honduras"
+  matchers:
+    - Tegucigalpa
+    - Honduras
+
+THR:
+  city: "Tehran, Iran"
+  matchers:
+    - Tehran
+    - Mehrabad
+
      # Tekadu, Papua New Guinea (TKB)
+
+TLV:
+  city: "Tel Aviv, Israel"
+  matchers:
+    - "Tel Aviv"
+
      # Tel Aviv, Israel (TLV)
      # Tembagapura, Indonesia (TIM)
      # Teminabuan, Indonesia (TXM)
@@ -2523,7 +2991,12 @@ SYD:
      # Tianjn, China (TSN)
      # Tiaret, Algeria (TID)
      # Tiga, New Caledonia (TGJ)
-     # Tijuana, Mexico (TIJ)
+     
+TIJ:
+  city: "Tijuana, Mexico"
+  matchers:
+    - "Tijuana"
+
      # Tikehau Atoll, French Polynesia (TIH)
      # Tiksi, Russia (IKS)
      # Timaru, New Zealand (TIU)
@@ -2545,14 +3018,37 @@ SYD:
      # Tobruk, Libya (TOB)
      # Tokunoshima, Japan (TKN)
      # Tokushima, Japan (TKS)
-     # Tokyo, Japan - All airports (TYO)
-     # Tokyo, Japan - Haneda (HND)
-     # Tokyo, Japan - Narita (NRT)
+
+TYO:
+  name: "Tokyo, Japan (all airports)"
+  city: "Tokyo, Japan"
+  matchers:
+    - "Tokyo"
+
+HND:
+  name: "Haneda International Airport"
+  city: "Tokyo, Japan"
+  matchers:
+    - "Haneda"
+    
+NRT:
+  name: "Narita International Airport"
+  city: "Tokyo, Japan"
+  matchers:
+    - "Narita"
+
      # Toledo, PR, Brazil (TOW)
      # Toluco, Mexico (TLC)
      # Tom Price, WA, Australia (TPR)
      # Tomanggong, Malaysia (TMG)
-     # Tombouctou, Mali (TOM)
+
+TOM:
+  city: "Tombouctou, Mali"
+  matchers:
+    - Tombouctou
+    - Timbuktu
+    - Timbucktu
+
      # Tomsk, Russia (TOF)
      # Tongliao, China (TGO)
      # Tongoa, Vanuatu (TGH)
@@ -2560,13 +3056,23 @@ SYD:
      # Torreon, Mexico (TRC)
      # Torres, Vanuatu (TOH)
      # Torsby, Sweden (TYF)
-     # Tortola, British Virgin Islands (TOV)
+
+TOV:
+  city: "Tortola, British Virgin Islands"
+  matchers:
+    - "Tortola"
+
      # Tortoli, Italy (TTB)
      # Tortuquero, Costa Rica (TTQ)
      # Tottori, Japan (TTJ)
      # Touho, New Caledonia (TOU)
      # Toulon, France (TLN)
-     # Toulouse, France (TLS)
+
+TLS:
+  city: "Toulouse, France"
+  matchers:
+    - "Toulouse"
+
      # Tours, France (TUF)
      # Tours, France - Rail service (XSH)
      # Townsville, QL, Australia (TSV)
@@ -2580,7 +3086,12 @@ SYD:
      # Trelew, CB, Argentina (REL)
      # Trieste, Italy (TRS)
      # Trinidad, Bolivia (TDD)
-     # Trinidad, Trinidad and Tobago (POS)
+
+POS:
+  city: "Trinidad"
+  matchers:
+    - "Trinidad"
+
      # Tripoli, Libya (TIP)
      # Trollhattan, Sweden (THN)
      # Trombetas, PA, Brazil (TMT)
@@ -2660,7 +3171,12 @@ SYD:
      # Vadodara, India (BDQ)
      # Vadso, Norway (VDS)
      # Valdivia, Chile (ZAL)
-     # Valencia, Spain (VLC)
+     
+VLC:
+  city: "Valencia, Spain"
+  matchers:
+    - "Valencia"
+
      # Valencia, Venezuela (VLN)
      # Valenciennes, France (XVS)
      # Valera, Venezuela (VLV)
@@ -2669,7 +3185,6 @@ SYD:
      # Valledupar, Colombia (VUP)
      # Valverde, Spain and Canary Islands - Hierro (VDE)
      # Van, Turkey (VAN)
-     # Vancouver, BC (YVR)
      # Vanimo, Papua New Guinea (VAI)
      # Vanuabalavu, Fiji (VBV)
      # Varanasi, India (VNS)

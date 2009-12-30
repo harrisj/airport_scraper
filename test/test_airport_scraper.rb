@@ -33,14 +33,17 @@ class TestAirportScraper < Test::Unit::TestCase
       assert_no_match(name_regex, "HeathrowX")
     end
     
-    should "create an @airports_by_priority array" do
-      by_priority = @scrape.instance_variable_get("@airports_by_priority")
+    should "create an @matcher_prefixes array" do
+      by_priority = @scrape.instance_variable_get("@matcher_prefixes")
       assert_not_nil(by_priority)
     end
     
-    should "order in descending match_priority order" do
+    should "order @matcher_prefixes values in descending match_priority order" do
       # Check that PWM comes before PDX
-      by_priority = @scrape.instance_variable_get("@airports_by_priority")
+      pref = @scrape.instance_variable_get("@matcher_prefixes")
+      by_priority = pref['po']
+      
+      assert_not_nil by_priority
       pdx = by_priority.detect {|x| x['code'] == 'PDX'}
       pwm = by_priority.detect {|x| x['code'] == 'PWM'}
       
