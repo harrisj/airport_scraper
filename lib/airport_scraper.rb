@@ -30,13 +30,23 @@ class AirportScraper
       value['major'] ||= false
       value['match_priority'] ||= value['major'] ? 10 : 0
       value['name'] ||= value['city']
-      value['matchers'] ||= []
+      value['matchers'] = case value['matchers']
+        when nil
+          []
+        when Array
+          value['matchers']
+        else
+          value['matchers'].to_a
+      end
+      
       value['regex'] = regex_from_matchers(value['matchers'])
 
-      prefixes = value['matchers'].map {|x| prefix_from_match(x)}.uniq
-      prefixes.each do |p| 
-        @matcher_prefixes[p] ||= []
-        @matcher_prefixes[p] << value
+      unless value['matchers'].nil?
+        prefixes = value['matchers'].map {|x| prefix_from_match(x)}.uniq
+        prefixes.each do |p| 
+          @matcher_prefixes[p] ||= []
+          @matcher_prefixes[p] << value
+        end
       end
     end
     
@@ -50,19 +60,27 @@ class AirportScraper
   end
   
   def prefix_from_match(str)
-    str[0,2].downcase
+    case str 
+    when /..\b/
+      str[0,2].downcase
+    when
+      str[0,3].downcase
+    else
+      str[0,4].downcase
+    end
   end
 
   def create_regexes
-    @code_match_regex = /([A-Z]{3})\b/
+    @code_match_regex = /\b([A-Z]{3})\b/
 
     flight_regex = /(flight|flying|plane|jet|turboprop)(\s(back|again|over))?/i
     airport_regex = /(.+)/
     
     @trans_regex = /(\sto\s)|(\s?->\s?)|(\s?>\s?)|(\s?✈\s?)/
-    @via_regex = /,?\s?(via|by way of)\s/
+    @via_regex = /,?\s?(via|by way of|on route to)\s/
 
     @match_regexes = [
+      /(boarding to #{airport_regex})/i,
       /(touched down in #{airport_regex})\b/i,
       /(land(ed|ing)? (in|at) #{airport_regex})\b/i,
       /(#{flight_regex}( from #{airport_regex})? to #{airport_regex}(#{@via_regex}#{airport_regex})?)/i,
@@ -123,7 +141,7 @@ class AirportScraper
           end
         end
         
-        break
+        # break
       end
     end
     

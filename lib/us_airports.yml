@@ -351,7 +351,11 @@ MDW:
   matchers:
     - "Midway"
 
-# Chisholm/Hibbing, MN (HIB)
+HIB:
+  city: "Chisholm/Hibbing, MN"
+  matchers:
+    - Chisholm
+    - Hibbing
 
 CVG:
   city: "Cincinnati, OH"
@@ -364,8 +368,6 @@ CKB:
   matchers:
     - "Clarksburg"
 
-# Clearwater/St Petersburg, FL (PIE)
-
 CLE:
   city: "Cleveland, OH"
   matchers:
@@ -376,10 +378,13 @@ CVN:
   matchers:
     - "Clovis"
 
-# Cody/Yellowstone, WY (COD)
-# Coffee Point, AK (CFA)
-# Coffman Cove, AK (KCC)
-# College Station, TX (CLL)
+CFA:
+  city: "Coffee Point, AK"
+  matchers: "Coffee Point"
+
+CLL:
+  city: "College Station, TX"
+  matchers: "College Station"
 
 COS:
   city: "Colorado Springs, CO"
@@ -407,8 +412,9 @@ CCR:
   matchers:
     - "Concord"
 
-# Concordia, KS (CNK)
-# Cordova, AK (CDV)
+CNK:
+  city: "Concordia, KS"
+  matchers: "Concordia"
 
 CRP:
   city: "Corpus Christi, TX"
@@ -420,13 +426,14 @@ CEZ:
   matchers:
     - "Cortez"
 
-# Crescent City, CA (CEC)
-# Crooked Creek, AK (CKO)
-# Cube Cove, AK (CUW)
-# Cumberland, MD (CBE)
-# return to top
-# D
-
+CEC:
+  city: "Crescent City, CA"
+  matchers: "Crescent City"
+  
+CBE:
+  city: "Cumberland, MD"
+  matchers: "Cumberland"
+  
 DAL:
   name: "Love Field"
   city: "Dallas, TX"
@@ -470,10 +477,10 @@ DEC:
   city: "Decatur, IL"
   matchers:
     - "Decatur"
- 
-# Deering, AK (DRG)
-# Del Reo, TX (DRT)
-# Delta Junction, AK (DJN)
+
+DRT:
+  city: "Del Reo, TX"
+  matchers: "Del Reo"
 
 DSM:
   city: "Des Moines, IA"
@@ -485,18 +492,29 @@ DTW:
   matchers:
     - "Detroit"
 
-# Devil's Lake, ND (DVL)
-# Dickinson, ND (DIK)
-# Dillingham, AK (DLG)
-# Dodge City, KS (DDC)
+DVL:
+  city: "Devil's Lake, ND"
+  matchers:
+    - "Devil's Lake"
+    - "Devils Lake"
 
+DIK:
+  city: "Dickinson, ND"
+  matchers:
+    - "Dickinson"
+
+DDC:
+  city: "Dodge City, KS"
+  matchers: "Dodge City"
 
 DLH:
   city: "Duluth, MN"
   matchers:
     - Duluth
 
-# Durango, CO (DRO)
+DRO:
+  city: "Durango, CO"
+  matchers: "Durango"
 
 RDU:
   city: "Raleigh/Durham, NC"
@@ -504,12 +522,13 @@ RDU:
     - Raleigh
     - Durham
 
-# Dutch Harbor, AK (DUT)
-# return to top
-# E
+IPL:
+  city: "El Centro, CA"
+  matchers: "El Centro"
 
-# El Centro, CA (IPL)
-# El Dorado, AR (ELD)
+ELD:
+  city: "El Dorado, AR"
+  matchers: "El Dorado"
 
 ELP:
   city: "El Paso, TX"
@@ -564,10 +583,24 @@ FAT:
   matchers:
     - Fresno
 
-# Farmington, NM (FMN)
-# Fayetteville, AR - Municipal/Drake (FYV)
+FMN:
+  city: "Farmington, NM"
+  matchers: "Farmington"
+
+FYV:
+  name: "Municipal/Drake Airport"
+  city: "Fayetteville, AR"
+  matchers:
+    - "Fayetteville"
+
 # Fayetteville, AR - Northwest Arkansas Regional (XNA)
-# Fayetteville, NC (FAY)
+
+FAY:
+  city: "Fayetteville, NC"
+  match_priority: 40
+  matchers:
+    - "Fayetteville NC"
+    - "Fayetteville, NC"
 
 FLG:
   city: "Flagstaff, AZ"
@@ -579,11 +612,33 @@ FNT:
   matchers:
     - "Flint"
 
-# Florence, SC (FLO)
-# Florence/Muscle Shoals/Sheffield, AL (MSL)
-# Fort Collins/Loveland, CO - Municipal Airport (FNL)
+FLO:
+  city: "Florence, SC"
+  match_priority: 40
+  matchers:
+    - "Florence, SC"
+    - "Florence SC"
+
+MSL:
+  city: "Florence/Muscle Shoals/Sheffield, AL"
+  matchers:
+    - "Muscle Shoals"
+
+FNL:
+  city: "Fort Collins/Loveland, CO"
+  matchers:
+    - "Fort Collins"
+    - "Ft. Collins"
+    - "Ft Collins"
+
 # Fort Collins/Loveland, CO - Bus service (QWF)
-# Fort Dodge, IA (FOD)
+
+FOD:
+  city: "Fort Dodge, IA"
+  matchers:
+    - "Fort Dodge"
+    - "Ft. Dodge"
+    - "Ft Dodge"
 
 FLL:
   city: "Fort Lauderdale, FL"
@@ -594,6 +649,13 @@ FLL:
 
 # Fort Leonard Wood, MO (TBN)
 
+TBN:
+  city: "Fort Leonard Wood, MO"
+  matchers:
+    - "Fort Leonard Wood"
+    - "Ft. Leonard Wood"
+    - "Ft Leonard Wood"
+
 RSW:
   city: "Fort Myers, FL"
   matchers:
@@ -603,8 +665,17 @@ RSW:
     
 # Fort Smith, AR (FSM)
 # Fort Walton Beach, FL (VPS)
-# Fort Wayne, IN (FWA)
-# Franklin, PA (FKL)
+
+FWA:
+  city: "Fort Wayne, IN"
+  matchers:
+    - "Fort Wayne"
+    - "Ft. Wayne"
+    - "Ft Wayne"
+
+FKL:
+  city: "Franklin, PA"
+  matchers: "Franklin"
 
 
 
@@ -613,39 +684,81 @@ GNV:
   matchers:
     - "Gainesville"
 
-# Gallup, NM (GUP)
-# Garden City, KS (GCK)
-# Gary, IN (GYY)
-# Gillette, WY (GCC)
-# Gladewater/Kilgore, TX (GGG)
+GUP:
+  city: "Gallup, NM"
+  matchers: Gallup
+
+GCK:
+  city: "Garden City, KS"
+  matchers: "Garden City"
+
+GYY:
+  city: "Gary, IN"
+  matchers: "Gary"
+
+GCC:
+  city: "Gillette, WY"
+  matchers: "Gillette"
+
+GGG:
+  city: "Gladewater/Kilgore, TX"
+  matchers:
+    - Gladewater
+    - Kilgore
+
+GGW:
+  city: "Glasgow, MT"
+  
 # Glasgow, MT (GGW)
 # Glendive, MT (GDV)
 # Golovin, AK (GLV)
 # Goodnews Bay, AK (GNU)
 # Grand Canyon, AZ - Heliport (JGC)
 # Grand Canyon, AZ - National Park (GCN)
-# Grand Forks, ND (GFK)
-# Grand Island, NE (GRI)
-# Grand Junction, CO (GJT)
+
+GFK:
+  city: "Grand Forks, ND"
+  matchers: "Grand Forks"
+  
+GRI:
+  city: "Grand Island, NE"
+  matchers: "Grand Island"
+
+GJT:
+  city: "Grand Junction, CO"
+  matchers: "Grand Junction"
 
 GRR:
   city: "Grand Rapids, MI"
   matchers:
     - "Grand Rapids"
 
-# Grand Rapids, MN (GPZ)
+GPZ:
+  city: "Grand Rapids, MN"
+  
 # Grayling, AK (KGX)
-# Great Falls, MT (GTF)
+
+GTF:
+  city: "Great Falls, MT"
+  matchers: "Great Falls"
 
 GRB:
   city: "Green Bay, WI"
   matchers:
     - "Green Bay"
 
-# Greensboro, NC (GSO)
-# Greenville, MS (GLH)
-# Greenville, NC (PGV)
-# Greenville/Spartanburg, SC (GSP)
+GSO:
+  city: "Greensboro, NC"
+  matchers: "Greensboro"
+  
+GLH:
+  city: "Greenville, MS"
+
+PGV:
+  city: "Greenville, NC"
+
+GSP:
+  city: "Greenville/Spartanburg, SC"
 
 GON:
   city: "Groton/New London, CT"
@@ -658,14 +771,31 @@ HGR:
   matchers:
     - "Hagerstown"
 
-# Hailey, ID (SUN)
-# Haines, AK (HNS)
-# Hampton, VA (PHF)
+SUN:
+  city: "Hailey, ID"
+  matchers:
+    - Hailey
+    - "Sun Valley"
+
+HSN:
+  city: "Haines, AK"
+  matchers: "Haines"
+  
+PHF:
+  city: "Hampton, VA"
+  matchers: "Hampton"
+
 # Hana, HI - Island of Maui (HNM)
 # Hanapepe, HI (PAK)
 # Hancock, MI (CMX)
-# Hanover, NH (LEB)
-# Harlingen, TX (HRL)
+
+LEB:
+  city: "Hanover, NH"
+  matchers: Hanover
+
+HRL:
+  city: "Harlingen, TX"
+  matchers: "Harlingen"
 
 MDT:
   city: "Harrisburg, PA"
@@ -681,8 +811,15 @@ BDL:
 
 # Havasupai, AZ (HAE)
 # Havre, MT (HVR)
-# Hayden, CO (HDN)
-# Hays, KS (HYS)
+
+HDN:
+  city: "Hayden, CO"
+  matchers: "Hayden"
+
+HYS:
+  city: "Hays, KS"
+  matchers: "Hays"
+
 # Healy Lake, AK (HKB)
 
 HLN:
@@ -691,17 +828,26 @@ HLN:
     - "Helena"
 
 # Hendersonville, NC (AVL)
-# Hibbing/Chisholm, MN (HIB)
-# Hickory, NC (HKY)
+
+HKY:
+  city: "Hickory, NC"
+  matchers: "Hickory"
+  
 # High Point, NC (GSO)
-# Hilo, HI - Island of Hawaii (ITO)
+
+ITO:
+  city: "Hilo, HI"
+  matchers: "Hilo"
 
 HHH:
   city: "Hilton Head, SC"
   matchers:
     - "Hilton Head"
 
-# Hobbs, NM (HBB)
+HBB:
+  city: "Hobbs, NM"
+  matchers: Hobbs
+  
 # Hollis, AK (HYL)
 # Holy Cross, AK (HCR)
 
@@ -734,15 +880,34 @@ HOT:
 HOU:
   name: "Houston, TX (all airports)"
   city: "Houston, TX"
+  match_priority: 20
+  matchers:
+    - "Houston Hobby"
+    - "Hobby"
+    
+IAH:
+  name: "Houston Intercontinental Airport"
   matchers:
     - "Houston"
-    
-# Houston, TX - Hobby (HOU)
-# Houston, TX - Intercontinental (IAH)
+
 # Hughes, AK (HUS)
-# Huntington, WV/Ashland, KY (HTS)
-# Huntsville, AL (HSV)
-# Huron, SD (HON)
+
+HTS:
+  city: "Huntington, WV/Ashland, KY"
+  matchers:
+    - "Huntington"
+    - "Ashland"
+
+HSV:
+  city: "Huntsville, AL"
+  matchers:
+    - "Huntsville"
+
+HON:
+  city: "Huron, SD"
+  matchers:
+    - "Huron"
+
 # Huslia, AK (HSL)
 
 HYA:
@@ -753,10 +918,18 @@ HYA:
 # Hydaburg, AK (HYG)
 # return to top
 # I
-# Idaho Falls, ID (IDA)
+
+IDA:
+  city: "Idaho Falls, ID"
+  matchers:
+    - "Idaho Falls"
+
 # Igiugig, AK (IGG)
 # Iliamna, AK (ILI)
-# Imperial, CA (IPL)
+
+IPL:
+  city: "Imperial, CA"
+  matchers: "Imperial"
 
 IND:
   city: "Indianapolis, IN"
@@ -769,41 +942,68 @@ INL:
   matchers:
     - "International Falls"
 
-# Inyokern, CA (IYK)
-# Iron Mountain, MI (IMT)
-# Ironwood, MI (IWD)
-# Islip, NY (ISP)
+IYK:
+  city: "Inyokern, CA"
+  matchers: "Inyokern"
+
+IMT:
+  city: "Iron Mountain, MI"
+  matchers: "Iron Mountain"
+
+IWD:  
+  city: "Ironwood, MI"
+  matchers: "Ironwood"
+  
+ISP:
+  city: "Islip, NY"
+  matchers: "Islip"
 
 ITH:
   city: "Ithaca, NY"
   matchers:
     - Ithaca
 
-# return to top
-# J
-# Jackson Hole, WY (JAC)
+JAC:
+  city: "Jackson Hole, WY"
+  matchers: "Jackson Hole"
 
 JAN:
   city: "Jackson, MS"
   matchers:
     - "Jackson"
 
-# Jackson, TN (MKL)
+MKL:
+  city: "Jackson, TN"
 
 JAX:
   city: "Jacksonville, FL"
   matchers:
     - "Jacksonville"
 
-# Jacksonville, NC (OAJ)
+OAJ:
+  city: "Jacksonville, NC"
+  
 # Jamestown, ND (JMS)
 # Jamestown, NY (JHW)
-# Janesville, WI (JVL)
-# Johnson City, NY (BGM)
-# Johnson City, TN (TRI)
-# Johnstown, PA (JST)
-# Jonesboro, AR (JBR)
 
+JVL:
+  city: "Janesville, WI"
+  matchers: "Janesville"
+
+BGM:
+  citY: "Johnson City, NY"
+  
+TRI:
+  city: "Johnson City, TN"
+  
+JST:
+  city: "Johnstown, PA"
+  matchers: "Johnstown"
+
+JBR:
+  city: "Jonesboro, AR"
+  matcher: "Jonesboro"
+  
 JLN:
   city: "Joplin, MO"
   matchers:
@@ -819,15 +1019,14 @@ JFK:
     - "Idlewild"
     
 JNU:
-  name: "Juneau, Alaska"
+  city: "Juneau, Alaska"
   matchers:
     - Juneau
     
-# K
-# Kahului, HI - Island of Maui, (OGG)
-# Kake, AK (KAE)
-# Kakhonak, AK (KNK)
-
+OGG:
+  city: "Kahului, HI"
+  matchers: "Kahului"
+  
 AZO:
   city: "Kalamazoo, MI"
   matchers:
@@ -844,11 +1043,23 @@ MCI:
     - "Kansas City"
     - "KC MO"
 
-# Kapalua, HI - Island of Maui, (JHM)
+JHM:
+  city: "Kapalua, HI"
+  matchers: "Kapalua"
+  
 # Kasaan, AK (KXA)
 # Kasigluk, AK (KUK)
-# Kauai Island/Lihue, HI (LIH)
-# Kearney, NE (EAR)
+
+LIH:
+  city: "Kauai Island/Lihue, HI"
+  matchers:
+    - "Kauai"
+    - "Lihue"
+
+EAR:
+  city: "Kearney, NE"
+  matchers:
+    - "Kearney"
 
 EEN:
   city: "Keene, NH"
@@ -866,7 +1077,6 @@ KTN:
     - Ketchikan
 
 # Kiana, AK (IAN)
-# Kilgore/Gladewater, TX (GGG)
 
 ILE:
   city: "Killeen, TX"
@@ -880,11 +1090,20 @@ ILE:
 # King Cove, AK (KVC)
 # King Salmon, AK (AKN)
 # Kingman, AZ (IGM)
-# Kingsport, TN (TRI)
+
+
 # Kipnuk, AK (KPN)
-# Kirksville, MO (IRK)
+
+IRK:
+  city: "Kirksville, MO"
+  matchers: "Kirksville"
+
 # Kivalina, AK (KVL)
-# Klamath Falls, OR (LMT)
+
+LMT:
+  city: "Klamath Falls, OR"
+  matchers: "Klamath Falls"
+  
 # Klawock, AK (KLW)
 
 TYS:
@@ -893,8 +1112,17 @@ TYS:
     - Knoxville
 
 # Kobuk, AK (OBU)
-# Kodiak, AK (ADQ)
-# Kona, HI - Island of Hawaii (KOA)
+
+ADQ:
+  city: "Kodiak, AK"
+  matchers:
+    - "Kodiak"
+
+KOA:
+  city: "Kona, HI"
+  matchers:
+    - "Kona"
+
 # Kongiganak, AK (KKH)
 # Kotlik, AK (KOT)
 # Kotzebue, AK (OTZ)
@@ -903,8 +1131,17 @@ TYS:
 # Kwigillingok, AK (KWK)
 # return to top
 # L
-# La Crosse, WI (LSE)
-# Lafayette, IN (LAF)
+
+LSE:
+  city: "La Crosse, WI"
+  matchers:
+    - "La Crosse"
+    - "Lacrosse"
+
+LAF:
+  city: "Lafayette, IN"
+  matchers: "Lafayette"
+
 # Lafayette, LA (LFT)
 
 LGA:
@@ -914,10 +1151,15 @@ LGA:
     - "Laguardia"
     - "La Guardia"
 
-# Lake Charles, LA (LCH)
+LCH:
+  city: "Lake Charles, LA"
+  matchers: "Lake Charles"
+
 # Lake Havasu City, AZ (HII)
+
 # Lake Minchumina, AK (LMA)
 # Lanai City, HI - Island of Lanai (LNY)
+
 # Lancaster, PA (LNS)
 
 LAN:
@@ -925,7 +1167,10 @@ LAN:
   matchers:
     - "Lancaster"
 
-# Laramie, WY (LAR)
+LAR:
+  city: "Laramie, WY"
+  matchers:
+    - "Laramie"
 
 LRD:
   city: "Laredo, TX"
@@ -939,23 +1184,62 @@ LAS:
     - "Vegas"
     - "Sin City"
 
-# Latrobe, PA (LBE)
+LBE:
+  city: "Latrobe, PA"
+  matchers: "Latrobe"
+
+
 # Laurel, MS (PIB)
-# Lawton, OK (LAW)
+
+LAW:
+  city: "Lawton, OK"
+  matchers: "Lawton"
+    
 # Lebanon, NH (LEB)
 # Levelock, AK (KLL)
-# Lewisburg, WV (LWB)
-# Lewiston, ID (LWS)
-# Lewistown, MT (LWT)
-# Lexington, KY (LEX)
-# Liberal, KS (LBL)
+
+LWB:
+  city: "Lewisburg, WV"
+  matchers: "Lewisburg"
+
+LWS:
+  city: "Lewiston, ID"
+  matchers:
+    - "Lewiston"
+
+LWT:
+  city: "Lewistown, MT"
+  matchers:
+    - "Lewistown"
+
+LEX:
+  city: "Lexington, KY"
+  matchers:
+    - "Lexington"
+
+LBL:
+  city: "Liberal, KS"
+  matchers:
+    - "Liberal"
+
 # Lihue, HI - Island of Kaui (LIH)
-# Lincoln, NE (LNK)
-# Little Rock, AR (LIT)
-# Long Beach, CA (LGB)
-# Longview, TX (GGG)
+
+LNK:
+  city: "Lincoln, NE"
+  matchers:
+    - "Lincoln"
+
+LGB:
+  city: "Long Beach, CA"
+  matchers:
+    - "Long Beach"
+
+GGG:
+  city: "Longview, TX"
+  matchers:
+    - "Longview"
+
 # Lopez Island, WA (LPS)
-# Los Angeles, CA (LAX)
 
 LAX:
   name: "Los Angeles International Airport"
@@ -971,48 +1255,92 @@ LIT:
   matchers:
     - "Little Rock"
 
-# Louisville, KY (SDF)
-# Loveland/Fort Collins, CO - Municipal Airport (FNL)
-# Loveland/Fort Collins, CO - Bus service (QWF)
-# Lubbock, TX (LBB)
-# return to top
-# M
-# Macon, GA (MCN)
-# Madison, WI (MSN)
+LBB:
+  city: "Lubbock, TX"
+  matchers:
+    - "Lubbock"
+
+MCN:
+  city: "Macon, GA"
+  matchers:
+    - "Macon"
+
+MSN:
+  city: "Madison, WI"
+  matchers:
+    - "Madison"
+
 # Madras, OR (MDJ)
 # Manchester, NH (MHT)
-# Manhattan, KS (MHK)
+
+MHK:
+  city: "Manhattan, KS"
+
 # Manistee, MI (MBL)
 # Mankato, MN (MKT)
 # Manley Hot Springs, AK (MLY)
 # Manokotak, AK (KMO)
 # Marietta, OH/Parkersburg, WV (PKB)
-# Marion, IL (MWA)
-# Marquette, MI (MQT)
+
+MWA:
+  city: "Marion, IL"
+  matchers: "Marion"
+
+MQT:
+  city: "Marquette, MI"
+  matchers: "Marquette"
+
 # Marshall, AK (MLL)
-# Martha's Vineyard, MA (MVY)
-# Martinsburg, PA (AOO)
-# Mason City, IA (MCW)
-# Massena, NY (MSS)
-# Maui, HI (OGG)
-# Mcallen, TX (MFE)
+
+MVY:
+  city: "Martha's Vineyard, MA"
+  matchers:
+    - "Martha's Vineyard"
+    - "Marthas Vineyard"
+    - "The Vineyard"
+
+AOO:
+  city: "Martinsburg, PA"
+  matchers: "Martinsburg"
+
+MCW:
+  city: "Mason City, IA"
+  matchers: "Mason City"
+  
+MSS:
+  city: "Massena, NY"
+  matchers: "Massena"
+
+OGG:
+  city: "Maui, HI"
+  matchers:
+    - "Maui"
+
+MFE:
+  city: "Mcallen, TX"
 # Mccook, NE (MCK)
 # Mcgrath, AK (MCG)
-# Medford, OR (MFR)
+
+MFR:
+  city: "Medford, OR"
+  matchers: "Medford"
+
 # Mekoryuk, AK (MYU)
 # Melbourne, FL (MLB)
-# Memphis, TN (MEM)
 
 MEM:
   city: "Memphis, TN"
   matchers:
     - "Memphis"
 
-# Merced, CA (MCE)
+MCE:
+  city: "Merced, CA"
+  matchers:
+    - "Merced"
+
 # Meridian, MS (MEI)
 # Metlakatla, AK (MTM)
 # Meyers Chuck, AK (WMK)
-# Miami, FL - International (MIA)
 
 MCO:
   city: "Orlando, FL"
@@ -1025,9 +1353,17 @@ MIA:
   matchers:
     - "Miami"
 
-# Midland, MI (MBS)
-# Midland/Odessa, TX (MAF)
-# Miles City, MT (MLS)
+MBS:
+  city: "Midland, MI"
+
+MAF:
+  city: "Midland/Odessa, TX"
+  matchers:
+    - "Midland"
+
+MLS:
+  city: "Miles City, MT"
+  matchers: "Miles City"
 
 MKE:
   city: "Milwaukee, WI"
@@ -1042,10 +1378,19 @@ MSP:
     - "The Twin Cities"
     - "Minnesota"
 
-# Minot, ND (MOT)
+MOT:
+  city: "Minot, ND"
+  matchers: "Minot"
+
 # Minto, AK (MNT)
-# Mission, TX (MFE)
-# Missoula, MT (MSO)
+
+MFE:
+  city: "Mission, TX"
+  matchers: "Mission"
+  
+MSO:
+  city: "Missoula, MT"
+  matchers: "Missoula"
 # Moab, UT (CNY)
 
 CNY:
@@ -1053,11 +1398,18 @@ CNY:
   matchers: 
     - "Moab"
 
-# Mobile, AL (MOB)
-# Modesto, CA (MOD)
-# Moline, IL (MLI)
-# Monroe, LA (MLU)
-# Monterey, CA (MRY)
+MOB:
+  city: "Mobile, AL"
+  matchers:
+    - "Mobile"
+
+MOD:
+  city: "Modesto, CA"
+  matchers: "Moline"
+
+MLU:
+  city: "Monroe, LA"
+  matchers: "Monroe"
 
 MRY:
   city: "Monterey, CA"
@@ -1070,12 +1422,19 @@ MGM:
     - "Montgomery"
 
 # Montrose, CO (MTJ)
-# Morgantown, WV (MGW)
+
+MGW:
+  city: "Morgantown, WV"
+  matchers: "Morgantown"
+
 # Moses Lake, WA (MWH)
+
 # Mountain Home, AR (WMH)
 # Mountain Village, AK (MOU)
-# Muscle Shoals, AL (MSL)
-# Muskegon, MI (MKG)
+
+MKG:
+  city: "Muskegon, MI"
+  matchers: "Muskegon"
 
 MYR:
   city: "Myrtle Beach, SC"
@@ -1085,14 +1444,29 @@ MYR:
 # N
 # Napakiak, AK (WNA)
 # Napaskiak, AK (PKA)
-# Naples, FL (APF)
-# Nashville, TN (BNA)
+
+APF:
+  city: "Naples, FL"
+  match_priority: 100
+  matchers:
+    - "Naples, FL"
+    - "Naples FL"
+    - "Naples, Florida"
+    - "Naples Florida"
+
+BNA:
+  city: "Nashville, TN"
+  matchers: "Nashville"
+
 # Naukiti, AK (NKI)
 # Nelson Lagoon, AK (NLG)
 # New Chenega, AK (NCN)
-# New Haven, CT (HVN)
+
+HVN:
+  city: "New Haven, CT"
+  matchers: "New Haven"
+  
 # New Koliganek, AK (KGK)
-# New London/Groton (GON)
 
 MSY:
   city: "New Orleans, LA"
@@ -1116,28 +1490,46 @@ NYC:
     - "N.Y.C."
     - "the Big Apple"
 
+SWF:
+  name: "Stewart Field"
+  city: "Newburgh, NY"
+  matchers: "Newburgh"
 
-# Newburgh/Stewart Field, NY (SWF)
-# Newport News, VA (PHF)
+PHF:
+  city: "Newport News, VA"
+  matchers: "Newport News"
+
 # Newtok, AK (WWT)
 # Nightmute, AK (NME)
 # Nikolai, AK (NIB)
 # Nikolski, AK (IKO)
 # Noatak, AK (WTK)
-# Nome, AK (OME)
+
+OME:
+  city: "Nome, AK"
+  matchers: "Nome"
+
 # Nondalton, AK (NNL)
 # Noorvik, AK (ORV)
-# Norfolk, NE (OFK)
-# Norfolk, VA (ORF)
-# North Bend, OR (OTH)
-# North Platte, NE (LBF)
+
+OFK:
+  city: "Norfolk, NE"
+
+ORF:
+  city: "Norfolk, VA"
+  matchers: "Norfolk"
+
+OTH:
+  city: "North Bend, OR"
+
+LBF:
+  city: "North Platte, NE"
+
 # Northway, AK (ORT)
 # Nuiqsut, AK (NUI)
 # Nulato, AK (NUL)
 # Nunapitchuk, AK (NUP)
-# return to top
-# O
-# Oakland, CA (OAK)
+
 OAK:
   city: "Oakland, CA"
   matchers:
@@ -1150,16 +1542,14 @@ ORD:
     - "O'Hare"
     - "Ohare"
 
-# Odessa/Midland, TX (MAF)
-# Ogdensburg, NY (OGS)
-# Oklahoma City, OK (OKC)
-
+OGS:
+  city: "Ogdensburg, NY"
+  matchers: "Ogdensburg"
+  
 OKC:
   city: "Oklahoma City, OK"
   matchers:
     - "Oklahoma City"
-
-# Omaha, NE (OMA)
 
 OMA:
   city: "Omaha, NE"
@@ -1167,16 +1557,40 @@ OMA:
     - "Omaha"
 
 # Ontario, CA (ONT)
-# Orange County, CA (SNA)
-# Orlando, FL - Herndon (ORL)
-# Oshkosh, WI (OSH)
-# Ottumwa, IA (OTM)
-# Owensboro, KY (OWB)
-# Oxnard/Ventura, CA (OXR)
-# return to top
-# P
-# Paducah, KY (PAH)
-# Page, AZ (PGA)
+
+SNA:
+  city: "Orange County, CA"
+  matchers:
+    - "Orange County"
+    - "O.C."
+    - "the O.C"
+    - "the OC"
+
+ORL:
+  name: "Herndon Airport"
+  city: "Orlando, FL"
+
+OSH:
+  city: "Oshkosh, WI"
+  matchers:
+    - "Oshkosh"
+
+OTM:
+  city: "Ottumwa, IA"
+  matchers: "Ottumwa"
+
+OWB:
+  city: "Owensboro, KY"
+  matchers:
+    - "Owensboro"
+
+PGA:
+  city: "Page, AZ"
+  matchers:
+    - "Page, AZ"
+    - "Page AZ"
+    - "Page Arizona"
+
 PSP:
   city: "Palm Springs, CA"
   matchers:
@@ -1187,12 +1601,24 @@ PFN:
   matchers:
     - "Panama City"
 
-# Parkersburg, WV/Marietta, OH (PKB)
-# Pasco, WA (PSC)
+PKB:
+  city: "Parkersburg, WV/Marietta, OH"
+  matchers: "Parkersburg"
+
+PSC:
+  city: "Pasco, WA"
+  matchers: "Pasco"
+
 # Pedro Bay, AK (PDB)
 # Pelican, AK (PEC)
-# Pellston, MI (PLN)
-# Pendleton, OR (PDT)
+
+PLN:
+  city: "Pellston, MI"
+  matchers: "Pellston"
+
+PDT:
+  city: "Pendleton, OR"
+  matchers: "Pendleton"
 
 PNS:
   city: "Pensacola, FL"
@@ -1204,8 +1630,11 @@ PIA:
   city: "Peoria, IL"
   matchers:
     - "Peoria"
-    
-# Perryville, AK (KPV)
+
+KPV:
+  city: "Perryville, AK"
+  matchers: "Perryville"
+  
 # Petersburg, AK (PSG)
 
 PAH:
@@ -1249,8 +1678,16 @@ PIT:
     - Pittsburg
     - Pittsburgh
 
-# Plattsburgh, NY (PLB)
-# Pocatello, ID (PIH)
+PLB:
+  city: "Plattsburgh, NY"
+  matchers:
+    - "Plattsburgh"
+
+PIH:
+  city: "Pocatello, ID"
+  matchers:
+    - "Pocatello"
+
 # Point Baker, AK (KPB)
 # Point Hope, AK (PHO)
 # Point Lay, AK (PIZ)
@@ -1258,7 +1695,6 @@ PIT:
 # Ponce, Puerto Rico (PSE)
 # Port Alsworth, AK (PTA)
 # Port Angeles, WA (CLM)
-# Port Arthur/Beaumont, TX (BPT)
 # Port Clarence, AK (KPC)
 # Port Heiden, AK (PTH)
 # Port Moller, AK (PML)
@@ -1290,35 +1726,72 @@ PWM:
     - "Portland, ME"
     - "Portland ME"
 
-# Portsmouth, NH (PSM)
-# Prescott, AZ (PRC)
-# Presque Isle, ME (PQI)
+PSM:
+  city: "Portsmouth, NH"
+  matchers:
+    - "Portsmouth"
+
+PRC:
+  city: "Prescott, AZ"
+  matchers:
+    - "Prescott"
+
+PQI:
+  city: "Presque Isle, ME"
+  matchers:
+    - "Presque Isle"
+
 # Princeton, WV (BLF)
 # Prudhoe Bay/Deadhorse, AK (SCC)
-# Pueblo, CO (PUB)
+
+PUB:
+  city: "Pueblo, CO"
+  matchers: "Pueblo"
+  
 # Pullman, WA (PUW)
 # return to top
 # Rampart, AK (RMP)
-# Rapid City, SD (RAP)
-# Reading, PA (RDG)
+
+RAP:
+  city: "Rapid City, SD"
+  matchers:
+    - "Rapid City"
+
+RDG:
+  city: "Reading, PA"
+  matchers: "Reading"
+
 # Red Devil, AK (RDV)
-# Redding, CA (RDD)
+
+RDD:
+  city: "Redding, CA"
+  matchers:
+    - "Redding"
+
 # Redmond, OR (RDM)
-# Rhinelander, WI, (RHI)
+
+RHI:
+  city: "Rhinelander, WI"
+  matchers:
+    - "Rhinelander"
 
 RIC:
   city: "Richmond, VA"
   matchers:
     - "Richmond"
 
-# Riverton, WY (RIW)
+RIW:
+  city: "Riverton, WY"
+  matchers: "Riverton"
 
 ROA:
   city: "Roanoke, VA"
   matchers:
     - "Roanoke"
 
-# Roche Harbor, WA (RCE)
+RCE:
+  city: "Roche Harbor, WA"
+  matchers: "Roche Harbor"
 
 RST:
   city: "Rochester, MN"
@@ -1333,10 +1806,17 @@ ROC:
   matchers:
     - "Rochester"
 
-# Rock Springs, WY (RKS)
-# Rockford, IL (RFD)
-# Rockland, ME (RKD)
-# Rosario, WA (RSJ)
+RKS:
+  city: "Rock Springs, WY"
+  matchers: "Rock Springs"
+  
+RKD:
+  city: "Rockland, ME"
+  matchers: "Rockland"
+
+RSJ:
+  city: "Rosario, WA"
+  matchers: "Rosario"
 
 RBY:
   city: "Ruby, AK"
@@ -1359,19 +1839,36 @@ ROW:
     - Roswell
 
 # Russian Mission, AK (RSH)
-# Rutland, VT (RUT)
-# return to top
-# S
+
+RUT:
+  city: "Rutland, VT"
+  matchers:
+    - "Rutland"
 
 SMF:
   city: "Sacramento, CA"
   matchers:
     - "Sacramento"
 
-# Saginaw, MI (MBS)
-# Saint Cloud, MN (STC)
+MBS:
+  city: "Saginaw, MI"
+  matchers: "Saginaw"
+
+STC:
+  city: "Saint Cloud, MN"
+  matchers:
+    - "Saint Cloud"
+    - "St. Cloud"
+    - "St Cloud"
+
 # Saint George Island, AK (STG)
-# Saint George, UT (SGU)
+
+SGU:
+  city: "Saint George, UT"
+  matchers:
+    - "Saint George"
+    - "St. George"
+    - "St George"
 
 SLC:
   city: "Salt Lake City, UT"
@@ -1388,20 +1885,41 @@ STL:
 # Saint Mary's, AK (KSM)
 # Saint Michael, AK (SMK)
 # Saint Paul Island, AK (SNP)
-# Salem, OR (SLE)
 
 SLE:
   city: "Salem, OR"
   matchers:
     - "Salem"
 
-# Salina, KS (SLN)
-# Salisbury-Ocean City, MD (SBY)
-# Salt Lake City, UT (SLC)
-# San Angelo, TX (SJT)
-# San Antonio, TX (SAT)
-# San Diego, CA (SAN)
-# San Jose, CA (SJC)
+SLN:
+  city: "Salina, KS"
+  matchers:
+    - "Salina"
+
+SBY:
+  city: "Salisbury-Ocean City, MD"
+  matchers: "Salisbury"
+
+SJT:
+  city: "San Angelo, TX"
+  matchers:
+    - "San Angelo"
+
+SAT:
+  city: "San Antonio, TX"
+  matchers:
+    - "San Antonio"
+    - "San Antone"
+
+SAN:
+  city: "San Diego, CA"
+  matchers:
+    - "San Diego"
+
+SJC:
+  city: "San Jose, CA"
+  matchers:
+    - "San Jose"
 
 SJU:
   city: "San Juan, Puerto Rico"
@@ -1417,26 +1935,50 @@ SBP:
     - "San Luis Obispo"
 
 # Sand Point, AK (SDP)
-# Sanford, FL (SFB)
-# Santa Ana, CA (SNA)
-# Santa Barbara, CA (SBA)
+
+SFB:
+  city: "Sanford, FL"
+  matchers: "Sanford"
+  
+SNA:
+  city: "Santa Ana, CA"
+  matchers:
+    - "Santa Ana"
+
+SBA:
+  city: "Santa Barbara, CA"
+  matchers: "Santa Barbara"
 
 SAF:
   city: "Santa Fe, NM"
   matchers:
     - "Santa Fe"
 
-# Santa Maria, CA (SMX)
-# Santa Rosa, CA (STS)
-# Saranac Lake, NY (SLK)
+SMX:
+  city: "Santa Maria, CA"
+  matchers: "Santa Maria"
+
+STS:
+  city: "Santa Rosa, CA"
+  matchers: "Santa Rosa"
+  
+SLK:
+  city: "Saranac Lake, NY"
+  matchers: "Saranac Lake"
 
 SRQ:
   city: "Sarasota, FL"
   matchers:
     - "Sarasota"
-    
-# Sault Ste Marie, MI, (CIU)
-# Savannah, GA (SAV)
+
+CIU:
+  city: "Sault Ste Marie, MI"
+  matchers: "Sault Ste Marie"
+  
+SAV:
+  city: "Savannah, GA"
+  matchers: "Savannah"
+
 # Savoonga, AK (SVA)
 # Scammon Bay, AK (SCM)
 # Scottsbluff, NE (BFF)
@@ -1481,21 +2023,25 @@ SHV:
 # Seward, AK (SWD)
 # Shageluk, AK (SHX)
 # Shaktoolik, AK (SKK)
-# Sheffield/Florence/Muscle Shoals, AL (MSL)
 # Sheldon Point, AK (SXP)
 # Sheridan, WY (SHR)
 # Shishmaref, AK (SHH)
 # Shungnak, AK (SHG)
 # Silver City, NM (SVC)
-# Sioux City, IA (SUX)
 
 SUX:
   city: "Sioux City, IA"
   matchers:
     - Sioux City
 
-# Sioux Falls, SD (FSD)
-# Sitka, AK (SIT)
+FSD:
+  city: "Sioux Falls, SD"
+  matchers: "Sioux Falls"
+  
+SIT:
+  city: "Sitka, AK"
+  matchers: "Sitka"
+
 # Sleetmore, AK (SLQ)
 
 SBN:
@@ -1506,9 +2052,22 @@ SBN:
 # South Naknek, AK (WSN)
 # Southern Pines, NC (SOP)
 # Spartanburg/Greenville, SC (GSP)
-# Spokane, WA (GEG)
-# Springfield, IL (SPI)
-# Springfield, MO (SGF)
+
+GEG:
+  city: "Spokane, WA"
+  matchers: "Spokane"
+
+SPI:
+  city: "Springfield, IL"
+  matchers:
+    - "Springfield, IL"
+    - "Springfield IL"
+
+SGF:
+  city: "Springfield, MO"
+  matchers:
+    - "Springfield, MO"
+    - "Springfield MO"
 
 PIE:
   city: "St. Petersburg/Clearwater, FL"
@@ -1518,20 +2077,23 @@ PIE:
     - "Clearwater"
 
 # State College/University Park, PA (SCE)
-# Staunton, VA (SHD)
+
+SHD:
+  city: "Staunton, VA"
+  matchers: "Staunton"
 
 SBS:
   city: "Steamboat Springs, CO"
   matchers:
-    - "Steamboat Springs"
+    - "Steamboat"
 
 # Stebbins, AK (WBB)
 # Stevens Point/Wausau, WI (CWA)
 # Stevens Village, AK (SVS)
-# Stewart Field/Newburgh, NY (SWF)
-# Stockton, CA (SCK)
-# Stony River, AK (SRV)
-# Sun Valley, ID (SUN)
+
+SCK:
+  city: "Stockton, CA"
+  matchers: "Stockton"
 
 SYR:
   city: "Syracuse, NY"
@@ -1556,8 +2118,16 @@ TSM:
 # Tanana, AK (TAL)
 # Tatitlek, AK (TEK)
 # Teller Mission, AK (KTS)
-# Telluride, CO (TEX)
-# Tenakee Springs, AK (TKE)
+
+TEX:
+  city: "Telluride, CO"
+  matchers:
+    - "Telluride"
+
+TKE:
+  city: "Tenakee Springs, AK"
+  matchers:
+    - "Tenakee Springs"
 
 HUF:
   city: "Terre Haute, IN"
@@ -1565,21 +2135,33 @@ HUF:
     - Terre Haute
 
 # Tetlin, AK (TEH)
-# Texarkana, AR (TXK)
+
+TXK:
+  city: "Texarkana, AR"
+  matchers:
+    - "Texarkana"
+
 # Thief River Falls, MN (TVF)
 # Thorne Bay, AK (KTB)
 # Tin City, AK (TNC)
 # Togiak Village, AK (TOG)
 # Tok, AK (TKJ)
 # Toksook Bay, AK (OOK)
-# Toledo, OH (TOL)
+
+TOL:
+  city: "Toledo, OH"
+  matchers:
+    - "Toledo"
 
 FOE:
   city: "Topeka, KS"
   matchers:
     - "Topeka"
 
-# Traverse City, MI (TVC)
+TVC:
+  city: "Traverse City, MI"
+  matchers: "Traverse City"
+
 # Trenton/Mercer, NJ (TTN)
 
 TUS:
@@ -1611,15 +2193,20 @@ TWF:
   matchers:
     - "Twin Falls"
 
-# Twin Hills, AK (TWA)
-# Tyler, TX (TYR)
-# return to top
-# U
+TYR:
+  city: "Tyler, TX"
+  matchers: "Tyler"
 # Unalakleet, AK (UNK)
-# Utica, NY (UCA)
-# Utopia Creek, AK (UTO)
-# return to top
-# V
+
+UCA:
+  city: "Utica, NY"
+  matchers:
+    - "Utica"
+
+UTO:
+  city: "Utopia Creek, AK"
+  matchers:
+    - "Utopia Creek"
 
 EGE:
   city: "Vail, CO"
@@ -1647,10 +2234,17 @@ OXR:
     - "Ventura"
     - "Oxnard"
 
-# Vernal, UT (VEL)
-# Victoria, TX (VCT)
-# Visalia, CA (VIS)
-# return to top
+VEL:
+  city: "Vernal, UT"
+  matchers: "Vernal"
+  
+VCT:
+  city: "Victoria, TX (VCT)"
+
+VIS:
+  city: "Visalia, CA"
+  matchers:
+    - "Visalia"
 
 ACT:
   city: "Waco, TX"
@@ -1659,7 +2253,6 @@ ACT:
 
 # Wainwright, AK (AIN)
 # Wales, AK (WAA)
-# Walla Walla, WA (ALW)
 
 WAS:
   name: "Washington, DC (all airports)"
@@ -1684,10 +2277,17 @@ DCA:
 
 # Waterfall, AK (KWF)
 # Waterloo, IA (ALO)
-# Watertown, NY (ART)
+
+ART:
+  city: "Watertown, NY"
+  matchers: "Watertown"
+
 # Watertown, SD (ATY)
 # Wausau/Stevens Point, WI (CWA)
-# Wenatchee, WA (EAT)
+
+EAT:
+  city: "Wenatchee, WA"
+  matchers: "Wenatchee"
 
 PBI:
   city: "West Palm Beach, FL"
@@ -1707,7 +2307,11 @@ HPN:
 # Whale Pass, AK (WWP)
 # White Mountain, AK (WMO)
 # White River, VT (LEB)
-# Wichita Falls, TX (SPS)
+
+SPC:
+  city: "Wichita Falls, TX"
+  match_priority: 100
+  matchers: "Wichita Falls"
 
 ICT:
   city: "Wichita, KS"
@@ -1738,10 +2342,22 @@ BDL:
 # Wrangell, AK (WRG)
 # return to top
 # Y
-# Yakima, WA (YKM)
-# Yakutat, AK (YAK)
-# Yellowstone/Cody, WY (COD)
-# Youngstown, OH (YNG)
+
+YAK:
+  city: "Yakutat, AK"
+  matchers:
+    - "Yakutat"
+
+COD:
+  city: "Yellowstone/Cody, WY"
+  matchers:
+    - "Yellowstone"
+    - "Cody"
+
+YNG:    
+  city: "Youngstown, OH"
+  matchers:
+    - "Youngstown"
 
 YKM:
   city: "Yakima, WA"
