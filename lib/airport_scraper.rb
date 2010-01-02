@@ -61,12 +61,10 @@ class AirportScraper
   
   def prefix_from_match(str)
     case str 
-    when /..\b/
+    when /\w\w\b/
       str[0,2].downcase
-    when
-      str[0,3].downcase
     else
-      str[0,4].downcase
+      str[0,3].downcase
     end
   end
 
@@ -82,13 +80,10 @@ class AirportScraper
     @match_regexes = [
       /(boarding to #{airport_regex})/i,
       /(touched down in #{airport_regex})\b/i,
-      /(land(ed|ing)? (in|at) #{airport_regex})\b/i,
-      /(#{flight_regex}( from #{airport_regex})? to #{airport_regex}(#{@via_regex}#{airport_regex})?)/i,
+      /((to land)|(land(ed|ing|s)) (in|at) #{airport_regex})\b/i,
+      /(#{flight_regex}( (from|in|at|out of) #{airport_regex})? to #{airport_regex}(#{@via_regex}#{airport_regex})?)/i,
       /(#{@code_match_regex}(#{@trans_regex}#{@code_match_regex})+\b)/ # (#{@via_regex}#{@code_match_regex}\b)?)/i,
     ]
-
-
-    #@regex = /#{@match_regexes.map {|m| /(#{m})/ }.join("|")}/
   end
 
   def airport(code)

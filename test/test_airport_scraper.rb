@@ -41,7 +41,7 @@ class TestAirportScraper < Test::Unit::TestCase
     should "order @matcher_prefixes values in descending match_priority order" do
       # Check that PWM comes before PDX
       pref = @scrape.instance_variable_get("@matcher_prefixes")
-      by_priority = pref['po']
+      by_priority = pref[@scrape.prefix_from_match("Portland")]
       
       assert_not_nil by_priority
       pdx = by_priority.detect {|x| x['code'] == 'PDX'}
