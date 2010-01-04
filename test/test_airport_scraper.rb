@@ -91,13 +91,14 @@ class TestAirportScraper < Test::Unit::TestCase
       end
     end
     
-    context "More specific name tests" do
+    context "Freeform name test" do
       [US_TESTS, CA_TESTS, INTL_TESTS].each do |tests|
         tests.keys.each do |code|
           tests[code].each do |str|
             should "return the airport #{code} for phrase '#{str}'" do
               airport = @scrape.airport(code)
-              assert_contains @scrape.extract_airports(str), airport
+              results = @scrape.extract_airports(str)
+              assert_contains results, airport, "Expected #{code}, returned #{results.map {|x| x['code']}.inspect }"
             end
           end
         end
