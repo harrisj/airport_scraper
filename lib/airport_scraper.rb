@@ -77,11 +77,11 @@ class AirportScraper
     @trans_regex = /(\sto\s)|(\s?->\s?)|(\s?>\s?)|(\s?✈\s?)/
     @via_regex = /,?\s?(via|by way of|on route to)\s/
 
-    @preposition_regex = /\bfrom\s|\bto\s|#{@via_regex}|#{@trans_regex}|\bin\s|\bat\s|\b@\s/i
+    @preposition_regex = /\bfrom\s|\bto\s|#{@via_regex}|#{@trans_regex}|\bin\s|\bat\s|@\s/i
     
     @match_regexes = [
-      # /(at|@|in #{airport_regex} airport)/i,
-      /(boarding|departing to|from|in #{airport_regex})/i,
+      /((at|@|in) #{airport_regex} airport)/i,
+      /((boarding|departing) (to|from|in) #{airport_regex})/i,
       /(touched down in #{airport_regex})\b/i,
       /((to land)|(land(ed|ing|s)) (in|at) #{airport_regex})\b/i,
       /(#{flight_regex}( (from|in|at|out of) #{airport_regex})? to #{airport_regex}(#{@via_regex}#{airport_regex})?)/i,
@@ -115,8 +115,8 @@ class AirportScraper
         str = $1
         matches = str.split(@preposition_regex)
       
-        puts "MATCHES: #{matches.inspect}" unless matches.empty?
-        puts "Text: #{text}"
+        # puts "MATCHES: #{matches.inspect}" unless matches.empty?
+        # puts "Text: #{text}"
         # puts "Regex: #{regex.inspect}"
         matches.each do |match|
           next if match.nil? || match.length < 2

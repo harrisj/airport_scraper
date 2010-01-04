@@ -1067,7 +1067,11 @@ EDI:
 # Edremit, Turkey (EDO)
 # Edward River, Australia (EDR)
 # Egilsstadir, Iceland (EGS)
-# Eindhoven, Netherlands (EIN)
+
+EIN:
+  city: "Eindhoven, Netherlands"
+  matchers: "Eindhoven"
+
 # Eisenach, Germany (EIB)
 # Ekaterinburg, Russia (SVX)
 # El Bolsan, Argentina (EHL)
@@ -2927,8 +2931,15 @@ SLU:
     - "St. Lucia"
     - "St Lucia"
 
-# Saint Maarten, Netherlands Antilles (SXM)
-# Saint Petersburg, Russia - Pulkovo (LED)
+SXM:
+  city: "Saint Maarten, Netherlands Antilles"
+  matchers:
+    - "Saint Martin"
+    - "Saint Maarten"
+    - "St. Martin"
+    - "St. Maarten"
+    - "St Martin"
+    - "St Maarten"
 
 # Saint Tropez, France - La Mole (LTT)
 # Saint Tropez, France (XPZ)
@@ -2954,7 +2965,13 @@ SZG:
 # San Carlos, Argentina (BRC)
 # San Jose, Costa Rica - Juan Santa Maria (SJO)
 # San Jose, Costa Rica - Tobias Bolanos Int'l (SYQ)
-# San Juan, Puerto Rico (SJU)
+
+SJU:
+  city: "San Juan, Puerto Rico"
+  matchers:
+    - "San Juan"
+    - "Puerto Rico"
+
 # San Juan, SJ, Argentina (UAQ)
 # San Julian, SC, Argentina (ULA)
 # San Luis Potosi, Mexico (SLP)
@@ -2979,7 +2996,13 @@ SZG:
 # Santa Rosa, LP, Argentina (RSA)
 # Santarem, PA, Brazil (STM)
 # Sante Marie, Madagascar (SMS)
-# Santiago, Chile (SCL)
+
+SCL:
+  city: "Santiago, Chile"
+  matchers:
+    - "Santiago"
+    - "Chile"
+
 # Santiago, Dominican Republic (STI)
 # Santo Angelo, Brazil (GEL)
 # Santo Antao, Cape Verde (NTO)
@@ -2997,8 +3020,11 @@ GRU:
     - "Guaralhos"
     - "Sao Paulo"
 
-# Sao Paulo, Brazil - Guarulhos Intl (GRU)
-# Sao Tome Is., Sao Tome and Principe (TMS)
+TMS:
+  city: "Sao Tome Is., Sao Tome and Principe"
+  matchers:
+    - "Sao Tome"
+
 # Sao Vicente, Cape Verde (VXE)
 # Sapporo, Japan - Chitose (CTS)
 # Sapporo, Japan - Okadama (OKD)
@@ -3061,7 +3087,11 @@ SSH:
     - "Sharm El Sheikh"
 
 # Sheffield, United Kingdom (SZD)
-# Shenzhen, China (SZX)
+
+SZX:
+  city: "Shenzhen, China"
+  matchers: "Shenzen"
+
 # Shetland Islands, United Kingdom - Lerwick/Tingwall (LWK)
 # Shetland Islands, United Kingdom - Sumburgh (LSI)
 # Shillavo, Ethiopia (HIL)
@@ -3090,7 +3120,11 @@ SIN:
 # Sligo, Ireland (SXL)
 # Soalala, Madagascar (DWB)
 # Soderham, Sweden (SOO)
-# Sofia, Bulgaria (SOF)
+
+SOF:
+  city: "Sofia, Bulgaria"
+  matchers: "Sofia"
+
 # Sognolal, Norway (SOG)
 # Solo City, Indonesia (SOC)
 # Son-La, Viet Nam - Na-San (SQH)
@@ -3100,19 +3134,57 @@ SIN:
 # South Caicos, Turks and Caicos Islands (XSC)
 # South Hampton, United Kingdom (SOU)
 # South Molle Island, QL, Australia (SOI)
-# Split, Croatia (SPU)
+
+SPU:
+  city: "Split, Croatia"
+  matchers: "Split"
+
 # Spring Point, Bahamas (AXP)
 # Srinagar, India (SXR)
-# St. Croix Island, U.S. Virgin Islands (STX)
-# St Denis de la Reunion, Reunion (RUN)
-# St Kitts, St Kitts and Nevis (SKB)
-# St Pierre, St Pierre and Miquelon (FSP)
-# St Vincent, Saint Vincent and the Grenadines (SVD)
-# St. Etienne, France (EBU)
-# St. Eustatius, Netherlands Antilles (EUX)
-# St. Lucia, St. Lucia - Hawnorra (UVF)
-# St. Lucia, St. Lucia (UVF)
-# St. Petersburg, Russia (LED)
+
+
+RUN:
+  city: "St Denis de la Reunion, Reunion"
+  matchers: "Reunion"
+
+SKB:
+  city: "St Kitts, St Kitts and Nevis"
+  matchers:
+    - "Saint Kitts"
+    - "St. Kitts"
+    - "St Kitts"
+
+FSP:
+  city: "St Pierre, St Pierre and Miquelon"
+  matchers:
+    - "Saint Pierre"
+    - "St. Pierre"
+    - "St Pierre"
+  
+EBU:
+  city: "St. Etienne, France"
+  matchers:
+    - "Saint Etienne"
+    - "St. Etienne"
+    - "St Etienne"
+
+EUX:
+  city: "St. Eustatius, Netherlands Antilles"
+  matchers:
+    - "St. Eustatius"
+    - "St Eustatius"
+    - "Eustatius"
+
+UVF:
+  city: "St. Lucia, St. Lucia"
+
+LED:
+  city: "St. Petersburg, Russia"
+  matchers:
+    - "Saint Petersburg"
+    - "St. Petersburg"
+    - "St Petersburg"
+
 # St. Pierre de la Reunion, Reunion (ZSE)
 
 STT:
@@ -3158,9 +3230,11 @@ SXB:
 
 # Stronsay, United Kingdom (SOY)
 # Stung Treng, Cambodia (TNX)
-# Stuttgart, Germany - Echterdingen (STR)
-# Stuttgart, Germany - Rail service (ZWS)
-# Suavanao, Solomon Islands (VAO)
+
+STR:
+  city: "Stuttgart, Germany"
+  matchers: "Stuttgart"
+  
 # Sucre, Bolivia (SRE)
 # Sue Island, QL, Australia (SYU)
 # Sui, Pakistan (SUL)
@@ -3214,11 +3288,22 @@ TLL:
 # Tambohorano, Madagascar(WTA)
 # Tambolaka, Indonesia (TMC)
 # Tambor, Costa Rica (TMU)
-# Tampere, Finland (TMP)
-# Tampico, Mexico (TAM)
+
+TMP:
+  city: "Tampere, Finland"
+  matchers: "Tampere"
+  
+TAM:
+  city: "Tampico, Mexico"
+  matchers: "Tampico"
+
 # Tamworth, NS, Australia (TMW)
 # Tanahmerah, Indonesia (TMH)
-# Tangier, Morocco (TNG)
+
+TNG:
+  city: "Tangier, Morocco"
+  matchers: "Tangier"
+
 # Tanjung Pandan, Indonesia (TJQ)
 # Tanjung Selor, Indonesia (TJS)
 # Tanna, Vanuatu (TAH)
@@ -3237,7 +3322,11 @@ TLL:
 # Taveuni, Fiji (TVU)
 # Tawau, Malaysia (TWU)
 # Tbessa, Algeria (TEE)
-# Tbilisi, Georgia (TBS)
+
+TBS:
+  city: "Tbilisi, Georgia"
+  matchers: "Tbilisi"
+
 # Tchibanga, Gabon (TCH)
 # Te Anau, New Zealand (TEU)
 # Teesside, United Kingdom (MME)
@@ -3263,10 +3352,13 @@ TLV:
     - "Tel Aviv"
     - "Ben Gurion"
 
-# Tel Aviv, Israel (TLV)
 # Tembagapura, Indonesia (TIM)
 # Teminabuan, Indonesia (TXM)
-# Temuco, Chile (ZCO)
+
+ZCO:
+  city: "Temuco, Chile"
+  matchers: "Temuco"
+
 # Tenerife, Spain and Canary Islands - Norte Los Rodeos (TFN)
 # Tenerife, Spain and the Canary Islands - Sur Reina Sofia (TFS)
 # Tennant Creek, NT, Australia (TCA)
@@ -3282,7 +3374,10 @@ TLV:
 # Thandwe, Myanmar (SNW)
 # Thangool, QL, Australia (THG)
 # Thargomindah, QL, Australia (XTG)
-# The Bight, Bahamas (TBI)
+
+TBI:
+  city: "The Bight, Bahamas"
+  matchers: "The Bight"
 
 SKG:
   city: "Thessaloniki, Greece"
@@ -3311,7 +3406,11 @@ TIJ:
 # Tioljikja, Mauritania (TIY)
 # Tioman, Malaysia (TOD)
 # Tippi, Ethiopia (TIE)
-# Tirana, Albania (TIA)
+
+TIA:
+  city: "Tirana, Albania"
+  matchers: "Tirana"
+
 # Tiree, United Kingdom (TRE)
 # Tirgu Mures, Romania (TGM)
 # Tiruchirapally, India (TRZ)
@@ -3349,7 +3448,11 @@ NRT:
     - "Narita"
 
 # Toledo, PR, Brazil (TOW)
-# Toluco, Mexico (TLC)
+
+TLC:
+  city: "Toluco, Mexico"
+  matchers: "Toluco"
+
 # Tom Price, WA, Australia (TPR)
 # Tomanggong, Malaysia (TMG)
 

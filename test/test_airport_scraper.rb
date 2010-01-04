@@ -4,6 +4,7 @@ require 'yaml'
 CA_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "ca_airports_tests.yml"))
 US_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "us_airports_tests.yml"))
 INTL_TESTS = YAML.load_file(File.join(File.dirname(__FILE__), "intl_airports_tests.yml"))
+BAD_MATCHES = YAML.load_file(File.join(File.dirname(__FILE__), "bad_matches.yml"))
 
 class TestAirportScraper < Test::Unit::TestCase
   context "new" do
@@ -101,6 +102,15 @@ class TestAirportScraper < Test::Unit::TestCase
               assert_contains results, airport, "Expected #{code}, returned #{results.map {|x| x['code']}.inspect }"
             end
           end
+        end
+      end
+    end
+    
+    context "Bad matches" do
+      BAD_MATCHES.each do |str|
+        should "not return any airports for phrase '#{str}'" do
+          results = @scrape.extract_airports(str)
+          assert_equal [], results, "Should not have matched anything, returned #{results.map {|x| x['code']}.inspect }"
         end
       end
     end    
