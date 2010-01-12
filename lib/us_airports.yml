@@ -790,8 +790,8 @@ PHF:
 # Hancock, MI (CMX)
 
 LEB:
-  city: "Hanover, NH"
-  matchers: Hanover
+  city: "Lebanon, NH"
+#  matchers: Hanover
 
 HRL:
   city: "Harlingen, TX"
@@ -1598,8 +1598,11 @@ PSP:
     
 PFN:
   city: "Panama City, FL"
+  match_priority: 40
   matchers:
-    - "Panama City"
+    - "Panama City, Florida"
+    - "Panama City, FL"
+    - "Panama City FL"
 
 PKB:
   city: "Parkersburg, WV/Marietta, OH"
@@ -1647,11 +1650,6 @@ PDX:
   city: "Portland, OR"
   matchers:
     - Portland
-
-PFN:
-  city: "Panama City, FL"
-  matchers:
-    - "Panama City"
 
 PHL:
   city: "Philadelphia, PA"
@@ -2071,9 +2069,11 @@ SGF:
 
 PIE:
   city: "St. Petersburg/Clearwater, FL"
+  match_priority: 40
   matchers:
-    - "St. Petersburg"
-    - "St Petersburg"
+    - "St. Petersburg, FL"
+    - "St. Petersburg, Florida"
+    - "St Petersburg FL"
     - "Clearwater"
 
 # State College/University Park, PA (SCE)

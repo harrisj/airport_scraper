@@ -22,6 +22,10 @@ ADD:
     - "Addis Ababa"
     - "Ethiopia"
 
+AMD:
+  city: "Ahmedabad, India"
+  matcherS: "Ahmedabad"
+
 AMS:
   title: Amsterdam Schiphol International Airport
   major: true
@@ -41,23 +45,19 @@ AUH:
 
 ADL:
   city: "Adelaide, Australia"
-  matchers:
-    - Adelaide
+  matchers: "Adelaide"
 
 ADE:
   city: "Aden, Yemen"
-  matchers:
-    - Aden
-
+  matchers: "Aden"
+  
 AEY:
   city: "Akureyri, Iceland"
-  matchers:
-    - Akureyri
+  matchers: "Akureyri"
 
 ALP:
   city: "Aleppo, Syria"
-  matchers:
-    - Aleppo
+  matchers: "Aleppo"
 
 ALY:
   city: "Alexandria, Egypt"
@@ -265,40 +265,123 @@ BBN:
   city: "Bario, Malaysia"
   matchers: "Bario"
 
-# Barisal, Bangladesh (BZL)
-# Barnaul, Russia (BAX)
-# Barquisimeto, Venezuela (BRM)
-# Barra Colorado, Costa Rica (BCL)
-# Barra, United Kingdom (BRR)
-# Barran Cabermeja, Colombia (EJA)
-# Barranquilla, Colombia (BAQ)
-# Barreiras, Brazil (BRA)
-# Basco, Philippines (BSO)
+BZL:
+  city: "Barisal, Bangladesh"
+  matchers: "Barisal"
+
+BAX:
+  city: "Barnaul, Russia"
+  matchers: "Barnaul"
+
+BRM:
+  city: "Barquisimeto, Venezuela"
+  matchers: "Barquisimeto"
+
+BCL:
+  city: "Barra Colorado, Costa Rica"
+  # MATCHER?
+
+BRR:
+  city: "Barra, United Kingdom"
+  #MATCHER?
+
+EJA:
+  city: "Barran Cabermeja, Colombia"
+
+BAQ:
+  city: "Barranquilla, Colombia"
+  matchers: "Barranquilla"
+
+BRA:
+  city: "Barreiras, Brazil"
+  matchers: "Barreiras"
+
+BSO:
+  city: "Basco, Philippines"
+  matchers: "Basco"
 
 BSL:
   city: "Basel, Switzerland"
   matchers:
     - Basel
 
-# Batam, Indonesia (BTH)
-# Bathurst Island, Australia (BRT)
-# Bathurst, Australia (BHS)
-# Batman, Turkey (BAL)
-# Batna, Algeria (BLJ)
-# Batom, Indonesia (BXM)
-# Batsfijord, Norway (BJF)
-# Battambang, Cambodia (BBM)
-# Batumi, Georgia (BUS)
-# Batuna, Solomon Islands (BPF)
-# Bauru, Brazil (BAU)
-# Bayamo, Cuba (BYM)
-# Bayreuth, Germany (BYU)
-# Bechar, Algeria (CBH)
-# Bedourie, Australia (BEU)
-# Beef Island, British Virgin Islands (EIS)
-# Beica, Ethiopia (BEI)
-# Beida, Libya - La Braq (LAQ)
-# Beihai, China (BHY)
+BTH:
+  city: "Batam, Indonesia"
+  matchers: "Batam"
+
+BRT:
+  city: "Bathurst Island, Australia"
+
+BHS:
+  city: "Bathurst, Australia"
+  matchers: "Bathurst"
+
+BAL:
+  city: "Batman, Turkey"
+  matchers: "Batman"
+
+BLJ:
+  city: "Batna, Algeria"
+  matchers: "Batna"
+
+BXM:
+  city: "Batom, Indonesia"
+  matchers: "Batom"
+
+BJF:
+  city: "Batsfijord, Norway"
+  matchers: "Batsfijord"
+
+BBM:
+  city: "Battambang, Cambodia"
+  matchers: "Battambang"
+
+BUS:
+  city: "Batumi, Georgia"
+  matchers: "Batumi"
+
+BPF:
+  city: "Batuna, Solomon Islands"
+  matchers: "Batuna"
+
+BAU:
+  city: "Bauru, Brazil"
+  matchers: "Bauru"
+
+BYM:
+  city: "Bayamo, Cuba"
+  matchers: "Bayamo"
+
+BYU:
+  city: "Bayreuth, Germany"
+  matchers: "Bayreuth"
+
+CBH:
+  city: "Bechar, Algeria"
+  matchers: "Bechar"
+
+BEU:
+  city: "Bedourie, Australia"
+  matchers: "Bedourie"
+
+EIS:
+  city: "Beef Island, British Virgin Islands"
+  matchers: "Beef Island"
+
+BEI:
+  city: "Beica, Ethiopia"
+  matchers: "Beica"
+
+LAQ:
+  name: "La Braq Airport"
+  city: "Beida, Libya"
+  matchers: 
+    - "Beida"
+    - "La Braq"
+
+BHY:
+  city: "Beihai, China"
+  matchers: Beihai
 
 PEK:
   city: "Beijing, China"
@@ -306,7 +389,9 @@ PEK:
     - Beijing
     - Peking
 
-# Beira, Mozambique (BEW)
+BEW:
+  city: "Beira, Mozambique"
+  matchers: "Beira"
      
 BEY:
   city: "Beirut, Lebanon"
@@ -314,10 +399,21 @@ BEY:
     - Beirut
     - Lebanon
 
-# Bejaia, Algeria (BJA)
-# Belaga, Mozambique (BLG)
-# Belem, Brazil (BEL)
-# Belep Island, New Caledonia (BMY)
+BJA:
+  city: "Bejaia, Algeria"
+  matchers: "Bejaia"
+
+BLG:
+  city: "Belaga, Mozambique"
+  matchers: "Belaga"
+
+BEL:
+  city: "Belem, Brazil"
+  matchers: "Belem"
+
+BMY:
+  city: "Belep Island, New Caledonia"
+  matchers: "Belep"
      
 BFS:
   city: "Belfast, Northern Ireland"
@@ -337,32 +433,63 @@ BZE:
   city: "Belize City, Belize"
   matchers:
      - Belize
-     
-# Belize City, Belize - International (BZE)
-# Belize City, Belize - Municipal (TZA)
-# Bellona, Solomon Islands (BNY)
+
+TZA:
+  name: "Belize City Municipal Airport"
+  city: "Belize City, Belize"
+
+BNY:
+  city: "Bellona, Solomon Islands"
 
 BMD:
   city: "Belo, Madagascar"
   matchers:
     - "Belo"
 
-# Belo Horizonte, Brazil - Tancredo Neves Intl. (CNF)
-# Belo Horizonte, Brazil - Pampulha (PLU)
-# Benbecula, United Kingdom (BEB)
-# Benghazi, Libya (BEN)
-# Bengkulu, Indonesia (BKS)
-# Berau, Indonesia (BEJ)
-# Berbera, Somalia (BBO)
+CNF:
+  name: "Tancredo Neves International Airport"
+  city: "Belo Horizonte, Brazil"
+  matchers:
+    - "Belo Horizonte"
+    - "Blo Horizonte"
+    - "Tancredo Neves"
+
+PLU:
+  name: "Pampulha Airport"
+  city: "Belo Horizonte, Brazil"
+
+BEB:
+  city: "Benbecula, United Kingdom"
+  matchers: "Benbecula"
+
+BEN:
+  city: "Benghazi, Libya"
+  matchers: "Benghazi"
+
+BKS:
+  city: "Bengkulu, Indonesia"
+  matchers: "Bengkulu"
+
+BEJ:
+  city: "Berau, Indonesia"
+  matchers: "Berau"
+
+BBO:
+  city: "Berbera, Somalia"
+  matchers: "Berbera"
 
 BGO:
   city: "Bergen, Norway"
-  matchers:
-    - Bergen
+  matchers: "Bergen"
 
-# Bergerac, France (EGC)
-# Berlevag, Norway (BVG)
-     
+EGC:
+  city: "Bergerac, France"
+  matchers: "Bergerac"
+
+BVG:
+  city: "Berlevag, Norway"
+  matchers: "Berlevag"
+
 BER:
   name: "Berlin, Germany (all airports)"
   city: "Berlin, Germany"
@@ -395,30 +522,27 @@ SXF:
 
 BDA:
   city: Bermuda
-  matchers:
-    - Bermuda
+  matchers: "Bermuda"
 
 BRN:
   city: "Berne, Switzerland"
-  matchers:
-    - Berne
-        
+  matchers: "Berne"
+
 BZR:
   city: "Beziers, France"
-  matchers:
-    - Beziers
+  matchers: "Beziers"
 
 BDP:
   city: "Bhadrapur, Nepal"
-  matchers:
-    - Bhadrapur
+  matchers: "Bhadrapur"
 
 BWA:
   city: "Bhairawa, Nepal"
-  matchers:
-    - Bhairawa
+  matchers: "Bhairawa"
 
-# Bhamo, Myanmar (BMO)
+BMO:
+  city: "Bhamo, Myanmar"
+  matchers: Bhamo
 
 BHR:
   city: "Bharatpur, Nepal"
@@ -430,83 +554,177 @@ BHU:
   matchers:
     - "Bhavnagar"
 
-# Bhopal, India (BHO)
-# Bhubaneswar, India (BBI)
-     
+BHO:
+  city: "Bhopal, India"
+  matchers: "Bhopal"
+
+BBI:
+  city: "Bhubaneswar, India"
+  matchers: "Bhubaneswar"
+
 BHJ:
   city: "Bhuj, India"
-  matchers:
-    - "Bhuj"
+  matchers: "Bhuj"
 
-# Biak, Indonesia (BIK)
+BIK:
+  city: "Biak, Indonesia"
+  matchers: "Biak"
 
 BIQ:
   city: "Biarritz, France"
-  matchers:
-    - "Biarritz"
+  matchers: "Biarritz"
 
-# Bikini Atoll, Marshall Islands (BII)
-
+BII:
+  city: "Bikini Atoll, Marshall Islands"
+  # matchers?
+  
 BIO:
   city: "Bilbao, Spain"
-  matchers:
-    - Bilbao
+  matchers: "Bilbao"
 
-# Billund, Denmark (BLL)
-# Bima, Indonesia (BMU)
-# Bimini, Bahamas (BIM)
-# Bimini, Bahamas (NSB)
-# Bintulu, Malaysia (BTU)
-# Bintuni, Indonesia (NTI)
-# Biratragar, Nepal (BIR)
-# Birdsville, Australia (BVI)
-# Birmingham, United Kingdom (BHX)
-# Bisha, Saudi Arabia (BHH)
-# Bishkek, Kyrgyzstan (FRU)
-# Biskra, Algeria (BSK)
-# Bissau, Guinea-Bissau (OXB)
-# Blackall, Australia (BKQ)
-# Blackpool, United Kingdom (BLK)
-# Blackwater, Australia (BLT)
-# Blagoveschensk, Russia (BQS)
-# Blantyre, Malawi (BLZ)
-# Blenheim, New Zealand (BHE)
-# Blo Horizonte, Brazil (CNF)
-# Bloemfontein, South Africa (BFN)
-# Boa Vista, Cape Verde (BVC)
-# Boang, Papua New Guinea (BOV)
-# Boavista, Brazil (BVB)
-# Bocas Del Toro, Panama (BOC)
-# Bodo, Norway (BOO)
-# Bodrum, Turkey (BJV)
+BLL:
+  city: "Billund, Denmark"
+  matchers: "Billund"
+
+BMU:
+  city: "Bima, Indonesia"
+  matchers: "Bima"
+
+BIM:
+  city: "Bimini, Bahamas"
+  matchers: "Bimini"
+
+NSB:
+  city: "Bimini, Bahamas"
+
+BTU:
+  city: "Bintulu, Malaysia"
+  matchers: "Bintulu"
+
+NTI:
+  city: "Bintuni, Indonesia"
+  matchers: "Bintuni"
+
+BIR:
+  city: "Biratragar, Nepal"
+  matchers: "Biratragar"
+
+BVI:
+  city: "Birdsville, Australia"
+  matchers: "Birdsville"
+
+BHX:
+  city: "Birmingham, United Kingdom"
+  matchers: "Birmingham"
+
+BHH:
+  city: "Bisha, Saudi Arabia"
+  matchers: "Bisha"
+
+FRU:
+  city: "Bishkek, Kyrgyzstan"
+  matchers: "Bishkek"
+
+BSK:
+  city: "Biskra, Algeria"
+  matchers: "Biskra"
+
+OXB:
+  city: "Bissau, Guinea-Bissau"
+  matchers: "Bissau"
+
+BKQ:
+  city: "Blackall, Australia"
+  matchers: "Blackall"
+
+BLK:
+  city: "Blackpool, United Kingdom"
+  matchers: "Blackpool"
+
+BLT:
+  city: "Blackwater, Australia"
+  matchers: "Blackwater"
+
+BQS:
+  city: "Blagoveschensk, Russia"
+  matchers: "Blagoveschensk"
+
+BLZ:
+  city: "Blantyre, Malawi"
+  matchers: "Blantyre"
+
+BHE:
+  city: "Blenheim, New Zealand"
+  matchers: "Blenheim"
+
+BFN:
+  city: "Bloemfontein, South Africa"
+  matchers: "Bloemfontein"
+
+BVC:
+  city: "Boa Vista, Cape Verde"
+  matchers: "Boa Vista"
+
+BOV:
+  city: "Boang, Papua New Guinea"
+  matchers: "Boang"
+
+BVB:
+  city: "Boavista, Brazil"
+  matchers: "Boavista"
+
+BOC:
+  city: "Bocas Del Toro, Panama"
+  matchers: "Bocas Del Toro"
+
+BOO:
+  city: "Bodo, Norway"
+  matchers: "Bodo"
+
+BJV:
+  city: "Bodrum, Turkey"
+  matchers: "Bodrum"
 
 BOG:
   city: "Bogota, Colombia"
   matchers:
     - "Bogota"
 
-# Boiju Island, Australia (GIC)
-# Bojnord, Iran (BJB)
-# Bokondini, Indonesia (BUI)
-# Bol, Croatia (BWK)
-# Bolzano, Italy (BZO)
-# Boma, Congo (BOA)
-# Bombay, India (BOM)
+GIC:
+  city: "Boiju Island, Australia"
+  matchers: "Boiju Island"
+
+BJB:
+  city: "Bojnord, Iran"
+  matchers: "Bojnord"
+
+BUI:
+  city: "Bokondini, Indonesia"
+  matchers: "Bokondini"
+
+BWL:
+  city: "Bol, Croatia"
+  matchers: "Bol"
+
+BZO:
+  city: "Bolzano, Italy"
+  matchers: "Bolzano"
+
+BOA:
+  city: "Boma, Congo"
+  matchers: "Boma"
 
 BON:
   city: "Bonaire, Netherlands Antilles"
-  matchers:
-    - "Bonaire"
+  matchers: "Bonaire"
 
 BNJ:
   city: "Bonn, Germany"
-  matchers:
-    - Bonn
+  matchers: Bonn
 
 BOB:
   city: "Bora Bora, French Polynesia"
-  matchers:
-    - "Bora Bora"
+  matchers: "Bora Bora"
 
 BOD:
   city: "Bordeaux, France"
@@ -583,10 +801,23 @@ SJD:
     - Cabo
     - Los Cabos
 
-# Caen, France (CFR)
-# Cagayan De Oro, Philippines - Lumbia (CGY)
-# Cagliari, Italy (CAG)
-# Cairns, Australia (CNS)
+CFR:
+  city: "Caen, France"
+
+CGY:
+  name: "Lumbia Airport"
+  city: "Cagayan De Oro, Philippines"
+  matchers:
+    - "Cagayen de Oro"
+    - "Lumbia"
+
+CAG:
+  city: "Cagliari, Italy"
+  matchers: "Cagliari"
+
+CNS:
+  city: "Cairns, Australia"
+  matchers: "Cairns"
 
 CAI:
   city: "Cairo, Egypt"
@@ -628,17 +859,25 @@ CEQ:
   matchers:
     - "Cannes"
     - "Mandelieu"
-    
-# Canouan, Saint Vincent and the Grenadines (CIW)
-# Cap Haitien, Haiti (CAP)
+
+CIW:
+  city: "Canouan, Saint Vincent and the Grenadines"
+  matchers: "Canouen"
+
+CAP:
+  city: "Cap Haitien, Haiti"
+  matchers: "Cap Haitien"
 
 CPT:
   city: "Cape Town, South Africa"
+  country: za
   matchers:
     - "Cape Town"
     - "Capetown"
 
-# Cape Vogel, Papua New Guinea (CVL)
+CVL:
+  city: "Cape Vogel, Papua New Guinea"
+  matchers: "Cape Vogel"
 
 CCS:
   city: "Caracas, Venezuela"
@@ -660,116 +899,325 @@ CTG:
   matchers:
     - Cartagena
 
-# Carupani, Venezuela (CUP)
-# Casablanca, Morocco - Anfa (CAS)
-# Casablanca, Morocco - Mohamed V (CMN)
-# Cascavel, Brazil (CAC)
-# Casino, Australia (CSI)
-# Castaway, Fiji (CST)
-# Castres, France (DCM)
-# Catamarca, Argentina (CTC)
-# Catania, Italy (CTA)
-# Caucasia, Colombia (CAQ)
-# Caxias Do Sul, Brazil (CXJ)
-# Cayenne, French Guiana (CAY)
-# Cayman Brac Is, Cambodia (CYB)
-# Cayo Largo Del Sur, Cuba (CYO)
+CUP:
+  city: "Carupani, Venezuela"
+  matchers: "Carupani"
+
+CAS:
+  name: "Anfa Airport"
+  city: "Casablanca, Morocco"
+  matchers:
+    - "Casablanca"
+    - "Anfa"
+
+CMN:
+  city: "Casablanca, Morocco"
+
+CAC:
+  city: "Cascavel, Brazil"
+  matchers: "Cascavel"
+
+CSI:
+  city: "Casino, Australia"
+
+CST:
+  city: "Castaway, Fiji"
+  matchers: "Castaway"
+
+DCM:
+  city: "Castres, France"
+  matchers: "Castres"
+
+CTC:
+  city: "Catamarca, Argentina"
+  matchers: "Catamarca"
+
+CTA:
+  city: "Catania, Italy"
+  machers: "Catania"
+
+CAQ:
+  city: "Caucasia, Colombia"
+  matchers: "Caucasia"
+
+CXJ:
+  city: "Caxias Do Sul, Brazil"
+  matchers: "Caxias Do Sul"
+
+CAY:
+  city: "Cayenne, French Guiana"
+  matchers: "Cayenne"
+
+CYB:
+  city: "Cayman Brac Is, Cambodia"
+
+CYO:
+  city: "Cayo Largo Del Sur, Cuba"
      
 CEB:
   city: "Cebu, Philippines"
   matchers:
     - Cebu
 
-# Cedun, Australia (CED)
-# Ceuta, Spain and Canary Islands (JCU)
-# Chah-Bahar, Iran (ZBR)
-# Chambery, France (CMF)
+CED:
+  city: "Cedun, Australia"
+  matchers: "Cedun"
+
+JCU:
+  city: "Ceuta, Spain and Canary Islands"
+  matchers: "Ceuta"
+
+ZBR:
+  city: "Chah-Bahar, Iran"
+  matchers: "Chah-Bahar"
+
+CMF:
+  city: "Chambery, France"
+  matchers: "Chambery"
 
 IXC:
   city: "Chandigarh, India"
   matchers:
     - "Chandigarh"
 
-   # Changchun, China (CGQ)
-# Changde, China (CGD)
-# Changuinda, Panama (CHX)
-# Changzhou, China (CZX)
-# Chania, Greece (CHQ)
-# Chaoyang, China (CHG)
-# Chapeco, Brazil (XAP)
-# Charleville, Australia (CTL)
-# Chatham Island, New Zealand (CHT)
-# Cheboksary, Russia (CSY)
-# Chelybinsk, Russia (CEK)
+CGQ:
+  city: "Changchun, China"
+  matchers: "Changchun"
+
+CGD:
+  city: "Changde, China"
+  matchers: "Changde"
+
+CHX:
+  city: "Changuinda, Panama"
+  matchers: "Changuinda"
+
+CZX:
+  city: "Changzhou, China"
+  matchers: "Changzhou"
+
+CHQ:
+  city: "Chania, Greece"
+  matchers: "Chania"
+
+CHG:
+  city: "Chaoyang, China"
+  matchers: "Chaoyang"
+
+XAP:
+  city: "Chapeco, Brazil"
+  matchers: "Chapeco"
+
+CTL:
+  city: "Charleville, Australia"
+  matchers: "Charleville"
+
+CHT:
+  city: "Chatham Island, New Zealand"
+  matchers: "Chatham Island"
+
+CSY:
+  city: "Cheboksary, Russia"
+  matchers: "Cheboksary"
+
+CEK:
+  city: "Chelybinsk, Russia"
+  matchers: "Chelybinsk"
 
 MAA:
   city: "Chennai, India"
   matchers:
     - Chennai
 
-# Cheongju, South Korea (CJJ)
-# Cherepovets, Russia (CEE)
-# Chergdu, China (CTU)
-# Chester, United Kingdom (CEG)
-# Chetumal, Mexico (CTM)
-# Chevepovets, Russia (CEE)
-# Chi Mei, Taiwan (CMJ)
-# Chiang Mai, Thailand (CNX)
-# Chiang Rai, Thailand (CEI)
-# Chiayi, Taiwan (CYI)
-# Chicayo, Peru (CIX)
-# Chifeng, China (CIF)
-# Chihuahua, Mexico (CUU)
-# Chillan, Chile (YAI)
-# Chipata, Zambia (CIP)
-# Chisinau, Republic of Moldova (KIV)
-# Chita, Russia (HTA)
-# Chitral, Pakistan (CJL)
-# Chitre, Panama (CTD)
-# Chittagong, Bangladesh (CGP)
-# Choiseul Bay, Solomon Islands (CHY)
-# Chongqing, China (CKG)
-     
+CJJ:
+  city: "Cheongju, South Korea"
+  matchers: "Cheongju"
+
+CEE:
+  city: "Cherepovets, Russia"
+  matchers: "Cherepovets"
+
+CTU:
+  city: "Chergdu, China"
+  matchers: "Chergdu"
+
+CEG:
+  city: "Chester, United Kingdom"
+  matchers: "Chester"
+
+CTM:
+  city: "Chetumal, Mexico"
+  matchers: "Chetumal"
+
+CEE:
+  city: "Chevepovets, Russia"
+  matchers: "Chevepovets"
+
+CMJ:
+  city: "Chi Mei, Taiwan"
+  matchers: "Chi Mei"
+
+CNX:
+  city: "Chiang Mai, Thailand"
+  matchers: "Chiang Mai"
+
+CEI:
+  city: "Chiang Rai, Thailand"
+  matchers: "Chiang Rai"
+
+CYI:
+  city: "Chiayi, Taiwan"
+  matchers: "Chiayi"
+
+CIX:
+  city: "Chicayo, Peru"
+  matchers: "Chicayo"
+
+CIF:
+  city: "Chifeng, China"
+  matchers: "Chifeng"
+
+CUU:
+  city: "Chihuahua, Mexico"
+  matchers: "Chihuahua"
+
+YAI:
+  city: "Chillan, Chile"
+  matchers: "Chillan"
+
+CIP:
+  city: "Chipata, Zambia"
+  matchers: "Chipata"
+
+KIV:
+  city: "Chisinau, Republic of Moldova"
+  matchers: "Chisinau"
+
+HTA:
+  city: "Chita, Russia"
+  matchers: "Chita"
+
+CJL:
+  city: "Chitral, Pakistan"
+  matchers: "Chitral"
+
+CTD:
+  city: "Chitre, Panama"
+  matchers: "Chitre"
+
+CGP:
+  city: "Chittagong, Bangladesh"
+  matchers: "Chittagong"
+
+CHY:
+  city: "Choiseul Bay, Solomon Islands"
+  matchers: "Choiseul Bay"
+
+CKG:
+  city: "Chongqing, China"
+  matchers: "Chongqing"
+
 CHC:
   city: "Christchurch, New Zealand"
   matchers: "Christchurch"
 
-# Christmas Island, Christmas Island (XCH)
-# Cicia, Fiji (ICI)
-# Ciego De Avila, Cuba (AVI)
-# Ciudad Bolivar, Venezuela (CBL)
-# Ciudad Del Carmen, Mexico (CME)
-# Ciudad del Este, Paraguay (AGT)
-     
+XCH:
+  city: "Christmas Island, Christmas Island"
+  matchers: "Christmas Island"
+
+ICI:
+  city: "Cicia, Fiji"
+  matchers: "Cicia"
+
+AVI:
+  city: "Ciego De Avila, Cuba"
+  matchers: "Ciego De Avila"
+
+CBL:
+  city: "Ciudad Bolivar, Venezuela"
+  matchers: "Ciudad Bolivar"
+
+CME:
+  city: "Ciudad Del Carmen, Mexico"
+  matchers: "Ciudad Del Carmen"
+
+AGT:
+  city: "Ciudad del Este, Paraguay"
+  matchers: "Ciudad del Este"
+
 CJS:
   city: "Ciudad Juarez, Mexico"
   matchers:
     - "Ciudad Juarez"
     - "Juarez"
 
-# Ciudad Obregon, Mexico (CEN)
-# Ciudad Victoria, Mexico (CVM)
-# Clermont-ferrand, France (CFE)
-# Cleve, Australia (CVC)
-# Cloncurry, Australia (CNJ)
-# Club Makokola, Malawi (CMK)
-# Cluj, Romania (CLJ)
-# Cobar, Australia (CAZ)
-# Cobija, Bolivia (CIJ)
-# Cochabamba, Bolivia (CBB)
+CEN:
+  city: "Ciudad Obregon, Mexico"
+  matchers: "Ciudad Obregon"
+
+CVM:
+  city: "Ciudad Victoria, Mexico"
+  matchers: "Ciudad Victoria"
+
+CFE:
+  city: "Clermont-ferrand, France"
+  matchers: "Clermont-ferrand"
+
+CVC:
+  city: "Cleve, Australia"
+  matchers: "Cleve"
+
+CNJ:
+  city: "Cloncurry, Australia"
+  matchers: "Cloncurry"
+
+CMK:
+  city: "Club Makokola, Malawi"
+  matchers: "Club Makokola"
+
+CLJ:
+  city: "Cluj, Romania"
+  matchers: "Cluj"
+
+CAZ:
+  city: "Cobar, Australia"
+  matchers: "Cobar"
+
+CIJ:
+  city: "Cobija, Bolivia"
+  matchers: "Cobija"
+
+CBB:
+  city: "Cochabamba, Bolivia"
+  matchers: "Cochabamba"
 
 COK:
   city: "Cochin, India"
-  matchers:
-    - "Cochin"
+  matchers: "Cochin"
 
-# Coconut Island, Australia (CNC)
-# Cocos Islands, Cocos (Keeling) Islands (CCK)
-# Coen, Australia (CUQ)
-# Coffs Harbor, Australia (CFS)
-# Coimbatore, India (CJB)
-# Colima, Mexico (CLQ)
-# Cologne, Germany - Rail service (QKL)
+CNC:
+  city: "Coconut Island, Australia"
+  matchers: "Coconut Island"
+
+CCK:
+  city: "Cocos Islands, Cocos (Keeling) Islands"
+  matchers: "Cocos Islands"
+
+CUQ:
+  city: "Coen, Australia"
+  matchers: "Coen"
+
+CFS:
+  city: "Coffs Harbor, Australia"
+  matchers: "Coffs Harbor"
+
+CJB:
+  city: "Coimbatore, India"
+  matchers: "Coimbatore"
+
+CLQ:
+  city: "Colima, Mexico"
+  matchers: "Colima"
 
 CGN:
   city: "Cologne, Germany"
@@ -784,75 +1232,166 @@ CMB:
     - "Colombo"
     - "Sri Lanka"
 
-# Colon, Panama (ONX)
-# Conakry, Guinea (CKY)
-     
+ONX:
+  city: "Colon, Panama"
+
+CKY:
+  city: "Conakry, Guinea"
+  matchers: "Conakry"
+
 CCP:
   city: "Concepcion, Chile"
   matchers:
     - "Concepcion"
 
-# Concordia, Argentina (COC)
-# Condoto, Colombia (COG)
-# Constanta, Romania (CND)
-# Constantine, Algeria (CZL)
-# Contadora, Panama (OTD)
-# Coober Pedy, Australia (CPD)
-# Cooktown, Australia (CTN)
-# Cooma, NS, Australia (OOM)
-# Coonamble, Australia (CNB)
-     
+COC:
+  city: "Concordia, Argentina"
+  matchers: "Concordia"
+
+COG:
+  city: "Condoto, Colombia"
+  matchers: "Condoto"
+
+CND:
+  city: "Constanta, Romania"
+  matchers: "Constanta"
+
+CZL:
+  city: "Constantine, Algeria"
+  matchers: "Constantine"
+
+OTD:
+  city: "Contadora, Panama"
+  matchers: "Contadora"
+
+CPD:
+  city: "Coober Pedy, Australia"
+  matchers: "Coober Pedy"
+
+CTN:
+  city: "Cooktown, Australia"
+  matchers: "Cooktown"
+
+OOM:
+  city: "Cooma, NS, Australia"
+  matchers: "Cooma"
+
+CNB:
+  city: "Coonamble, Australia"
+  matchers: "Coonamble"
+
 CPH:
   city: "Copenhagen, Denmark"
   matchers:
     - Copenhagen
 
-# Copiapo, Chile (CPO)
-# Cordoba, Argentina (COR)
+CPO:
+  city: "Copiapo, Chile"
+  matchers: "Copiapo"
+
+COR:
+  city: "Cordoba, Argentina"
+  matchers: "Cordoba"
      
 ORK:
   city: "Cork, Ireland"
   matchers:
     - "Cork"
 
-# Corozal, Belize (CZH)
-# Corrientes, Argentina (CNQ)
-# Corumba, Brazil (CMG)
-# Corvo Island, Portugal (CVU)
-# Cotabato, Philippines (CBO)
-     
+CZH:
+  city: "Corozal, Belize"
+  matchers: "Corozal"
+
+CNQ:
+  city: "Corrientes, Argentina"
+  matchers: "Corrientes"
+
+CMG:
+  city: "Corumba, Brazil"
+  matchers: "Corumba"
+
+CVU:
+  city: "Corvo Island, Portugal"
+  matchers: "Corvo Island"
+
+CBO:
+  city: "Cotabato, Philippines"
+  matchers: "Cotabato"
+
 COC:
   city: "Cotarou, Benin"
   matchers:
     - "Cotarou"
 
-# Cox's Bazar, Bangladesh (CXB)
+CXV:
+  city: "Cox's Bazar, Bangladesh"
      
 CZM:
   city: "Cozumel, Mexico"
   matchers:
     - "Cozumel"
 
-# Craig Cove, Vanuatu (CCV)
-# Criciuma, Brazil (CCM)
-# Croker Island, Australia (CKI)
-# Crooked Island, Bahamas (CRI)
-# Crotone, Italy (CRV)
-# Cruzeiro Do Sul, Brazil (CZS)
-# Cucata, Colombia (CUC)
-# Cuenca, Ecuador (CUE)
-# Cuernavaca, Mexico (CVJ)
-# Cuiaba, Brazil (CGB)
-# Culiacan, Mexico (CUL)
-# Cumana, Venezuela (CUM)
-# Cunnamulla, Australia (CMA)
+CCV:
+  city: "Craig Cove, Vanuatu"
+  matchers: "Craig Cove"
+
+CCM:
+  city: "Criciuma, Brazil"
+  matchers: "Criciuma"
+
+CKI:
+  city: "Croker Island, Australia"
+  matchers: "Croker Island"
+
+CRI:
+  city: "Crooked Island, Bahamas"
+  matchers: "Crooked Island"
+
+CRV:
+  city: "Crotone, Italy"
+  matchers: "Crotone"
+
+CZS:
+  city: "Cruzeiro Do Sul, Brazil"
+  matchers: "Cruzeiro Do Sul"
+
+CUC:
+  city: "Cucata, Colombia"
+  matchers: "Cucata"
+
+CUE:
+  city: "Cuenca, Ecuador"
+  matchers: "Cuenca"
+
+CVJ:
+  city: "Cuernavaca, Mexico"
+  matchers: "Cuernavaca"
+
+CGB:
+  city: "Cuiaba, Brazil"
+  matchers: "Cuiaba"
+
+CUL:
+  city: "Culiacan, Mexico"
+  matchers: "Culiacan"
+
+CUM:
+  city: "Cumana, Venezuela"
+  matchers: "Cumana"
+
+CMA:
+  city: "Cunnamulla, Australia"
+  matchers: "Cunnamulla"
+
      
 CUR:
   city: "Curacao, Netherlands Antilles"
   matchers:
     - "Curacao"
 
-# Curitiba, Brazil (CWB)
+CWB:
+  city: "Curitiba, Brazil"
+  matchers: "Ciritiba"
 
 CUZ:
   city: "Cuzco, Peru"
@@ -865,28 +1404,55 @@ DAD:
     - "Da Nang"
     - "Danang"
 
-# Dabra, Indonesia (DRH)
-# Daegu, South Korea (TAE)
-     
+DRH:
+  city: "Dabra, Indonesia"
+  matchers: "Dabra"
+
+TAE:
+  city: "Daegu, South Korea"
+  matchers: "Daegu"
+
 DKR:
   city: "Dakar, Senegal"
   matchers:
     - "Dakar"
     - "Senegal"
 
-# Dakhla, Morocco (VIL)
-# Dalaman, Turkey (DLM)
-# Dalat, Viet Nam - Lienkhang DLI)
-# Dali City, China (DLU)
-# Dalian, China (DLC)
+VIL:
+  city: "Dakhla, Morocco"
+  matchers: "Dakhla"
+
+DLM:
+  city: "Dalaman, Turkey"
+  matchers: "Dalaman"
+
+DLI:
+  city: "Dalat, Viet Nam"
+  name: "Lienkhang Airport"
+  matchers:
+    - "Dalat"
+    - "Lienkhang"
+
+DLU:
+  city: "Dali City, China"
+  matchers: "Dali City"
+
+DLC:
+  city: "Dalian, China"
+  matchers: "Dalian"
 
 DAM:
   city: "Damascus, Syria"
   matchers:
     - "Damascus"
 
-# Dammam, Saudi Arabia (DMM)
-# Dangriga, Belize (DGA)
+DMM:
+  city: "Dammam, Saudi Arabia"
+  matchers: "Dammam"
+
+DGA:
+  city: "Dangriga, Belize"
+  matchers: "Dangriga"
      
 DAR:
   city: "Dar Es Salaam, Tanzania"
@@ -894,17 +1460,31 @@ DAR:
     - "Dar Es Salaam"
     - "Tanzania"
 
-# Darnley Island, QL, Australia (NLF)
-# Daru, Papua New Guinea (DAU)
+NLF:
+  city: "Darnley Island, QL, Australia"
+  matchers: "Darnley Island"
+  
+DAU:
+  city: "Daru, Papua New Guinea"
+  matchers: "Daru"
+  
 DRW:
   city: "Darwin, Australia"
-  matchers:
-    - "Darwin"
+  matchers: "Darwin"
 
-# Datadawai, Indonesia (DTD)
-# Davao, Philipines - Mati (DVO)
-# David, Panama (DAV)
-# Dawe, Myanmar (TVY)
+DTD:
+  city: "Datadawai, Indonesia"
+  matchers: "Datadawai"
+
+DVO:
+  city: "Davao, Philipines"
+  matchers: "Davao"
+
+DAV:
+  city: "David, Panama"
+  
+matchers:
+  city: "Dawe, Myanmar"
 
 DAX:
   city: "Daxian, China"
@@ -916,27 +1496,70 @@ DYG:
   matchers:
     - "Dayang"
 
-# Daydream Is, Australia (DDI)
-# Deauville, France (DOL)
-# Debra Marcos, Ethiopia (DBM)
-# Debra Tabor, Ethiopia (DBT)
-# Deirezzor, Syria - Al Jafrah (DEZ)
+DDI:
+  city: "Daydream Island, Australia"
+  matchers: "Daydream Island"
+
+DOL:
+  city: "Deauville, France"
+  matchers: "Deauville"
+  
+DBM:
+  city: "Debra Marcos, Ethiopia"
+  matchers: "Debra Marcos"
+  
+DBT:
+  city: "Debra Tabor, Ethiopia"
+  matchers: "Debra Tabor"
+  
+DEZ:
+  city: "Deirezzor, Syria"
+  matchers: "Deirezzor"
      
 DEL:
   city: "Delhi, India"
   matchers:
     - "Delhi"
 
-# Dembidollo, Ethiopia (DEM)
-# Denham, Australia (DNM)
-# Denizli, Turkey (DNZ)
-# Denpasar Bali, Indonesia (DPS)
-# Dera Ghazi, Pakistan (DEA)
-# Dera Ismail Khan, Pakistan (DSK)
-# Derby, Australia (DRB)
-# Derim, Papua New Guinea (DER)
-# Dessie, Ethiopia (DSE)
-# Devonport, Australia (DPO)
+DEM:
+  city: "Dembidollo, Ethiopia"
+  matchers: "Dembidollo"
+
+DNM:
+  city: "Denham, Australia"
+  matchers: "Denham"
+
+DNZ:
+  city: "Denizli, Turkey"
+  matchers: "Denizli"
+
+DPS:
+  city: "Denpasar Bali, Indonesia"
+  matchers: "Denpasar Bali"
+
+DEA:
+  city: "Dera Ghazi, Pakistan"
+  matchers: "Dera Ghazi"
+
+DSK:
+  city: "Dera Ismail Khan, Pakistan"
+  matchers: "Dera Ismail Khan"
+
+DRB:
+  city: "Derby, Australia"
+  matchers: "Derby"
+
+DER:
+  city: "Derim, Papua New Guinea"
+  matchers: "Derim"
+
+DSE:
+  city: "Dessie, Ethiopia"
+  matchers: "Dessie"
+
+DPO:
+  city: "Devonport, Australia"
+  matchers: "Devonport"
      
 DAC:
   name: "Zia International Airport"
@@ -946,7 +1569,9 @@ DAC:
     - "Bangledesh"
     - "Bangladesh"
 
-# Dibrugarn, India (DIB)
+DIB:
+  city: "Dibrugarn, India"
+  matchers: "Dibrugarn"
 
 DIN:
   name: "Gialam International Airport"
@@ -959,16 +1584,45 @@ DIJ:
   matchers:
     - "Dijon"
 
-# Dili, Indonesia (DIL)
-# Dillons Bay, Vanuata (DLY)
-# Dimapur, India (DMU)
-# Dinard, France (DNR)
-# Dipolog, Philippines (DPL)
-# Dire Dawa, Ethiopia (DIR)
-# Div, India (DIU)
-# Diyarbakir, Turkey (DIY)
-# Djanet, Algeria (DJG)
-# Djerba, Tunisia (DJE)
+DIL:
+  city: "Dili, Indonesia"
+  matchers: "Dili"
+
+DLY:
+  city: "Dillons Bay, Vanuata"
+  matchers: "Dillons Bay"
+
+DMU:
+  city: "Dimapur, India"
+  matchers: "Dimapur"
+
+DNR:
+  city: "Dinard, France"
+  matchers: "Dinard"
+
+DPL:
+  city: "Dipolog, Philippines"
+  matchers: "Dipolog"
+
+DIR:
+  city: "Dire Dawa, Ethiopia"
+  matchers: "Dire Dawa"
+
+DIU:
+  city: "Div, India"
+  matchers: "Div"
+
+DIY:
+  city: "Diyarbakir, Turkey"
+  matchers: "Diyarbakir"
+
+DJG:
+  city: "Djanet, Algeria"
+  matchers: "Djanet"
+
+DJE:
+  city: "Djerba, Tunisia"
+  matchers: "Djerba"
 
 JIB:
   name: "Djibouti"
@@ -994,12 +1648,29 @@ CFN:
   matchers:
     - "Donegal"
 
-# Donetsk, Ukraine (DOK)
-# Dongola, Sudan (DOG)
-# Doomadgee, Australia (DMD)
-# Dortmund, Germany (DTM)
-# Dourados, Brazil (DOU)
-# Dovala, Cameroon (DLA)
+DOK:
+  city: "Donetsk, Ukraine"
+  matchers: "Donetsk"
+
+DOG:
+  city: "Dongola, Sudan"
+  matchers: "Dongola"
+
+DMD:
+  city: "Doomadgee, Australia"
+  matchers: "Doomadgee"
+
+DTM:
+  city: "Dortmund, Germany"
+  matchers: "Dortmund"
+
+DOU:
+  city: "Dourados, Brazil"
+  matchers: "Dourados"
+
+DLA:
+  city: "Dovala, Cameroon"
+  matchers: "Dovala"
 
 DRS:
   name: "Dresden, Germany"
@@ -1022,25 +1693,43 @@ DBV:
   matchers:
     - "Dubrovnik"
 
-# Dumaguete, Philippines (DGT)
-# Dumai, Indonesia (DUM)
-# Dundee, United Kingdom (DND)
-# Dunedin, New Zealand (DUD)
+DGT:
+  city: "Dumaguete, Philippines"
+  matchers: "Dumaguete"
+
+DUM:
+  city: "Dumai, Indonesia"
+  matchers: "Dumai"
+
+DND:
+  city: "Dundee, United Kingdom"
+  matchers: "Dundee"
+
+DUD:
+  city: "Dunedin, New Zealand"
+  matchers: "Dunedin"
      
 DNH:
   city: "Dunhuang, China"
   matchers:
     - "Dunhuang"
 
-# Dunk Island, Australia (DKI)
-# Durango, Mexico (DGO)
+DKI:
+  city: "Dunk Island, Australia"
+  matchers: "Dunk Island"
+
+DGO:
+  city: "Durango, Mexico"
+  matchers: "Durango, Mexico"
 
 DUR:
   city: "Durban, South Africa"
   matchers:
     - "Durban"
 
-# Dushanbe, Tajikistan (DYU)
+DYU:
+  city: "Dushanbe, Tajikistan"
+  matchers: "Dushanbe"
      
 DUS:
   city: "Dusseldorf, Germany"
@@ -1053,115 +1742,295 @@ DZA:
     - "Dzaoudzi"
     - "Mayotte"
 
-# return to top
-# E
-# East London, South Africa (ELS)
-# Ebon, Marshall Islands (EBO)
-# Eday, United Kingdom (EOI)
+ELS:
+  city: "East London, South Africa"
+  matchers: "East London"
+
+EBO:
+  city: "Ebon, Marshall Islands"
+  matchers: "Ebon"
+
+EOI:
+  city: "Eday, United Kingdom"
+  matchers: "Eday"
+
      
 EDI:
   city: "Edinburgh, United Kingdom"
   matchers:
     - "Edinburgh"
 
-# Edremit, Turkey (EDO)
-# Edward River, Australia (EDR)
-# Egilsstadir, Iceland (EGS)
+EDO:
+  city: "Edremit, Turkey"
+  matchers: "Edremit"
+
+EDR:
+  city: "Edward River, Australia"
+  matchers: "Edward River"
+
+EGS:
+  city: "Egilsstadir, Iceland"
+  matchers: "Egilsstadir"
 
 EIN:
   city: "Eindhoven, Netherlands"
   matchers: "Eindhoven"
 
-# Eisenach, Germany (EIB)
-# Ekaterinburg, Russia (SVX)
-# El Bolsan, Argentina (EHL)
-# El Fasher, Sudan (ELF)
-# El Maiten, Argentina (EMX)
-# El Obeid, Sudan (EBD)
-# El Oved, Algeria (ELU)
-# El Portillo/Samana, Dominician Republic - El Portillo(EPS)
-# El Real, Panama (ELE)
-# El Salvador, Chile (ESR)
-# El Vigia, Venezuela (VIG)
-# El Yopal, Colombia (EYP)
-# Elat, Italy (ETH)
-# Elazig, Turkey (EZS)
-# Elba Island, Italy (EBA)
-# Elcho Island, Australia (ELC)
-# Eldoret, Kenya (EDL)
+EIB:
+  city: "Eisenach, Germany"
+  matchers: "Eisenach"
+
+SVX:
+  city: "Ekaterinburg, Russia"
+  matchers: "Ekaterinburg"
+
+EHL:
+  city: "El Bolsan, Argentina"
+  matchers: "El Bolsan"
+
+ELF:
+  city: "El Fasher, Sudan"
+  matchers: "El Fasher"
+
+EMX:
+  city: "El Maiten, Argentina"
+  matchers: "El Maiten"
+
+EBD:
+  city: "El Obeid, Sudan"
+  matchers: "El Obeid"
+
+ELU:
+  city: "El Oved, Algeria"
+  matchers: "El Oved"
+
+EPS:
+  city: "El Portillo/Samana, Dominician Republic - El Portillo(EPS)"
+  matchers: "El Portillo/Samana"
+
+ELE:
+  city: "El Real, Panama"
+  matchers: "El Real"
+
+ESR:
+  city: "El Salvador, Chile"
+  matchers: "El Salvador, Chile"
+
+VIG:
+  city: "El Vigia, Venezuela"
+  matchers: "El Vigia"
+
+EYP:
+  city: "El Yopal, Colombia"
+  matchers: "El Yopal"
+
+ETH:
+  city: "Elat, Italy"
+  matchers: "Elat"
+
+EZS:
+  city: "Elazig, Turkey"
+  matchers: "Elazig"
+
+EBA:
+  city: "Elba Island, Italy"
+  matchers: "Elba Island"
+
+ELC:
+  city: "Elcho Island, Australia"
+  matchers: "Elcho Island"
+
+EDL:
+  city: "Eldoret, Kenya"
+  matchers: "Eldoret"
 
 ELH:
   city: "Eleuthera Island, Bahamas"
   matchers:
     - "Eleuthera"
 
-# Elista, Russia (ESL)
-# Emae, Vanuata (EAE)
-# Embessa, Papua New Guinea (EMS)
-# Emerald, Australia (EMD)
-# Emo, Papua New Guinea (EMO)
-# Enarotali, Indonesia (EWI)
-# Ende, Indonesia (ENE)
-# Enewetak Island, Marshall Islands (ENT)
-# Enontekio, Finland (ENF)
-# Enshi, China (ENH)
+ESL:
+  city: "Elista, Russia"
+  matchers: "Elista"
+
+EAE:
+  city: "Emae, Vanuata"
+  matchers: "Emae"
+
+EMS:
+  city: "Embessa, Papua New Guinea"
+  matchers: "Embessa"
+
+EMD:
+  city: "Emerald, Australia"
+  matchers: "Emerald"
+
+EMO:
+  city: "Emo, Papua New Guinea"
+  matchers: "Emo"
+
+EWI:
+  city: "Enarotali, Indonesia"
+  matchers: "Enarotali"
+
+ENE:
+  city: "Ende, Indonesia"
+  matchers: "Ende"
+
+ENT:
+  city: "Enewetak Island, Marshall Islands"
+  matchers: "Enewetak Island"
+
+ENF:
+  city: "Enontekio, Finland"
+  matchers: "Enontekio"
+
+ENH:
+  city: "Enshi, China"
+  matchers: "Enshi"
 
 EBB:
   city: "Entebbe, Uganda"
   matchers:
     - "Entebbe"
 
-# Enugu, Nigeria (ENU)
-# Epinal, France (EPL)
-# Ercan, Cyprus (ECN)
-# Erfurt, Germany (ERF)
-# Erzincan, Turkey (ERC)
-# Erzurum, Turkey (ERZ)
-# Esbjerg, Denmark - Esbjerg Airport (EBJ)
-# Esbjerg, Denmark - Rail service (ZBB)
-     
+ENU:
+  city: "Enugu, Nigeria"
+  matchers: "Enugu"
+
+EPL:
+  city: "Epinal, France"
+  matchers: "Epinal"
+
+ECN:
+  city: "Ercan, Cyprus"
+  matchers: "Ercan"
+
+ERF:
+  city: "Erfurt, Germany"
+  matchers: "Erfurt"
+
+ERC:
+  city: "Erzincan, Turkey"
+  matchers: "Erzincan"
+
+ERZ:
+  city: "Erzurum, Turkey"
+  matchers: "Erzurum"
+
+EBJ:
+  city: "Esbjerg, Denmark - Esbjerg Airport"
+  matchers: "Esbjerg"
+
 ESM:
   city: "Esmeraldas, Ecuador"
   matchers:
     - "Esmeraldas"
 
-# Esperance, Australia (EPR)
-# Espiritu Santo, Vanuatu (SON)
-# Esquel, Argentina (EQS)
-# Eveter, United Kingdom (EXT)
-# Ewer, Indonesia (EWE)
-# Exmouth Gulf, Australia (EXM)
-# return to top
-# F
-# Fagernes, Norway (VDB)
-# Fair Isle, United Kingdom (FIE)
-# Faisalabad, Pakistan (LYP)
-# Fajard, Puerto Rico (FAJ)
-# Fak Fak, Indonesia (FKQ)
-# Fakarava, French Polynesia (FAV)
-# Farafangana, Madagascar (RVA)
+EPR:
+  city: "Esperance, Australia"
+  matchers: "Esperance"
+
+SON:
+  city: "Espiritu Santo, Vanuatu"
+  matchers: "Espiritu Santo"
+
+EQS:
+  city: "Esquel, Argentina"
+  matchers: "Esquel"
+
+EXT:
+  city: "Eveter, United Kingdom"
+  matchers: "Eveter"
+
+EWE:
+  city: "Ewer, Indonesia"
+  matchers: "Ewer"
+
+EXM:
+  city: "Exmouth Gulf, Australia"
+  matchers: "Exmouth Gulf"
+
+VDB:
+  city: "Fagernes, Norway"
+  matchers: "Fagernes"
+
+FIE:
+  city: "Fair Isle, United Kingdom"
+  matchers: "Fair Isle"
+
+LYP:
+  city: "Faisalabad, Pakistan"
+  matchers: "Faisalabad"
+
+FAJ:
+  city: "Fajard, Puerto Rico"
+  matchers: "Fajard"
+
+FKQ:
+  city: "Fak Fak, Indonesia"
+  matchers: "Fak Fak"
+
+FAV:
+  city: "Fakarava, French Polynesia"
+  matchers: "Fakarava"
+
+RVA:
+  city: "Farafangana, Madagascar"
+  matchers: "Farafangana"
+
 
 FAO:
   city: "Faro, Portugal"
   matchers:
     - "Faro"
 
-# Faroe Islands, Faroe Islands (FAE)
-# Fera Island, Solomon Islands (FRE)
-# Fergana, Uzbekistan (FEG)
-# Fernando De Noronha, Brazil (FEN)
+FAE:
+  city: "Faroe Islands"
+  matchers:
+    - "The Faroe"
+    - "Faroe"
+
+FRE:
+  city: "Fera Island, Solomon Islands"
+  matchers: "Fera Island"
+
+FEG:
+  city: "Fergana, Uzbekistan"
+  matchers: "Fergana"
+
+FEN:
+  city: "Fernando De Noronha, Brazil"
+  matchers: "Fernando De Noronha"
      
 FEZ:
   city: "Fez, Morocco"
   matchers:
     - "Fez"
 
-# Fianarantsoa, Madagascar (WFI)
-# Figari, France (FSC)
-# Filton, United Kingdom (FZO)
-# Finkenwerder, Germany (XFW)
-# Fitzroy Crossing, Australia (FIZ)
-# Flensburg, Germany (FLF)
+WFI:
+  city: "Fianarantsoa, Madagascar"
+  matchers: "Fianarantsoa"
+
+FSC:
+  city: "Figari, France"
+  matchers: "Figari"
+
+FZO:
+  city: "Filton, United Kingdom"
+  matchers: "Filton"
+
+XFW:
+  city: "Finkenwerder, Germany"
+  matchers: "Finkenwerder"
+
+FIZ:
+  city: "Fitzroy Crossing, Australia"
+  matchers: "Fitzroy Crossing"
+
+FLF:
+  city: "Flensburg, Germany"
+  matchers: "Flensburg"
 
 FLR:
   name: "Peretola International Airport"
@@ -1170,20 +2039,62 @@ FLR:
     - "Florence"
     - "Firenze"
 
-# Florencia, Colombia (FLA)
-# Flores Island, Portugal (FLW)
-# Flores, Guatemala (FRS)
-# Florianopolis, Brazil (FLN)
-# Floro, Norway (FRO)
-# Foggia, Italy (FOG)
-# Forde, Norway (FDE)
-# Formosa, Argentina (FMA)
-# Fort Dauphin, Madagascar (FTU)
-# Fort De France, Martinique (FDF)
-# Fortaleza, Brazil (FOR)
-# Franca, Brazil (FRC)
-# Franceville, Gabon (MVB)
-# Francistown, Botswana (FRW)
+FLA:
+  city: "Florencia, Colombia"
+  matchers: "Florencia"
+
+FLW:
+  city: "Flores Island, Portugal"
+  matchers: "Flores Island"
+
+FRS:
+  city: "Flores, Guatemala"
+  matchers: "Flores"
+
+FLN:
+  city: "Florianopolis, Brazil"
+  matchers: "Florianopolis"
+
+FRO:
+  city: "Floro, Norway"
+  matchers: "Floro"
+
+FOG:
+  city: "Foggia, Italy"
+  matchers: "Foggia"
+
+FDE:
+  city: "Forde, Norway"
+  matchers: "Forde"
+
+FMA:
+  city: "Formosa, Argentina"
+  matchers: "Formosa"
+
+FTU:
+  city: "Fort Dauphin, Madagascar"
+  matchers: "Fort Dauphin"
+
+FDF:
+  city: "Fort De France, Martinique"
+  matchers: "Fort De France"
+
+FOR:
+  city: "Fortaleza, Brazil"
+  matchers: "Fortaleza"
+
+FRC:
+  city: "Franca, Brazil"
+  matchers: "Franca"
+
+MVB:
+  city: "Franceville, Gabon"
+  matchers: "Franceville"
+
+FRW:
+  city: "Francistown, Botswana"
+  matchers: "Francistown"
+
 # Frankfurt, Germany - Hahn (HHN)
      
 FRA:
@@ -1191,30 +2102,79 @@ FRA:
   matchers:
     - "Frankfurt"
 
-# Fredericia, Denmark (ZBJ)
+ZBJ:
+  city: "Fredericia, Denmark"
+  matchers: "Fredericia"
 
 FPO:
   city: "Freeport, Bahamas"
   matchers:
     - "Freeport"
 
-# Freetown, Sierra Leone - Lungi Intl (FNA)
-# Friedrichshafer, Germany (FDH)
-# Fuerteventura, Spain (FUE)
-# Fukuoka, Japan (FUK)
-# Fukue, Japan (FUJ)
-# Fukushima, Japan (FKS)
-# Funafuti Atol, Tuvalu (FUN)
-# Funchal, Portugal (FNC)
-# Futuna Island, Vanuatu (FTA)
-# Futuna Island, Wallis and Futuna Islands (FUT)
-# Fuyang, China (FUG)
-# Fuzhou, China (FOC)
-# return to top
-# G
-# Gaborone, Botswana (GBE)
-# Gafsa, Tunisia (GAF)
-# Gagnoa, Cote D'Ivoire (GGN)
+FNA:
+  name: "Lungi International Airport"
+  city: "Freetown, Sierra Leone"
+  matchers:
+    - "Freetown"
+    - "Sierra Leone"
+    - "Lungi"
+
+FDH:
+  city: "Friedrichshafer, Germany"
+  matchers: "Friedrichshafer"
+
+FUE:
+  city: "Fuerteventura, Spain"
+  matchers: "Fuerteventura"
+
+FUK:
+  city: "Fukuoka, Japan"
+  matchers: "Fukuoka"
+
+FUJ:
+  city: "Fukue, Japan"
+  matchers: "Fukue"
+
+FKS:
+  city: "Fukushima, Japan"
+  matchers: "Fukushima"
+
+FUN:
+  city: "Funafuti Atol, Tuvalu"
+  matchers: "Funafuti Atol"
+
+FNC:
+  city: "Funchal, Portugal"
+  matchers: "Funchal"
+
+FTA:
+  city: "Futuna Island, Vanuatu"
+  matchers: "Futuna Island"
+
+FUT:
+  city: "Futuna Island, Wallis and Futuna Islands"
+  #matchers: "Futuna Island"
+
+FUG:
+  city: "Fuyang, China"
+  matchers: "Fuyang"
+
+FOC:
+  city: "Fuzhou, China"
+  matchers: "Fuzhou"
+
+GBE:
+  city: "Gaborone, Botswana"
+  matchers: "Gaborone"
+
+GAF:
+  city: "Gafsa, Tunisia"
+  matchers: "Gafsa"
+
+GGN:
+  city: "Gagnoa, Cote D'Ivoire"
+  matchers: "Gagnoa"
+
      
 GPS:
   city: "Galapagos, Ecuador"
@@ -1222,48 +2182,153 @@ GPS:
     - "Galapagos"
     - "The Galapagos"
 
-# Gallivare, Sweden (GEV)
+GEV:
+  city: "Gallivare, Sweden"
+  matchers: "Gallivare"
 
 GWY:
   city: "Galway, Ireland"
   matchers:
     - "Galway"
 
-# Gamba, Gabon (GAX)
-# Gambela, Ethiopia (GMB)
-# Gan Island, Maldives (GAN)
-# Gangneung, South Korea (KAG)
-# Garachine, Panama (GHE)
-# Garaina, Papua New Guinea (GAR)
-# Garasa, Papua New Guinea (GRL)
-# Garden Point, Australia (GPN)
-# Garoua, Cameroon (GOV)
-# Gassim, Saudi Arabia (ELQ)
-# Gaua, Vanuatu (ZGU)
-# Gawahati, India (GAU)
-# Gaza City, Occupied Palestinian Territory (GZA)
-# Gaziatep, Turkey (GZT)
-# Gdansk, Poland (GDN)
-# Gebe, Indonesia (GEB)
-# Gelendzik, Russia (GDZ)
-# Geneina, Sudan (EGN)
-# General Santos, Philippines (GES)
-# Geneva, Switzerland (GVA)
-# Genoa, Italy (GOA)
-# George Town, Bahamas (GGT)
-# George, South Africa (GRJ)
-# Georgetown, Guyana (GEO)
-# Geraldton, Australia, (GET)
-# Gerona, Spain (GRO)
-# Ghadames, Libya (LTD)
-# Ghardala, Algeria (GHA)
-# Ghat, Libya (GHT)
-# Gibraltar, Gibraltar (GIB)
-# Gilgit, Pakistan (GIL)
-# Gisborne, New Zealand (GIS)
-# Gizan, Saudi Arabia (GIZ)
-# Gizo, Solomon Islands (GZO)
-# Gladstone, Australia (GLT)
+GAX:
+  city: "Gamba, Gabon"
+  matchers: "Gamba"
+
+GMB:
+  city: "Gambela, Ethiopia"
+  matchers: "Gambela"
+
+GAN:
+  city: "Gan Island, Maldives"
+  matchers: "Gan Island"
+
+KAG:
+  city: "Gangneung, South Korea"
+  matchers: "Gangneung"
+
+GHE:
+  city: "Garachine, Panama"
+  matchers: "Garachine"
+
+GAR:
+  city: "Garaina, Papua New Guinea"
+  matchers: "Garaina"
+
+GRL:
+  city: "Garasa, Papua New Guinea"
+  matchers: "Garasa"
+
+GPN:
+  city: "Garden Point, Australia"
+  matchers: "Garden Point"
+
+GOV:
+  city: "Garoua, Cameroon"
+  matchers: "Garoua"
+
+ELQ:
+  city: "Gassim, Saudi Arabia"
+  matchers: "Gassim"
+
+ZGU:
+  city: "Gaua, Vanuatu"
+  matchers: "Gaua"
+
+GAU:
+  city: "Gawahati, India"
+  matchers: "Gawahati"
+
+GZA:
+  city: "Gaza City, Occupied Palestinian Territory"
+  matchers: "Gaza"
+
+GZT:
+  city: "Gaziatep, Turkey"
+  matchers: "Gaziatep"
+
+GDN:
+  city: "Gdansk, Poland"
+  matchers: "Gdansk"
+
+GEB:
+  city: "Gebe, Indonesia"
+  matchers: "Gebe"
+
+GDZ:
+  city: "Gelendzik, Russia"
+  matchers: "Gelendzik"
+
+EGN:
+  city: "Geneina, Sudan"
+  matchers: "Geneina"
+
+GES:
+  city: "General Santos, Philippines"
+  matchers: "General Santos"
+
+GVA:
+  city: "Geneva, Switzerland"
+  matchers: "Geneva"
+
+GOA:
+  city: "Genoa, Italy"
+  matchers: "Genoa"
+
+GGT:
+  city: "George Town, Bahamas"
+
+GRJ:
+  city: "George, South Africa"
+  matchers: "George"
+
+GEO:
+  city: "Georgetown, Guyana"
+  matchers: "Georgetown"
+
+GET:
+  city: "Geraldton, Australia,"
+  matchers: "Geraldton"
+
+GRO:
+  city: "Gerona, Spain"
+  matchers: "Gerona"
+
+LTD:
+  city: "Ghadames, Libya"
+  matchers: "Ghadames"
+
+GHA:
+  city: "Ghardala, Algeria"
+  matchers: "Ghardala"
+
+GHT:
+  city: "Ghat, Libya"
+  matchers: "Ghat"
+
+GIB:
+  city: "Gibraltar, Gibraltar"
+  matchers: "Gibraltar"
+
+GIL:
+  city: "Gilgit, Pakistan"
+  matchers: "Gilgit"
+
+GIS:
+  city: "Gisborne, New Zealand"
+  matchers: "Gisborne"
+
+GIZ:
+  city: "Gizan, Saudi Arabia"
+  matchers: "Gizan"
+
+GZO:
+  city: "Gizo, Solomon Islands"
+  matchers: "Gizo"
+
+GLT:
+  city: "Gladstone, Australia"
+  matchers: "Gladstone"
 
 GLA:
   name: "Glasgow International Airport"
@@ -1282,82 +2347,282 @@ GOI:
   matchers:
     - "Goa"
 
-# Goba, Ethiopia (GOB)
-# Gobernador Gregores, Argentina (GGS)
-# Gode/Iddidole, Ethopia (GDE)
-# Goiania, Brazil (GYN)
-# Gold Coast, QL, Australia (OOL)
-# Golfito, Costa Rica (GLF)
-# Golmud, China (GOQ)
-# Gonalia, Papua New Guinea (GOE)
-# Gondari, Ethiopia (GDQ)
-# Gore, Ethiopia (GOR)
-# Goroka, Papua New Guinea (GKA)
-# Gorontalo, Indonesia (GTO)
-# Gothenburg, Sweden - Landvetter (GOT)
-# Gothenburg, Sweden - Saeve (GSE)
-# Goulburn Island, Australia (GBL)
-# Goundam, Mali (GUD)
-# Gove, Australia (GOV)
-# Governors Harbour, Bahamas (GHB)
-# Governador Valadares, Brazil (GVR)
-# Goya, CR, Argentina (OYA)
-# Gozo, Malta (GZM)
-# Graciosa Island, Portugal (GRW)
-# Grafton, Australia (GFN)
-# Granada, Spain (GRX)
-# Grand Cayman, Cayman Islands (GCM)
-# Grand Turk Island, Turks and Caicos Islands (GDT)
-# Graz, Austria (GRZ)
-# Grenada, Grenada, (GND)
-# Grenoble, France (GNB)
-# Griffith, Australia (GFF)
-# Grimsey, Iceland (GRY)
-# Groennedal, Greenland (JGR)
-# Groningen, Netherlands (GRQ)
-# Groofe Eylandt, Australia (GTE)
-# Guadalajara, Mexico (GDL)
-# Guam (GUM)
-# Guanaja, Honduras (GJA)
-# Guanajuato, Mexico (BJX)
-# Guangzhou, China (CAN)
-# Guantanamo, Cuba (GAO)
-# Guatemala City, Guatemala (GUA)
-# Guayaquil, Ecuador (GYE)
-# Guayaramerin, Bolivia (GYA)
-# Guaymas, Mexico (GYM)
-# Guernsey, United Kingdom (GCI)
-# Guerrero Negro, Mexico (GUB)
-# Guilin, China (KWL)
-# Guiria, Venezuela (GUI)
-# Gulu, Uganda (ULU)
-# Gulyang, China (KWE)
-# Gunsan, South Korea (KUV)
-# Gurayat, Saudi Arabia (URY)
-# Gwadar, Pakistan (GWD)
-# Gwangju, South Korea (KWJ)
-# Gwalior, India (GWL)
-# Gyandzha, Azerbaijan (KVD)
-# Gyourmri, Armenia (LWN)
-# return to top
-# H
-# HaApa, Tonga (HPA)
-# Hachijo Jima, Japan (HAC)
-# Hagfors, Sweden (HFS)
+GOB:
+  city: "Goba, Ethiopia"
+  matchers: "Goba"
+
+GGS:
+  city: "Gobernador Gregores, Argentina"
+  matchers: "Gobernador Gregores"
+
+GDE:
+  city: "Gode/Iddidole, Ethopia"
+  matchers: 
+    - "Gode"
+    - "Iddidole"
+
+GYN:
+  city: "Goiania, Brazil"
+  matchers: "Goiania"
+
+OOL:
+  city: "Gold Coast, QL, Australia"
+
+GLF:
+  city: "Golfito, Costa Rica"
+  matchers: "Golfito"
+
+GOQ:
+  city: "Golmud, China"
+  matchers: "Golmud"
+
+GOE:
+  city: "Gonalia, Papua New Guinea"
+  matchers: "Gonalia"
+
+GDQ:
+  city: "Gondari, Ethiopia"
+  matchers: "Gondari"
+
+GOR:
+  city: "Gore, Ethiopia"
+  matchers: "Gore"
+
+GKA:
+  city: "Goroka, Papua New Guinea"
+  matchers: "Goroka"
+
+GTO:
+  city: "Gorontalo, Indonesia"
+  matchers: "Gorontalo"
+
+GOT:
+  city: "Gothenburg, Sweden - Landvetter"
+  matchers: "Gothenburg"
+
+GSE:
+  city: "Gothenburg, Sweden - Saeve"
+
+GBL:
+  city: "Goulburn Island, Australia"
+  matchers: "Goulburn Island"
+
+GUD:
+  city: "Goundam, Mali"
+  matchers: "Goundam"
+
+GOV:
+  city: "Gove, Australia"
+  matchers: "Gove"
+
+GHB:
+  city: "Governors Harbour, Bahamas"
+  matchers: "Governors Harbour"
+
+GVR:
+  city: "Governador Valadares, Brazil"
+  matchers: "Governador Valadares"
+
+OYA:
+  city: "Goya, CR, Argentina"
+  matchers: "Goya"
+
+GZM:
+  city: "Gozo, Malta"
+  matchers: "Gozo"
+
+GRW:
+  city: "Graciosa Island, Portugal"
+  matchers: "Graciosa Island"
+
+GFN:
+  city: "Grafton, Australia"
+  matchers: "Grafton"
+
+GRX:
+  city: "Granada, Spain"
+  matchers: "Granada"
+
+GCM:
+  city: "Grand Cayman, Cayman Islands"
+  matchers: "Grand Cayman"
+
+GDT:
+  city: "Grand Turk Island, Turks and Caicos Islands"
+  matchers: "Grand Turk Island"
+
+GRZ:
+  city: "Graz, Austria"
+  matchers: "Graz"
+
+GND:
+  city: "Grenada, Grenada,"
+  matchers: "Grenada"
+
+GNB:
+  city: "Grenoble, France"
+  matchers: "Grenoble"
+
+GFF:
+  city: "Griffith, Australia"
+  matchers: "Griffith"
+
+GRY:
+  city: "Grimsey, Iceland"
+  matchers: "Grimsey"
+
+JGR:
+  city: "Groennedal, Greenland"
+  matchers: "Groennedal"
+
+GRQ:
+  city: "Groningen, Netherlands"
+  matchers: "Groningen"
+
+GTE:
+  city: "Groofe Eylandt, Australia"
+  matchers: "Groofe Eylandt"
+
+GDL:
+  city: "Guadalajara, Mexico"
+  matchers: "Guadalajara"
+
+GUM:
+  city: "Guam"
+  matchers: "Guam"
+
+GJA:
+  city: "Guanaja, Honduras"
+  matchers: "Guanaja"
+
+BJX:
+  city: "Guanajuato, Mexico"
+  matchers: "Guanajuato"
+
+CAN:
+  city: "Guangzhou, China"
+  matchers: "Guangzhou"
+
+GAO:
+  city: "Guantanamo, Cuba"
+  matchers: "Guantanamo"
+
+GUA:
+  city: "Guatemala City, Guatemala"
+  matchers: "Guatemala City"
+
+GYE:
+  city: "Guayaquil, Ecuador"
+  matchers: "Guayaquil"
+
+GYA:
+  city: "Guayaramerin, Bolivia"
+  matchers: "Guayaramerin"
+
+GYM:
+  city: "Guaymas, Mexico"
+  matchers: "Guaymas"
+
+GCI:
+  city: "Guernsey, United Kingdom"
+  matchers: "Guernsey"
+
+GUB:
+  city: "Guerrero Negro, Mexico"
+  matchers: "Guerrero Negro"
+
+KWL:
+  city: "Guilin, China"
+  matchers: "Guilin"
+
+GUI:
+  city: "Guiria, Venezuela"
+  matchers: "Guiria"
+
+ULU:
+  city: "Gulu, Uganda"
+  matchers: "Gulu"
+
+KWE:
+  city: "Gulyang, China"
+  matchers: "Gulyang"
+
+KUV:
+  city: "Gunsan, South Korea"
+  matchers: "Gunsan"
+
+URY:
+  city: "Gurayat, Saudi Arabia"
+  matchers: "Gurayat"
+
+GWD:
+  city: "Gwadar, Pakistan"
+  matchers: "Gwadar"
+
+KWJ:
+  city: "Gwangju, South Korea"
+  matchers: "Gwangju"
+
+GWL:
+  city: "Gwalior, India"
+  matchers: "Gwalior"
+
+KVD:
+  city: "Gyandzha, Azerbaijan"
+  matchers: "Gyandzha"
+
+LWN:
+  city: "Gyourmri, Armenia"
+  matchers: "Gyourmri"
+
+HPA:
+  city: "HaApa, Tonga"
+  matchers: "HaApa"
+
+HAC:
+  city: "Hachijo Jima, Japan"
+  matchers: "Hachijo Jima"
+
+HFS:
+  city: "Hagfors, Sweden"
+  matchers: "Hagfors"
 
 HFA:
   city: "Haifa, Israel"
   matchers: "Haifa"
 
-# Haikou, China (HAK)
-# Hail, Saudi Arabia (HAS)
-# Hailar, China (HLD)
-# Haiphong, Viet Nam - Catbi (HPH)
-# Hakodate, Japan (HKD)
-# Halberstadt, Germany (ZHQ)
-# Halls Creek, Australia (HCQ)
-# Halmstad, Sweden (HAD)
-     
+HAK:
+  city: "Haikou, China"
+  matchers: "Haikou"
+
+HAS:
+  city: "Hail, Saudi Arabia"
+  matchers: "Hail"
+
+HLD:
+  city: "Hailar, China"
+  matchers: "Hailar"
+
+HPH:
+  city: "Haiphong, Viet Nam - Catbi"
+  matchers: "Haiphong"
+
+HKD:
+  city: "Hakodate, Japan"
+  matchers: "Hakodate"
+
+ZHQ:
+  city: "Halberstadt, Germany"
+  matchers: "Halberstadt"
+
+HCQ:
+  city: "Halls Creek, Australia"
+  matchers: "Halls Creek"
+
+HAD:
+  city: "Halmstad, Sweden"
+  matchers: "Halmstad"
+
 HAM:
   name: "Fuhisbuettel Airport"
   city: "Hamburg, Germany"
@@ -1365,144 +2630,450 @@ HAM:
     - Hamburg
     - Fuhisbuettel
 
-# Hamilton Island, Australia (HTI)
+HTI:
+  city: "Hamilton Island, Australia"
 
 BDA:
   city: "Hamilton, Bermuda"
   matchers:
     - "Bermuda"
 
-# Hamilton, New Zealand (HLZ)
-# Hammerfest, Norway (HFT)
-# Hangzhou, China (HGH)
-# Hanimaadhoo, Maldives (HAQ)
-# Hanoi, Viet Nam - Noibai (HAN)
-# Hanover, Germany (HAJ)
-# Hanzhang, China (HZG)
-# Harare, Zimbabwe (HRE)
-# Harbin, China (HRB)
-# Hargeisa, Somolia (HGA)
-# Harstad-Narvik, Norway (EVE)
-# Hassi Messaoud, Algeria (HME)
-# Hasvik, Norway (HAA)
-# Hat Yai, Thailand (HDY)
-# Hateruma, Japan (HTR)
-# Haugesund, Norway (HAU)
-# Havana, Cuba (HAV)
-# Hayman Island, Australia (HIS)
-# Hefei, China (HFE)
-# Heidelberg, Germany (HDB)
-# Helgoland, Germany (HGL)
+HLZ:
+  city: "Hamilton, New Zealand"
+  matchers: "Hamilton"
+
+HFT:
+  city: "Hammerfest, Norway"
+  matchers: "Hammerfest"
+
+HGH:
+  city: "Hangzhou, China"
+  matchers: "Hangzhou"
+
+HAQ:
+  city: "Hanimaadhoo, Maldives"
+  matchers: "Hanimaadhoo"
+
+HAN:
+  city: "Hanoi, Viet Nam"
+  matchers: "Hanoi"
+
+HAJ:
+  city: "Hanover, Germany"
+  matchers: "Hanover"
+
+HZG:
+  city: "Hanzhang, China"
+  matchers: "Hanzhang"
+
+HRE:
+  city: "Harare, Zimbabwe"
+  matchers: "Harare"
+
+HRB:
+  city: "Harbin, China"
+  matchers: "Harbin"
+
+HGA:
+  city: "Hargeisa, Somolia"
+  matchers: "Hargeisa"
+
+EVE:
+  city: "Harstad-Narvik, Norway"
+  matchers: "Harstad-Narvik"
+
+HME:
+  city: "Hassi Messaoud, Algeria"
+  matchers: "Hassi Messaoud"
+
+HAA:
+  city: "Hasvik, Norway"
+  matchers: "Hasvik"
+
+HDY:
+  city: "Hat Yai, Thailand"
+  matchers: "Hat Yai"
+
+HTR:
+  city: "Hateruma, Japan"
+  matchers: "Hateruma"
+
+HAU:
+  city: "Haugesund, Norway"
+  matchers: "Haugesund"
+
+HAV:
+  city: "Havana, Cuba"
+  matchers: "Havana"
+
+HIS:
+  city: "Hayman Island, Australia"
+  matchers: "Hayman Island"
+
+HFE:
+  city: "Hefei, China"
+  matchers: "Hefei"
+
+HDB:
+  city: "Heidelberg, Germany"
+  matchers: "Heidelberg"
+
+HGL:
+  city: "Helgoland, Germany"
+  matchers: "Helogoland"
      
 HEL:
   city: "Helsinki, Finland"
   matchers:
     - "Helsinki"
 
-# Heno, Myanmar (HEH)
-# Heraklian, Greece (HER)
-# Heringsdorf, Germany (HDF)
-# Hermavan, Sweden (HMV)
-# Hermosillo, Mexico (HMO)
-# Herning, Denmark (XAK)
-# Hervey Bay, Australia (HVB)
+HEH:
+  city: "Heno, Myanmar"
+  matchers: "Heno"
+
+HER:
+  city: "Heraklian, Greece"
+  matchers: "Heraklian"
+
+HDF:
+  city: "Heringsdorf, Germany"
+  matchers: "Heringsdorf"
+
+HMV:
+  city: "Hermavan, Sweden"
+  matchers: "Hermavan"
+
+HMO:
+  city: "Hermosillo, Mexico"
+  matchers: "Hermosillo"
+
+XAK:
+  city: "Herning, Denmark"
+  matchers: "Herning"
+
+HVB:
+  city: "Hervey Bay, Australia"
+  matchers: "Hervey Bay"
 
 HIJ:
   city: "Hiroshima, Japan"
   matchers: "Hiroshima"
 
-# Hiroshima, Japan - Hiroshima West (HIW)
-# Hivaro, Papua New Guinea (HIT)
-# Ho Chi Minh City, Viet Nam (SGN)
-# Hobart, Australia (HBA)
-# Hodeidah, Yemen (HOD)
-# Hoedspruit, South Africa (HDS)
-# Hof, Germany (HOQ)
-# Hofuf, Saudi Arabia (HOF)
-# Hohhot, China (HET)
-# Hokitika, New Zealand (HKK)
-# Holguin, Cuba (HOG)
-# Hong Kong, Hong Kong (HKG)
-# Honiara, Solomon Islands (HIR)
-# Honningsvag, Norway (HVG)
-# Hooker, Australia (HOK)
-# Horn Island Australia (HID)
-# Hornafjordur, Iceland (HFN)
-# Horta, Portugal (HOR)
-# Hoskins, Papua New Guinea (HKN)
-# Hotan, China (HTN)
-# Houeisay, Laos (HOE)
-# Houn, Libya (HUQ)
-# Huahine, French Polynesia (HUH)
-# Hualien, Taiwan - Phi Bai (HUN)
-# Hualtin, Thailand (HHQ)
-# Huanuco, French Polynesia (HUU)
-# Huargyan, China (HYN)
-# Huatulco, Mexico (HUX)
-# Hudiksvall, Sweden (HUV)
-# Hue, Viet Nam (HUI)
-# Hughenden, Australia (HGD)
-# Hultsfred, Sweden (HLF)
-# Humberside, United Kingdom (HUY)
-# Hurghada, Egypt (HRG)
-# Hwange Nat Park, Zimbabwe (HWN)
-# Hyderabad, India (HYD)
-# return to top
-# I
-# Iasi, Romania (IAS)
-# Ibague, Colombia (IBE)
-# Ibiza, Spain (IBZ)
-# Igarka, Russia (IAA)
-# Iguassu Falls, PR, Brazil (IGU)
-# Iguazu, Argentina (IGR)
-# Ihu, Papua New Guinea (IHU)
-# Ile Des Pins, New Caledonia (ILP)
-# Ilheus, Brazil (IOS)
-# Illaga, Indonesia (ILA)
-# Iloilo, Philippines - Mandurriao (ILO)
-# Ilu, Indonesia (IUL)
-# Ilulissat, Greenland (JAV)
-# Imperatriz, Brazil (IMP)
-# Imphal, India (IMF)
-# In Amenas, Algeria (IAM)
-# Inagua, Bahamas (IGA)
-# Inanwatan, Indonesia (INX)
-# Indagen, Papua New Guinea (IDN)
-# Indore, India (IDR)
-# Innsbruck, Austria (INN)
-# Inta, Russia (INA)
-# Invercargill, New Zealand (IVC)
-# Inverell, Australia (IVR)
+HIT:
+  city: "Hivaro, Papua New Guinea"
+  matchers: "Hivaro"
+
+SGN:
+  city: "Ho Chi Minh City, Viet Nam"
+  matchers:
+    - "Ho Chi Minh"
+    - "Hochiminh"
+    - "Saigon"
+
+HBA:
+  city: "Hobart, Australia"
+  matchers: "Hobart"
+
+HOD:
+  city: "Hodeidah, Yemen"
+  matchers: "Hodeidah"
+
+HDS:
+  city: "Hoedspruit, South Africa"
+  country: za
+  matchers: "Hoedspruit"
+
+HOQ:
+  city: "Hof, Germany"
+  matchers: "Hof"
+
+HOF:
+  city: "Hofuf, Saudi Arabia"
+  matchers: "Hofuf"
+
+HET:
+  city: "Hohhot, China"
+  matchers: "Hohhot"
+
+HKK:
+  city: "Hokitika, New Zealand"
+  matchers: "Hokitika"
+
+HOG:
+  city: "Holguin, Cuba"
+  matchers: "Holguin"
+
+HKG:
+  city: "Hong Kong"
+  matchers: 
+    - "Hong Kong"
+    - "HK"
+
+HIR:
+  city: "Honiara, Solomon Islands"
+  matchers: "Honiara"
+
+HVG:
+  city: "Honningsvag, Norway"
+  matchers: "Honningsvag"
+
+HOK:
+  city: "Hooker, Australia"
+  matchers: "Hooker"
+
+HID:
+  city: "Horn Island Australia"
+  matchers: "Horn Island Australia (HID)"
+
+HFN:
+  city: "Hornafjordur, Iceland"
+  matchers: "Hornafjordur"
+
+HOR:
+  city: "Horta, Portugal"
+  matchers: "Horta"
+
+HKN:
+  city: "Hoskins, Papua New Guinea"
+  matchers: "Hoskins"
+
+HTN:
+  city: "Hotan, China"
+  matchers: "Hotan"
+
+HOE:
+  city: "Houeisay, Laos"
+  matchers: "Houeisay"
+
+HUQ:
+  city: "Houn, Libya"
+  matchers: "Houn"
+  country: ly
+
+HUH:
+  city: "Huahine, French Polynesia"
+  matchers: "Huahine"
+
+HUN:
+  city: "Hualien, Taiwan - Phi Bai"
+  matchers: "Hualien"
+
+HHQ:
+  city: "Hualtin, Thailand"
+  matchers: "Hualtin"
+
+HUU:
+  city: "Huanuco, French Polynesia"
+  matchers: "Huanuco"
+
+HYN:
+  city: "Huargyan, China"
+  matchers: "Huargyan"
+
+HUX:
+  city: "Huatulco, Mexico"
+  country: mx
+  matchers: "Huatulco"
+
+HUV:
+  city: "Hudiksvall, Sweden"
+  matchers: Hudiksvall
+  country: se
+
+HUI:
+  city: "Hue, Viet Nam"
+  county: vn
+  matchers: "Hue"
+
+HGD:
+  city: "Hughenden, Australia"
+  matchers: "Hughenden"
+
+HLF:
+  city: "Hultsfred, Sweden"
+  matchers: "Hultsfred"
+
+HUY:
+  city: "Humberside, United Kingdom"
+  matchers: "Humberside"
+
+HRG:
+  city: "Hurghada, Egypt"
+  matchers: "Hurghada"
+
+HWN:
+  city: "Hwange Nat Park, Zimbabwe"
+  matchers: "Hwange Nat Park"
+
+HYD:
+  city: "Hyderabad, India"
+  matchers: "Hyderabad"
+
+IAS:
+  city: "Iasi, Romania"
+  matchers: "Iasi"
+
+IBE:
+  city: "Ibague, Colombia"
+  matchers: "Ibague"
+
+IBZ:
+  city: "Ibiza, Spain"
+  matchers: "Ibiza"
+
+IAA:
+  city: "Igarka, Russia"
+  matchers: "Igarka"
+
+IGU:
+  city: "Iguassu Falls, PR, Brazil"
+  matchers: "Iguassu Falls"
+
+IGR:
+  city: "Iguazu, Argentina"
+  matchers: "Iguazu"
+
+IHU:
+  city: "Ihu, Papua New Guinea"
+  matchers: "Ihu"
+
+ILP:
+  city: "Ile Des Pins, New Caledonia"
+  matchers: "Ile Des Pins"
+
+IOS:
+  city: "Ilheus, Brazil"
+  matchers: "Ilheus"
+
+ILA:
+  city: "Illaga, Indonesia"
+  matchers: "Illaga"
+
+ILO:
+  city: "Iloilo, Philippines - Mandurriao"
+  matchers: "Iloilo"
+
+IUL:
+  city: "Ilu, Indonesia"
+  matchers: "Ilu"
+
+JAV:
+  city: "Ilulissat, Greenland"
+  matchers: "Ilulissat"
+
+IMP:
+  city: "Imperatriz, Brazil"
+  matchers: "Imperatriz"
+
+IMF:
+  city: "Imphal, India"
+  matchers: "Imphal"
+
+IAM:
+  city: "In Amenas, Algeria"
+  matchers: "In Amenas"
+
+IGA:
+  city: "Inagua, Bahamas"
+  matchers: "Inagua"
+
+INX:
+  city: "Inanwatan, Indonesia"
+  matchers: "Inanwatan"
+
+IDN:
+  city: "Indagen, Papua New Guinea"
+  matchers: "Indagen"
+
+IDR:
+  city: "Indore, India"
+  matchers: "Indore"
+
+INN:
+  city: "Innsbruck, Austria"
+  matchers: "Innsbruck"
+
+INA:
+  city: "Inta, Russia"
+  matchers: "Inta"
+
+IVC:
+  city: "Invercargill, New Zealand"
+  matchers: "Invercargill"
+
+IVR:
+  city: "Inverell, Australia"
+  matchers: "Inverell"
 
 INV:
   city: "Inverness, United Kingdom"
   matchers: "Inverness"
 
-# Ioannina, Greece (IOA)
-# Ioma, Papua New Guinea (IOP)
-# Ipatinga, Brazil (IPN)
-# Ipiales, Colombia (IPI)
-# Ipil, Philippines (IPE)
-# Ipoh, Malaysia (IPH)
-# Ipota, Vanuatu (IPA)
-# Iquique, Chile (IQQ)
+IOA:
+  city: "Ioannina, Greece"
+  matchers: "Ioannina"
+
+IOP:
+  city: "Ioma, Papua New Guinea"
+  matchers: "Ioma"
+
+IPN:
+  city: "Ipatinga, Brazil"
+  matchers: "Ipatinga"
+
+IPI:
+  city: "Ipiales, Colombia"
+  matchers: "Ipiales"
+
+IPE:
+  city: "Ipil, Philippines"
+  matchers: "Ipil"
+
+IPH:
+  city: "Ipoh, Malaysia"
+  matchers: "Ipoh"
+
+IPA:
+  city: "Ipota, Vanuatu"
+  matchers: "Ipota"
+
+IQQ:
+  city: "Iquique, Chile"
+  matchers: "Iquique"
 
 IQT:
   city: "Iquitos, Peru"
   matchers: "Iquitos"
 
-# Irkutsk, Russia (IKT)
-# Isafjordur, Iceland (IFJ)
+IKT:
+  city: "Irkutsk, Russia"
+  
+IFJ:
+  city: "Isafjordur, Iceland"
+  matchers: "Isafjordur"
 
 IFN:
   city: "Isfahan, Iran"
   matchers: "Isfahan"
 
-# Ishigakij, Japan (ISG)
-# Islamabad, Pakistan (ISB)
+ISG:
+  city: "Ishigakij, Japan"
+  matchers: "Ishigakij"
+
+ISB:
+  city: "Islamabad, Pakistan"
+  matchers: "Islamabad"
+
 # Island Lake/Garden Hill, Canada (YIV)
-# Islay, United Kingdom (ILY)
-# Isle of Man, United Kingdom (IOM)
+
+ILY:
+  city: "Islay, United Kingdom"
+  matchers: "Islay"
+  
+IOM:
+  city: "Isle of Man, United Kingdom"
+  matchers: "Isle of Man"
+
 # Isles of Scilly, United Kingdom - St Marys (ISC)
 # Isles of Scilly, United Kingdom - Tresco (TSO)
 
@@ -1512,183 +3083,652 @@ IST:
     - Istanbul
     - Constantinople
 
-# Itaituba, Brazil (ITB)
-# Itokama, Papua New Guinea (ITK)
-# Ivalo, Finland (IVL)
-# Ivano-Frankovsk, Ukraine (IFO)
-# Iwami, Japan (IWJ)
-# Ixtapa, Mexico (ZIH)
-# Ixtepec, Mexico (IZT)
-# Izmir, Turkey (ADB)
-# Izumo, Japan (IZO)
-# return to top
-# J
-# Jabor, Marshall Islands (JAT)
-# Jacareacanga, Brazil (JCR)
-# Jacobabad, Pakistan (JAG)
-# Jacquinot Bay, Papua New Guinea (JAQ)
-# Jaipur, India (JAI)
+ITB:
+  city: "Itaituba, Brazil"
+  matchers: "Itaituba"
+
+ITK:
+  city: "Itokama, Papua New Guinea"
+  matchers: "Itokama"
+
+IVL:
+  city: "Ivalo, Finland"
+  matchers: "Ivalo"
+
+IFO:
+  city: "Ivano-Frankovsk, Ukraine"
+  matchers: "Ivano-Frankovsk"
+
+IWJ:
+  city: "Iwami, Japan"
+  matchers: "Iwami"
+
+IZT:
+  city: "Ixtepec, Mexico"
+  matchers: "Ixtepec"
+
+ADB:
+  city: "Izmir, Turkey"
+  matchers: "Izmir"
+
+IZO:
+  city: "Izumo, Japan"
+  matchers: "Izumo"
+
+JAT:
+  city: "Jabor, Marshall Islands"
+  matchers: "Jabor"
+
+JCR:
+  city: "Jacareacanga, Brazil"
+  matchers: "Jacareacanga"
+
+JAG:
+  city: "Jacobabad, Pakistan"
+  matchers: "Jacobabad"
+
+JAQ:
+  city: "Jacquinot Bay, Papua New Guinea"
+  matchers: "Jacquinot Bay"
+
+JAI:
+  city: "Jaipur, India"
+  country: in
+  matchers: "Jaipur"
 
 CGK:
   city: "Jakarta, Indonesia"
-  matchers: 
-    - "Jakarta"
+  matchers: "Jakarta"
 
-# Jalapa, Mexico (JAL)
-# Jaluit Island, Marshall Islands (UIT)
-# Jambi. Indonesia (DJB)
-# Jamnagar, India (JGA)
-# Janakpur, Nepal (JKR)
-# Jaque, Panama (JQE)
-# Jayapura, Indonesia (DJJ)
-     
+JAL:
+  city: "Jalapa, Mexico"
+  matchers: "Jalapa"
+
+UIT:
+  city: "Jaluit Island, Marshall Islands"
+  matchers: "Jaluit Island"
+
+DJB:
+  city: "Jambi. Indonesia"
+  matchers: "Jambi. Indonesia (DJB)"
+
+JGA:
+  city: "Jamnagar, India"
+  matchers: "Jamnagar"
+
+JKR:
+  city: "Janakpur, Nepal"
+  matchers: "Janakpur"
+
+JQE:
+  city: "Jaque, Panama"
+  matchers: "Jaque"
+
+DJJ:
+  city: "Jayapura, Indonesia"
+  matchers: "Jayapura"
+
 JED:
   city: "Jeddah, Saudi Arabia"
-  matchers:
-    - "Jeddah"
+  matchers: "Jeddah"
 
-# Jeh, Marshall Islands (JEJ)
-# Jeju, South Korea - Jeju Airport, metro area (CJU)
-# Jerez De La Frontere, Spain (XRY)
-# Jersey, United Kingdom (JER)
-# Jessore, Bangladesh (JSR)
-# Jiamusi, China (JMU)
-# Jiayuguan, China (JGN)
-# Jijel, Algeria (GJL)
-# Jijiga, Ethiopia (JIJ)
-# Jimma, Ethiopia (JIM)
-# Jinan, China (TNA)
-# Jingdezhen, China (JDZ)
-# Jinghong, China (JHG)
-# Jinja, Uganda (JIN)
-# Jinjiang, China (JJN)
-# Jinju, South Korea - Sancheon (HIN)
-# Jinka, Ethiopia (BCO)
-# Jinzhou, China (JNZ)
-# Ji-Parana, Brazil (JPR)
-# Jiwani, Pakistan (JIW)
-# Joao Pessoa, Brazil (JPA)
-# Jodhpur, India (JDH)
-# Joensuu, Finland (JOE)
-# Johannesburg, South Africa (JNB)
-# Johnston Island, US Minor Outlying Islands (JON)
-# Johor, Malaysia (JHB)
-# Joinville, Brazil (JOI)
-# Jommu, India (IXJ)
-# Jomsom, Nepal (JMO)
-# Jonkoping, Sweden (JKG)
-# Jorhat, India (JRH)
-# Jose De San Martin, Argentina (JSM)
-# Jouf, Saudi Arabia (AJF)
-# Juazeiro Do Norte, Brazil (JDO)
-# Juist, Germany (JUI)
-# Juiz De Fora, Brazil (JDF)
-# Jujuy, Argentina (JUJ)
-# Julia Creek, Australia (JCK)
-# Juliaca, Peru (JUL)
-# Juzha, China (JUZ)
-# Jyvaskyla, Finland (JYV)
-# return to top
-# K
-# Kaadedhdhoo, Maldives (KDM)
-# Kaben, Marshall Islands (KBT)
-# Kabri Dar, Ethiopia (ABK)
-# Kabul, Afghanistan (KBL)
-# Kabwun, Papua New Guinea (KBM)
-# Kadanwari, Pakistan (KCF)
-# Kadhonoo, Maldives (KDO)
-# Kaintiba, Papua New Guinea (KZF)
-# Kaitaia, New Zealand (KAT)
-# Kajaani, Finland (KAJ)
-# Kalbarri, Australia (KAX)
-# Kaliningrad, Russia (KGD)
-# Kambuaya, Indonesia (KBX)
-# Kameshli, Syrian Arab Republic (KAC)
-# Kamur, Indonesia (KCD)
-# Kamusi, Papua New Guinea (KUY)
-# Kano, Nigeria (KAN)
-# Karachi, Pakistan - Quaid-E-Azam International (KHI)
-# Kardia, Estonia (KDL)
-# Kariba, Zimbabwe (KAB)
-# Karlsruhe/Badern Baden, Germany (FKB)
-# Karpathos, Greece (AOK)
-# Karubaga, Indonesia (KBF)
-# Kasaba Bay, Zambia (ZKB)
-# Kasama, Zambia (KAA)
-# Kasane, Botswana (BBK)
-# Katherine, NT, Australia (KTR)
-# Kathmandu, Nepal (KTM)
-# Katowice, Poland (KTW)
-# Kaunas, Lithuania (KUN)
-# Kavala, Greece (KVA)
-# Kavieng, Papua New Guinea (KVG)
-# Kawthaung, Myanmar (KAW)
-# Kayseri, Turkey (ASR)
-# Kazan,, Russia (KZN)
-# Kefallinia, Greece (EFL)
-# Kendari, Indonesia (KDI)
-# Kerkyra, Greece (CFU)
-# Khajuraho, India (HJR)
-# Kharga, Egypt (UVL)
-# Kharkov, Ukraine (HRK)
-# Khudzhand, Tajikistan (LBD)
-# Khuzdar, Pakistan (KDD)
-# Kiev, Ukraine - Zhulhany (IEV)
-# Kiev, Ukraine - Borispol (KBP)
-# Kigali, Rwanda (KGL)
-# Kigoma, Tanzania (TKQ)
-# Kilimanjaro, Tanzania (JRO)
+JEJ:
+  city: "Jeh, Marshall Islands"
+  matchers: "Jeh"
+
+CJU:
+  city: "Jeju, South Korea - Jeju Airport, metro area"
+  matchers: "Jeju"
+
+XRY:
+  city: "Jerez De La Frontere, Spain"
+  matchers: "Jerez De La Frontere"
+
+JER:
+  city: "Jersey, United Kingdom"
+  matchers: "Jersey"
+
+JSR:
+  city: "Jessore, Bangladesh"
+  matchers: "Jessore"
+
+JMU:
+  city: "Jiamusi, China"
+  matchers: "Jiamusi"
+
+JGN:
+  city: "Jiayuguan, China"
+  matchers: "Jiayuguan"
+
+GJL:
+  city: "Jijel, Algeria"
+  matchers: "Jijel"
+
+JIJ:
+  city: "Jijiga, Ethiopia"
+  matchers: "Jijiga"
+
+JIM:
+  city: "Jimma, Ethiopia"
+  matchers: "Jimma"
+
+TNA:
+  city: "Jinan, China"
+  matchers: "Jinan"
+
+JDZ:
+  city: "Jingdezhen, China"
+  matchers: "Jingdezhen"
+
+JHG:
+  city: "Jinghong, China"
+  matchers: "Jinghong"
+
+JIN:
+  city: "Jinja, Uganda"
+  matchers: "Jinja"
+
+JJN:
+  city: "Jinjiang, China"
+  matchers: "Jinjiang"
+
+HIN:
+  city: "Jinju, South Korea - Sancheon"
+  matchers: "Jinju"
+
+BCO:
+  city: "Jinka, Ethiopia"
+  matchers: "Jinka"
+
+JNZ:
+  city: "Jinzhou, China"
+  matchers: "Jinzhou"
+
+JPR:
+  city: "Ji-Parana, Brazil"
+  matchers: "Ji-Parana"
+
+JIW:
+  city: "Jiwani, Pakistan"
+  matchers: "Jiwani"
+
+JPA:
+  city: "Joao Pessoa, Brazil"
+  matchers: "Joao Pessoa"
+
+JDH:
+  city: "Jodhpur, India"
+  matchers: "Jodhpur"
+
+JOE:
+  city: "Joensuu, Finland"
+  matchers: "Joensuu"
+
+JNB:
+  city: "Johannesburg, South Africa"
+  matchers: "Johannesburg"
+
+JON:
+  city: "Johnston Island, US Minor Outlying Islands"
+  matchers: "Johnston Island"
+
+JHB:
+  city: "Johor, Malaysia"
+  matchers: "Johor"
+
+JOI:
+  city: "Joinville, Brazil"
+  matchers: "Joinville"
+
+IXJ:
+  city: "Jommu, India"
+  matchers: "Jommu"
+
+JMO:
+  city: "Jomsom, Nepal"
+  matchers: "Jomsom"
+
+JKG:
+  city: "Jonkoping, Sweden"
+  matchers: "Jonkoping"
+
+JRH:
+  city: "Jorhat, India"
+  matchers: "Jorhat"
+
+JSM:
+  city: "Jose De San Martin, Argentina"
+  matchers: "Jose De San Martin"
+
+AJF:
+  city: "Jouf, Saudi Arabia"
+  matchers: "Jouf"
+
+JDO:
+  city: "Juazeiro Do Norte, Brazil"
+  matchers: "Juazeiro Do Norte"
+
+JUI:
+  city: "Juist, Germany"
+  matchers: "Juist"
+
+JDF:
+  city: "Juiz De Fora, Brazil"
+  matchers: "Juiz De Fora"
+
+JUJ:
+  city: "Jujuy, Argentina"
+  matchers: "Jujuy"
+
+JCK:
+  city: "Julia Creek, Australia"
+  matchers: "Julia Creek"
+
+JUL:
+  city: "Juliaca, Peru"
+  matchers: "Juliaca"
+
+JUZ:
+  city: "Juzha, China"
+  matchers: "Juzha"
+
+
+JYV:
+  city: "Jyvaskyla, Finland"
+  country: fi
+  matchers: Jyvaskyla
+
+KDM:
+  city: "Kaadedhdhoo, Maldives"
+  matchers: "Kaadedhdhoo"
+
+KBT:
+  city: "Kaben, Marshall Islands"
+  matchers: "Kaben"
+
+ABK:
+  city: "Kabri Dar, Ethiopia"
+  matchers: "Kabri Dar"
+
+KBL:
+  city: "Kabul, Afghanistan"
+  matchers: "Kabul"
+
+KBM:
+  city: "Kabwun, Papua New Guinea"
+  matchers: "Kabwun"
+
+KCF:
+  city: "Kadanwari, Pakistan"
+  matchers: "Kadanwari"
+
+KDO:
+  city: "Kadhonoo, Maldives"
+  matchers: "Kadhonoo"
+
+KZF:
+  city: "Kaintiba, Papua New Guinea"
+  matchers: "Kaintiba"
+
+KAT:
+  city: "Kaitaia, New Zealand"
+  matchers: "Kaitaia"
+
+KAJ:
+  city: "Kajaani, Finland"
+  matchers: "Kajaani"
+
+KAX:
+  city: "Kalbarri, Australia"
+  matchers: "Kalbarri"
+
+KGD:
+  city: "Kaliningrad, Russia"
+  matchers: "Kaliningrad"
+
+KBX:
+  city: "Kambuaya, Indonesia"
+  matchers: "Kambuaya"
+
+KAC:
+  city: "Kameshli, Syrian Arab Republic"
+  matchers: "Kameshli"
+
+KCD:
+  city: "Kamur, Indonesia"
+  matchers: "Kamur"
+
+KUY:
+  city: "Kamusi, Papua New Guinea"
+  matchers: "Kamusi"
+
+KAN:
+  city: "Kano, Nigeria"
+  matchers: "Kano"
+
+KHI:
+  city: "Karachi, Pakistan - Quaid-E-Azam International"
+  matchers: "Karachi"
+
+KDL:
+  city: "Kardia, Estonia"
+  matchers: "Kardia"
+
+KAB:
+  city: "Kariba, Zimbabwe"
+  matchers: "Kariba"
+
+FKB:
+  city: "Karlsruhe/Badern Baden, Germany"
+  matchers: 
+    - "Karlsruhe"
+    - "Baden Baden"
+
+AOK:
+  city: "Karpathos, Greece"
+  country: gr
+  matchers: "Karpathos"
+
+KBF:
+  city: "Karubaga, Indonesia"
+  matchers: "Karubaga"
+
+ZKB:
+  city: "Kasaba Bay, Zambia"
+  matchers: "Kasaba Bay"
+
+KAA:
+  city: "Kasama, Zambia"
+  matchers: "Kasama"
+
+BBK:
+  city: "Kasane, Botswana"
+  matchers: "Kasane"
+
+KTR:
+  city: "Katherine, NT, Australia"
+  matchers: "Katherine"
+
+KTM:
+  city: "Kathmandu, Nepal"
+  matchers: "Kathmandu"
+
+KTW:
+  city: "Katowice, Poland"
+  matchers: "Katowice"
+
+KUN:
+  city: "Kaunas, Lithuania"
+  matchers: "Kaunas"
+
+KVA:
+  city: "Kavala, Greece"
+  matchers: "Kavala"
+
+KVG:
+  city: "Kavieng, Papua New Guinea"
+  matchers: "Kavieng"
+
+KAW:
+  city: "Kawthaung, Myanmar"
+  matchers: "Kawthaung"
+
+ASR:
+  city: "Kayseri, Turkey"
+  matchers: "Kayseri"
+
+KZN:
+  city: "Kazan,, Russia"
+  matchers: "Kazan"
+
+EFL:
+  city: "Kefallinia, Greece"
+  matchers: "Kefallinia"
+
+KDI:
+  city: "Kendari, Indonesia"
+  matchers: "Kendari"
+
+CFU:
+  city: "Kerkyra, Greece"
+  matchers: "Kerkyra"
+
+HJR:
+  city: "Khajuraho, India"
+  matchers: "Khajuraho"
+
+UVL:
+  city: "Kharga, Egypt"
+  matchers: "Kharga"
+
+HRK:
+  city: "Kharkov, Ukraine"
+  matchers: "Kharkov"
+
+LBD:
+  city: "Khudzhand, Tajikistan"
+  matchers: "Khudzhand"
+
+KDD:
+  city: "Khuzdar, Pakistan"
+  matchers: "Khuzdar"
+
+IEV:
+  city: "Kiev, Ukraine - Zhulhany"
+  matchers: "Kiev"
+
+KBP:
+  city: "Kiev, Ukraine - Borispol"
+
+KGL:
+  city: "Kigali, Rwanda"
+  matchers: "Kigali"
+
+TKQ:
+  city: "Kigoma, Tanzania"
+  matchers: "Kigoma"
+
+JRO:
+  city: "Kilimanjaro, Tanzania"
+  matchers: "Kilimanjaro"
+
 # Kimmirut/Lake Harbour, Canada (YLC)
-# Kingston, Jamaica - Norman Manley (KIN)
-# Kingston, Jamaica - Tinson (KTP)
-# Kinshasa, Congo (FIH)
-# Kirakira, Solomon Islands (IRA)
-# Kitadaito, Japan (KTD)
-# Kittila, Finland (KTT)
-# Kiunga, Papua New Guinea (UNG)
-# Kiwayu, Kenya (KWY)
-# Knock, Ireland (NOC)
-# Kochi, Japan (KCZ)
-# Koh Samui, Thailand (USM)
-# Kolkata, India (CCU)
-# Kolobrzeg, Poland (QJY)
-# Komsomolsk Na Amure, Russia (KXK)
-# Konya, Turkey (KYA)
-# Koror, Palau (ROR)
-# Koszalin, Poland (OSZ)
-# Kota Bharu, Malaysia (KBR)
-# Kota Kinabalu, Malaysia (BKI)
-# Kowanyama, QL, Australia (KWM)
-# Kozhikode, India (CCJ)
-# Krabi, Thailand (KBV)
-# Krakow, Poland (KRK)
-# Krivoy Rog, Ukraine (KWG)
-# Kuala Lumpur, Malaysia (KUL)
-# Kuala Terengganu, Malaysia (TGG)
-# Kuantan, Malaysia (KUA)
-# Kubin Island, QL, Australia (KUG)
-# Kuching, Malaysia (KCH)
-# Kahramanmaras, Turkey (KCM)
-# Kudat, Malaysia (KUD)
-# Kufrah, Libya (AKF)
-# Kulusuk, Greenland (KUS)
-# Kumejima, Japan (UEO)
-# Kundiawa, Papau New Guinea (CMU)
-# Kuopio, Finland (KUO)
-# Kuri, Papua New Guinea (KUQ)
-# Kushiro, Japan (KUH)
-# Kutaisi, Georgia (KUT)
-# Kuusamo, Finland (KAO)
-# Kuwait, Kuwait (KWI)
-# Kwajalein, Marshall Islands (KWA)
-# Kyzyl, Russia (KYZ)
-# return to top
-# L
-# La Ceiba, Honduras (LCE)
-# La Coruna, Spain (LCG)
-# La Palma, Panama (PLP)
-# La Paz, Bolivia (LPB)
-# La Paz, Mexico (LAP)
+
+KIN:
+  name: "Norman Manley Airport"
+  city: "Kingston, Jamaica"
+  matchers:
+    - Kingston
+    - Jamaica
+
+KTP:
+  name: "Tinson Airport"
+  city: "Kingston, Jamaica"
+  matchers: "Tinson"
+
+FIH:
+  city: "Kinshasa, Congo"
+  matchers: "Kinshasa"
+
+IRA:
+  city: "Kirakira, Solomon Islands"
+  matchers: "Kirakira"
+
+KTD:
+  city: "Kitadaito, Japan"
+  matchers: "Kitadaito"
+
+KTT:
+  city: "Kittila, Finland"
+  matchers: "Kittila"
+
+UNG:
+  city: "Kiunga, Papua New Guinea"
+  matchers: "Kiunga"
+
+KWY:
+  city: "Kiwayu, Kenya"
+  matchers: "Kiwayu"
+
+NOC:
+  city: "Knock, Ireland"
+  matchers: "Knock"
+
+KCZ:
+  city: "Kochi, Japan"
+  matchers: "Kochi"
+
+USM:
+  city: "Koh Samui, Thailand"
+  matchers: "Koh Samui"
+
+QJY:
+  city: "Kolobrzeg, Poland"
+  matchers: "Kolobrzeg"
+
+KXK:
+  city: "Komsomolsk Na Amure, Russia"
+  matchers: "Komsomolsk Na Amure"
+
+KYA:
+  city: "Konya, Turkey"
+  matchers: "Konya"
+
+ROR:
+  city: "Koror, Palau"
+  matchers: "Koror"
+
+OSZ:
+  city: "Koszalin, Poland"
+  matchers: "Koszalin"
+
+KBR:
+  city: "Kota Bharu, Malaysia"
+  matchers: "Kota Bharu"
+
+BKI:
+  city: "Kota Kinabalu, Malaysia"
+  matchers: "Kota Kinabalu"
+
+KWM:
+  city: "Kowanyama, QL, Australia"
+  matchers: "Kowanyama"
+
+CCJ:
+  city: "Kozhikode, India"
+  matchers: "Kozhikode"
+
+KBV:
+  city: "Krabi, Thailand"
+  matchers: "Krabi"
+
+KRK:
+  city: "Krakow, Poland"
+  matchers: "Krakow"
+
+KWG:
+  city: "Krivoy Rog, Ukraine"
+  matchers: "Krivoy Rog"
+
+
+KUL:
+  city: "Kuala Lumpur, Malaysia"
+  matchers:
+    - "Kuala Lumpur"
+    - "KL"
+
+TGG:
+  city: "Kuala Terengganu, Malaysia"
+  matchers: "Kuala Terengganu"
+
+KUA:
+  city: "Kuantan, Malaysia"
+  matchers: "Kuantan"
+
+KUG:
+  city: "Kubin Island, QL, Australia"
+  matchers: "Kubin Island"
+
+KCH:
+  city: "Kuching, Malaysia"
+  matchers: "Kuching"
+
+KCM:
+  city: "Kahramanmaras, Turkey"
+  matchers: "Kahramanmaras"
+
+KUD:
+  city: "Kudat, Malaysia"
+  matchers: "Kudat"
+
+AKF:
+  city: "Kufrah, Libya"
+  matchers: "Kufrah"
+
+KUS:
+  city: "Kulusuk, Greenland"
+  matchers: "Kulusuk"
+
+UEO:
+  city: "Kumejima, Japan"
+  matchers: "Kumejima"
+
+CMU:
+  city: "Kundiawa, Papau New Guinea"
+  matchers: "Kundiawa"
+
+KUO:
+  city: "Kuopio, Finland"
+  matchers: "Kuopio"
+
+KUQ:
+  city: "Kuri, Papua New Guinea"
+  matchers: "Kuri"
+
+KUH:
+  city: "Kushiro, Japan"
+  matchers: "Kushiro"
+
+KUT:
+  city: "Kutaisi, Georgia"
+  matchers: "Kutaisi"
+
+KAO:
+  city: "Kuusamo, Finland"
+  matchers: "Kuusamo"
+
+KWI:
+  city: "Kuwait, Kuwait"
+  matchers: "Kuwait"
+
+KWA:
+  city: "Kwajalein, Marshall Islands"
+  matchers: "Kwajalein"
+
+KYZ:
+  city: "Kyzyl, Russia"
+  matchers: "Kyzyl"
+
+LCE:
+  city: "La Ceiba, Honduras"
+  matchers: "La Ceiba"
+
+LCG:
+  city: "La Coruna, Spain"
+  matchers: "La Coruna"
+
+PLP:
+  city: "La Palma, Panama"
+  matchers: "La Palma"
+
+LPB:
+  city: "La Paz, Bolivia"
+  matchers: "La Paz"
+
+LAP:
+  city: "La Paz, Mexico"
+  country: mx
+
 # La Rioja, Argentina (IRJ)
 # La Romana, Dominican Republic (LRM)
 # La Serena, Chile (LSC)
@@ -1716,63 +3756,225 @@ LHE:
   matchers:
     - "Lahore"
 
-# Lakeba, Fiji (LKB)
-# Lakselv, Norway (LKL)
-# Lalibela, Ethiopia (LLI)
-# Lamap, Vanuatu (LPM)
-# Lamen Bay, Vanuatu (LNB)
-# Lamezia-Terme, Italy (SUF)
-# Lampang, Thailand (LPI)
-# Lampedusa, Italy (LMP)
-# Lamu, Kenya (LAU)
-# Lands End, United Kingdom (LEQ)
-# Langguri, Indonesia (LUV)
-# Langkawi, Malaysia (LGK)
-# Lannion, France (LAI)
-# Lanzarote, Spain (ACE)
-# Lanzhau, Guinea (LHW)
-# Lanzhou, China (ZGC)
-# Laoag, Philippines (LAO)
-# Lappeenranta, Finland (LPP)
-# Larantuka, Indonesia (LKA)
-# Larnaca, Cyprus (LCA)
-# Larochelle, France (LRH)
-# Las Palmas, Spain (LPA)
-# Las Piedras, Venezuela (LSP)
-# Latakia, Syria (LTK)
-# Laucala Island, Fiji (LUC)
-# Launceston, TS, Australia (LST)
-# Luanda, Angola (LAD)
-# Laverton, WA, Australia (LVO)
-# Lawas, Malaysia (LWY)
-# Le Havre, France (LEH)
-# Le Mans, France (ZLN)
-# Le Puy, France (LPY)
-# Le Touquet, France (LTQ)
-# Learmonth, WA, Australia (LEA)
-# Leeds, United Kingdom (LBA)
-# Legaspi, Philippines (LGP)
-# Leh, India (IXL)
-# Leinster, WA, Australia (LER)
-# Leipzig, Germany (LEJ)
-# Leknes, Norway (LKN)
-# Lemnos, Greece (LXS)
-# Leon, Mexico (BJX)
-# Leonora, WA, Australia (LNO)
-# Leticia, Colombia (LET)
-# Lhasa, China (LXA)
-# Lianyungang, China (LYG)
-# Liberia, Costa Rica (LIR)
-# Libreville, Gabon (LBV)
-# Lichinga, Mozambique (VXC)
-# Liege, Belgium (LGG)
+LKB:
+  city: "Lakeba, Fiji"
+  matchers: "Lakeba"
+
+LKL:
+  city: "Lakselv, Norway"
+  matchers: "Lakselv"
+
+LLI:
+  city: "Lalibela, Ethiopia"
+  matchers: "Lalibela"
+
+LPM:
+  city: "Lamap, Vanuatu"
+  matchers: "Lamap"
+
+LNB:
+  city: "Lamen Bay, Vanuatu"
+  matchers: "Lamen Bay"
+
+SUF:
+  city: "Lamezia-Terme, Italy"
+  matchers: "Lamezia-Terme"
+
+LPI:
+  city: "Lampang, Thailand"
+  matchers: "Lampang"
+
+LMP:
+  city: "Lampedusa, Italy"
+  matchers: "Lampedusa"
+
+LAU:
+  city: "Lamu, Kenya"
+  matchers: "Lamu"
+
+LEQ:
+  city: "Lands End, United Kingdom"
+  matchers: "Lands End"
+
+LUV:
+  city: "Langguri, Indonesia"
+  matchers: "Langguri"
+
+LGK:
+  city: "Langkawi, Malaysia"
+  matchers: "Langkawi"
+
+LAI:
+  city: "Lannion, France"
+  matchers: "Lannion"
+
+ACE:
+  city: "Lanzarote, Spain"
+  matchers: "Lanzarote"
+
+LHW:
+  city: "Lanzhau, Guinea"
+  matchers: "Lanzhau"
+
+ZGC:
+  city: "Lanzhou, China"
+  matchers: "Lanzhou"
+
+LAO:
+  city: "Laoag, Philippines"
+  matchers: "Laoag"
+
+LPP:
+  city: "Lappeenranta, Finland"
+  matchers: "Lappeenranta"
+
+LKA:
+  city: "Larantuka, Indonesia"
+  matchers: "Larantuka"
+
+LCA:
+  city: "Larnaca, Cyprus"
+  matchers: "Larnaca"
+
+LRH:
+  city: "Larochelle, France"
+  matchers: "Larochelle"
+
+
+LPA:
+  city: "Las Palmas, Spain"
+  country: es
+  matchers: "Las Palmas"
+
+LSP:
+  city: "Las Piedras, Venezuela"
+  matchers: "Las Piedras"
+
+LTK:
+  city: "Latakia, Syria"
+  matchers: "Latakia"
+
+LUC:
+  city: "Laucala Island, Fiji"
+  matchers: "Laucala Island"
+
+LST:
+  city: "Launceston, TS, Australia"
+  matchers: "Launceston"
+
+LAD:
+  city: "Luanda, Angola"
+  matchers: "Luanda"
+
+LVO:
+  city: "Laverton, WA, Australia"
+  matchers: "Laverton"
+
+LWY:
+  city: "Lawas, Malaysia"
+  matchers: "Lawas"
+
+LEH:
+  city: "Le Havre, France"
+  matchers: "Le Havre"
+  country: fr
+
+ZLN:
+  city: "Le Mans, France"
+  matchers: "Le Mans"
+
+LPY:
+  city: "Le Puy, France"
+  matchers: "Le Puy"
+
+LTQ:
+  city: "Le Touquet, France"
+  matchers: "Le Touquet"
+
+LEA:
+  city: "Learmonth, WA, Australia"
+  matchers: "Learmonth"
+
+LBA:
+  city: "Leeds, United Kingdom"
+  matchers: "Leeds"
+
+LGP:
+  city: "Legaspi, Philippines"
+  matchers: "Legaspi"
+
+IXL:
+  city: "Leh, India"
+  matchers: "Leh"
+
+LER:
+  city: "Leinster, WA, Australia"
+  matchers: "Leinster"
+
+LEJ:
+  city: "Leipzig, Germany"
+  matchers: "Leipzig"
+
+LKN:
+  city: "Leknes, Norway"
+  matchers: "Leknes"
+
+LXS:
+  city: "Lemnos, Greece"
+  matchers: "Lemnos"
+
+BJX:
+  city: "Leon, Mexico"
+  matchers: "Leon"
+
+LNO:
+  city: "Leonora, WA, Australia"
+  matchers: "Leonora"
+
+LET:
+  city: "Leticia, Colombia"
+  matchers: "Leticia"
+
+LXA:
+  city: "Lhasa, Tibet"
+  matchers: 
+    - "Lhasa"
+    - "Tibet"
+
+LYG:
+  city: "Lianyungang, China"
+  matchers: "Lianyungang"
+
+LIR:
+  city: "Liberia, Costa Rica"
+
+LBV:
+  city: "Libreville, Gabon"
+  matchers: "Libreville"
+
+VXC:
+  city: "Lichinga, Mozambique"
+  matchers: "Lichinga"
+
+LGG:
+  city: "Liege, Belgium"
+  country: be
+  matchers: "Liege"
+
 # Lifa, New Caledonia (LIF)
 # Lightning Ridge, NS, Australia (LHG)
 # Lihir Island, Papua New Guinea (LNV)
 # Lijiang City, China (LJG)
 # Likiep Island, Marshall Islands (LIK)
-# Lille, France - Lesquin (LIL)
-# Lille, France - Rail service (XDB)
+
+LIL:
+  name: "Lesquin Airport"
+  city: "Lille, France"
+  country: fr
+  matchers:
+    - Lille
+    - Lesquin
+
 # Lilongwe, Malawi (LLW)
 
 LIM:
@@ -1780,25 +3982,79 @@ LIM:
   matchers:
     - "Lima"
 
-# Limbang, Malaysia (LMN)
-# Limoges, France (LIG)
-# Lindeman Island, QL, Australia (LDC)
-# Lindi, Tanzania (LDI)
-# Linkoping, Sweden (LPI)
-# Linyi, China (LYI)
-# Linz, Austria (LNZ)
-# Lisbon, Portugal (LIS)
-# Lismore, NS, Australia (LSY)
-# Liuzhou, China (LZH)
-# Liverpool, United Kingdom (LPL)
-# Livingstone, Zambia (LVI)
-# Lizard Island, QL, Australia (LZR)
-# Ljubliana, Slovenia (LJU)
-# Lockhart River, Australia (IRG)
-# Loen, Marshall Islands (LOF)
-# Loja, Ecuador (LOH)
-# Lome, Togo (LFW)
+LMN:
+  city: "Limbang, Malaysia"
+  matchers: "Limbang"
 
+LIG:
+  city: "Limoges, France"
+  matchers: "Limoges"
+
+LDC:
+  city: "Lindeman Island, QL, Australia"
+  matchers: "Lindeman Island"
+
+LDI:
+  city: "Lindi, Tanzania"
+  matchers: "Lindi"
+
+LPI:
+  city: "Linkoping, Sweden"
+  matchers: "Linkoping"
+
+LYI:
+  city: "Linyi, China"
+  matchers: "Linyi"
+
+LNZ:
+  city: "Linz, Austria"
+  matchers: "Linz"
+
+LIS:
+  city: "Lisbon, Portugal"
+  matchers: 
+    - "Lisbon"
+    - "Portugal"
+
+LSY:
+  city: "Lismore, NS, Australia"
+  matchers: "Lismore"
+
+LZH:
+  city: "Liuzhou, China"
+  matchers: "Liuzhou"
+
+LPL:
+  city: "Liverpool, United Kingdom"
+  matchers: "Liverpool"
+
+LVI:
+  city: "Livingstone, Zambia"
+  matchers: "Livingstone"
+
+LZR:
+  city: "Lizard Island, QL, Australia"
+  matchers: "Lizard Island"
+
+LJU:
+  city: "Ljubliana, Slovenia"
+  matchers: "Ljubliana"
+
+IRG:
+  city: "Lockhart River, Australia"
+  matchers: "Lockhart River"
+
+LOF:
+  city: "Loen, Marshall Islands"
+  matchers: "Loen"
+
+LOH:
+  city: "Loja, Ecuador"
+  matchers: "Loja"
+
+LFW:
+  city: "Lome, Togo"
+  matchers: "Lome"
 
 LON:
   name: "London, UK (all airports)"
@@ -1830,96 +4086,330 @@ STN:
   city: "London, UK"
   matchers:
     - "Stansted"
-    
-# London, United Kingdom - London City (LCY)
-# Londonderry, United Kingdom (LDY)
-# Londrina, PR, Brazil (LDB)
-# Long Apung, Indonesia (LPU)
-# Long Banga, Malaysia (LBP)
-# Long Bawan, Indonesia (LBW)
-# Long Island, Australia (HAP)
-# Long Island/Deadmans Cay, Bahamas (LGI)
-# Long Lellang, Malaysia (LGL)
-# Long Seridan, Malaysia (ODN)
-# Longana, Vanuatu (LOD)
-# Longreach, QL, Australia (LRE)
-# Longyearbyen, Svalbard & Jan Mayen Island (LYR)
-# Lonorore, Vanuatu (LNE)
-# Lord Howe Island, NS, Australia (LDH)
-# Loreto, Mexico (LTO)
-# Lorient, France (LRT)
-# Los Cabos, Mexico (SJD)
-# Los Mochis, Mexico (LMM)
-# Losuia, Papua New Guinea (LSA)
-# Lourdes/Tarbes, France (LDE)
-# Lozaro Cardenas, Mexico (LZC)
-# Luanda, Angola (LAD)
-# Luang Namtha, Laos (LXG)
-# Luang Prabang, Laos (LPQ)
-# Lucknow, India (LKO)
-# Luderitz, Namibia (LUD)
-# Lugano, Switzerland (LUG)
-# Lugansk, Uganda (VSG)
-# Lukla, Nepal (LUA)
-# Lulea, Sweden (LLA)
-# Lumbashi, Congo (FBM)
-# Luoyang, China (LYA)
-# Lusaka, Zambia (LUN)
-# Luwuk, Indonesia (LUW)
-# Luxembourg, Luxembourg (LUX)
-# Luxi, China (LUM)
-# Luxor, Egypt (LXR)
-# Luzhou, China (LZO)
-# Lvov, Ukraine (LWO)
-# Lyoksele, Sweden (LYC)
-# Lyon, France - Satolas (LYS)
-# Lyon, France - Lyon Part-Dieu Rail service (XYD)
-# return to top
-# M
+
+LCY:
+  name: "London City Airport"
+  city: "London, UK"
+  match_priority: 60
+  matchers:
+    - "London City"    
+
+LDY:
+  city: "Londonderry, United Kingdom"
+  matchers: "Londonderry"
+
+LDB:
+  city: "Londrina, PR, Brazil"
+  matchers: "Londrina"
+
+LPU:
+  city: "Long Apung, Indonesia"
+  matchers: "Long Apung"
+
+LBP:
+  city: "Long Banga, Malaysia"
+  matchers: "Long Banga"
+
+LBW:
+  city: "Long Bawan, Indonesia"
+  matchers: "Long Bawan"
+
+HAP:
+  city: "Long Island, Australia"
+
+LGI:
+  city: "Long Island/Deadmans Cay, Bahamas"
+
+LGL:
+  city: "Long Lellang, Malaysia"
+  matchers: "Long Lellang"
+
+ODN:
+  city: "Long Seridan, Malaysia"
+  matchers: "Long Seridan"
+
+LOD:
+  city: "Longana, Vanuatu"
+  matchers: "Longana"
+
+LRE:
+  city: "Longreach, QL, Australia"
+  matchers: "Longreach"
+
+LYR:
+  city: "Longyearbyen, Svalbard & Jan Mayen Island"
+  matchers: "Longyearbyen"
+
+LNE:
+  city: "Lonorore, Vanuatu"
+  matchers: "Lonorore"
+
+LDH:
+  city: "Lord Howe Island, NS, Australia"
+  matchers: "Lord Howe Island"
+
+LTO:
+  city: "Loreto, Mexico"
+  matchers: "Loreto"
+
+LRT:
+  city: "Lorient, France"
+  matchers: "Lorient"
+
+SJD:
+  city: "Los Cabos, Mexico"
+  matchers: "Los Cabos"
+
+LMM:
+  city: "Los Mochis, Mexico"
+  matchers: "Los Mochis"
+
+LSA:
+  city: "Losuia, Papua New Guinea"
+  matchers: "Losuia"
+
+LDE:
+  city: "Lourdes/Tarbes, France"
+  matchers: 
+    - "Lourdes"
+    - "Tarbes"
+
+LZC:
+  city: "Lozaro Cardenas, Mexico"
+  matchers: "Lozaro Cardenas"
+
+LAD:
+  city: "Luanda, Angola"
+  matchers: 
+    - "Luanda"
+    - "Angola"
+
+LXG:
+  city: "Luang Namtha, Laos"
+  matchers: "Luang Namtha"
+
+LPQ:
+  city: "Luang Prabang, Laos"
+  matchers: "Luang Prabang"
+
+LKO:
+  city: "Lucknow, India"
+  matchers: "Lucknow"
+
+LUD:
+  city: "Luderitz, Namibia"
+  matchers: "Luderitz"
+
+LUG:
+  city: "Lugano, Switzerland"
+  matchers: "Lugano"
+
+VSG:
+  city: "Lugansk, Uganda"
+  matchers: "Lugansk"
+
+LUA:
+  city: "Lukla, Nepal"
+  matchers: "Lukla"
+
+LLA:
+  city: "Lulea, Sweden"
+  matchers: "Lulea"
+
+FBM:
+  city: "Lumbashi, Congo"
+  matchers: "Lumbashi"
+
+LYA:
+  city: "Luoyang, China"
+  matchers: "Luoyang"
+
+LUN:
+  city: "Lusaka, Zambia"
+  matchers: "Lusaka"
+
+LUW:
+  city: "Luwuk, Indonesia"
+  matchers: "Luwuk"
+
+LUX:
+  city: "Luxembourg, Luxembourg"
+  matchers: "Luxembourg"
+
+LUM:
+  city: "Luxi, China"
+  matchers: "Luxi"
+
+LXR:
+  city: "Luxor, Egypt"
+  matchers: "Luxor"
+
+LZO:
+  city: "Luzhou, China"
+  matchers: "Luzhou"
+
+LWO:
+  city: "Lvov, Ukraine"
+  matchers: "Lvov"
+
+LYC:
+  city: "Lyoksele, Sweden"
+  matchers: "Lyoksele"
+
+LYS:
+  city: "Lyon, France - Satolas"
+  matchers: 
+    - "Lyon"
+    - "Lyons"
 
 MST:
   city: "Maastricht, Netherlands"
   matchers:
     - Maastricht
 
+UBB:
+  city: "Mabuiag Island, QL, Australia"
+  matchers: "Mabuiag Island"
 
-# Mabuiag Island, QL, Australia (UBB)
-# Macapa, AP, Brazil (MCP)
-# Macas, Ecuador (XMS)
-# Macau, China (MFM)
-# Maceio, AL, Brazil (MCZ)
-# Machala, Ecuador (MCH)
-# Mackay, QL, Australia (MKY)
-# Madang, Papua New Guinea (MAG)
-# Madinah, Saudi Arabia (MED)
-# Madrid, Spain (MAD)
-# Madurai, India (IXM)
-# Mae Hong Son, Thailand (HGN)
-# Mae Sot, Thailand (MAQ)
-# Maewo, Vanuatu (MWF)
-# Mafia, Tanzania (MFA)
-# Magadan, Russia (GDX)
-# Magnitogorsk, Russia (MQF)
-# Mahanoro, Madagascar (VVB)
-# Mahe Island, Seychelles (SEZ)
-# Maintirano, Madagascar (MXT)
-# Maio, Cape Verde (MMO)
-# Majkin, Marshall Islands (MJE)
-# Majunga, Madagascar (MJN)
-# Majuro, Marshall Islands (MAJ)
-# Makale, Ethiopia (MQX)
-# Makhachkala, Russia (MCX)
-# Makokou, Gabon (MKU)
-# Makung, Taiwan (MZG)
-# Malabo, Equatorial Guinea (SSG)
-# Malacca, Malaysia (MKZ)
-# Malaga, Spain (AGP)
-# Malakai, Sudan (MAK)
-# Malargue, MD, Argentina (LGS)
-# Malatya, Turkey (MLX)
-# Male, Maldives (MLE)
-# Malindi, Kenya (MYD)
-# Malmo, Sweden (MMX)
+MCP:
+  city: "Macapa, AP, Brazil"
+  matchers: "Macapa"
+
+XMS:
+  city: "Macas, Ecuador"
+  matchers: "Macas"
+
+MFM:
+  city: "Macau, China"
+  matchers: "Macau"
+
+MCZ:
+  city: "Maceio, AL, Brazil"
+  matchers: "Maceio"
+
+MCH:
+  city: "Machala, Ecuador"
+  matchers: "Machala"
+
+MKY:
+  city: "Mackay, QL, Australia"
+  matchers: "Mackay"
+
+MAG:
+  city: "Madang, Papua New Guinea"
+  matchers: "Madang"
+
+MED:
+  city: "Madinah, Saudi Arabia"
+  matchers: "Madinah"
+
+MAD:
+  city: "Madrid, Spain"
+  matchers: "Madrid"
+
+IXM:
+  city: "Madurai, India"
+  matchers: "Madurai"
+
+HGN:
+  city: "Mae Hong Son, Thailand"
+  matchers: "Mae Hong Son"
+
+MAQ:
+  city: "Mae Sot, Thailand"
+  matchers: "Mae Sot"
+
+MWF:
+  city: "Maewo, Vanuatu"
+  matchers: "Maewo"
+
+MFA:
+  city: "Mafia, Tanzania"
+  matchers: "Mafia"
+
+GDX:
+  city: "Magadan, Russia"
+  matchers: "Magadan"
+
+MQF:
+  city: "Magnitogorsk, Russia"
+  matchers: "Magnitogorsk"
+
+VVB:
+  city: "Mahanoro, Madagascar"
+  matchers: "Mahanoro"
+
+SEZ:
+  city: "Mahe Island, Seychelles"
+  matchers: "Mahe Island"
+
+MXT:
+  city: "Maintirano, Madagascar"
+  matchers: "Maintirano"
+
+MMO:
+  city: "Maio, Cape Verde"
+  matchers: "Maio"
+
+MJE:
+  city: "Majkin, Marshall Islands"
+  matchers: "Majkin"
+
+MJN:
+  city: "Majunga, Madagascar"
+  matchers: "Majunga"
+
+MAJ:
+  city: "Majuro, Marshall Islands"
+  matchers: "Majuro"
+
+MQX:
+  city: "Makale, Ethiopia"
+  matchers: "Makale"
+
+MCX:
+  city: "Makhachkala, Russia"
+  matchers: "Makhachkala"
+
+MKU:
+  city: "Makokou, Gabon"
+  matchers: "Makokou"
+
+MZG:
+  city: "Makung, Taiwan"
+  matchers: "Makung"
+
+SSG:
+  city: "Malabo, Equatorial Guinea"
+  matchers: "Malabo"
+
+MKZ:
+  city: "Malacca, Malaysia"
+  matchers: "Malacca"
+
+AGP:
+  city: "Malaga, Spain"
+  matchers: "Malaga"
+
+MAK:
+  city: "Malakai, Sudan"
+  matchers: "Malakai"
+
+LGS:
+  city: "Malargue, MD, Argentina"
+  matchers: "Malargue"
+
+MLX:
+  city: "Malatya, Turkey"
+  matchers: "Malatya"
+
+MLE:
+  city: "Male, Maldives"
+  matchers: "Male"
+
+MYD:
+  city: "Malindi, Kenya"
+  matchers: "Malindi"
 
 MMX:
   city: "Malmö, Sweden"
@@ -1935,10 +4425,17 @@ MLA:
   matchers:
     - "Malta"
 
-# Mampikony, Madagascar (WMP)
-# Mana Island, Fiji (MNF)
-# Manado, Indonesia (MDC)
+WMP:
+  city: "Mampikony, Madagascar"
+  matchers: "Mampikony"
 
+MNF:
+  city: "Mana Island, Fiji"
+  matchers: "Mana Island"
+
+MDC:
+  city: "Manado, Indonesia"
+  matchers: "Manado"
 
 MGA:
   city: "Managua, Nicaragua"
@@ -1946,116 +4443,430 @@ MGA:
     - Managua
     - Nicaragua
 
+WVK:
+  city: "Manakara, Madagascar"
+  matchers: "Manakara"
 
-# Manakara, Madagascar (WVK)
-# Mananara, Madagascar (WMR)
-# Manang, Nepal (NGX)
-# Mananjary, Madagascar (MNJ)
-# Manaus, AM, Brazil (MAO)
-# Manchester, United Kingdom (MAN)
-# Mandalay, Myanmar (MDL)
-# Mandritsara, Madagascar (WMA)
-# Mangaia Island, Cook Islands (MGS)
-# Mangalore, India (IXE)
-# Mangrove Cay, Bahamas (MAY)
-# Mangu, Zambia (MNR)
-# Manguna, Papua New Guinea (MFO)
-# Manihi, French Polynesia (XMH)
-# Manihiki Island, Cook Islands (MHX)
-# Manila, Philippines (MNL)
-# Maningrioa, NT, Australia (MNG)
-# Manizales, Colombia (MZL)
-# Manja, Madagascar (MJA)
-# Mannheim, Germany (MHG)
-# Manokwari, Indonesia (MKW)
-# Manston, United Kingdom (MSE)
-# Manta, Ecuador (MEC)
-# Manus Island, Papua New Guinea (MAS)
-# Manzanillo, Cuba (MZO)
-# Manzanillo, Mexico (ZLO)
-# Manzini, Swaziland (MTS)
-# Mao, Chad (AMO)
-# Maota Savaii Is, Western Samoa (MXS)
-# Maputo, Mozambique (MPM)
-# Mar Del Plata, BA, Argentina (MDQ)
-# Mara Lodges, Kenya (MRE)
-# Maraba, PA, Brazil (MAB)
-# Maracaibo, Venezuela (MAR)
-# Maracay, Venezuela (MYC)
-# Mare, New Caledonia (MEE)
-# Margate, South Africa (MGH)
-# Maribor, Slovenia (MBX)
-# Mariehamn, Finland (MHQ)
-# Mariitsoq, Greenland (JSU)
-# Marilia, SP, Brazil (MII)
-# Maringa, PR, Brazil (MGF)
-# Mariupol, Ukraine (MPW)
-# Maroantsetra, Madagascar (WMN)
-# Marova, Cameroon (MVR)
-# Marseille, France (MRS)
-# Marsh Harbour, Bahamas (MHH)
-# Marudi, Malaysia (MUR)
-# Maryborough, QL, Australia (MBH)
-# Masbate, Philippines (MBT)
-# Maseru, Lesotho (MSU)
-# Mashad, Iran (MHD)
-# Matamoros, Mexico (MAM)
-# Mataram, Indonesia (AMI)
-# Matsumoto, Japan (MMJ)
-# Matsuyama, Japan (MYJ)
-# Maturin, Venezuela (MUN)
-# Mauke Island, Cook Islands (MUK)
-# Maulmyine, Myanmar (MNU)
-# Maumere, Indonesia (MOF)
-# Maun, Botswana (MUB)
-# Maupiti, French Polynesia (MAU)
-# Mauritius, Mauritius (MRU)
-# Mayaguana, Bahamas (MYG)
-# Mayaguez, Puerto Rico (MAZ)
-# Mazatlan, Mexico (MZT)
-# Mbandaka, Congo (MDK)
-# Mbuji Mayi, Congo (MJM)
-# Mcarthur River, NT, Australia (MCV)
-# Medan, Indonesia (MES)
-# Medellin, Colombia - Enrique Olaya Herrera (EOH)
-# Medellin, Colombia - Jose Marie Cordova (MDE)
-# Meekatharra, WA, Australia (MKR)
-# Mehamn, Norway (MEH)
-# Meixian, China (MXZ)
-# Mejit Island, Marshall Islands (MJB)
-# Mekane Selam, Ethiopia (MKS)
-# Melbourne, Victoria, Australia (MEL)
-# Melilla, Spain (MLN)
-# Memanbetsu, Japan (MMB)
-# Mendi, Ethiopia (NDM)
-# Mendi, Papua New Guinea (MDU)
-# Mendoza, MD, Argentina (MDZ)
-# Menorca, Spain (MAH)
-# Menyamya, Papua New Guinea (MYX)
-# Merauke, Indonesia (MKQ)
-# Merave, Sudan (MWE)
-# Merdey, Indonesia (RDE)
-# Merida, Mexico (MID)
-# Merida, Venezuela (MRD)
-# Merimbula, NS, Australia (MIM)
-# Mersa Matruh, Egypt (MUH)
-# Metz/Nancy, France (ETZ)
-# Mexicali, Mexico (MXL)
+WMR:
+  city: "Mananara, Madagascar"
+  matchers: "Mananara"
+
+NGX:
+  city: "Manang, Nepal"
+  matchers: "Manang"
+
+MNJ:
+  city: "Mananjary, Madagascar"
+  matchers: "Mananjary"
+
+MAO:
+  city: "Manaus, AM, Brazil"
+  matchers: "Manaus"
+
+MAN:
+  city: "Manchester, United Kingdom"
+  matchers: 
+    - "Manchester"
+    - "Man City"
+
+MDL:
+  city: "Mandalay, Myanmar"
+  matchers: "Mandalay"
+
+WMA:
+  city: "Mandritsara, Madagascar"
+  matchers: "Mandritsara"
+
+MGS:
+  city: "Mangaia Island, Cook Islands"
+  matchers: "Mangaia Island"
+
+IXE:
+  city: "Mangalore, India"
+  matchers: "Mangalore"
+
+MAY:
+  city: "Mangrove Cay, Bahamas"
+  matchers: "Mangrove Cay"
+
+MNR:
+  city: "Mangu, Zambia"
+  matchers: "Mangu"
+
+MFO:
+  city: "Manguna, Papua New Guinea"
+  matchers: "Manguna"
+
+XMH:
+  city: "Manihi, French Polynesia"
+  matchers: "Manihi"
+
+MHX:
+  city: "Manihiki Island, Cook Islands"
+  matchers: "Manihiki Island"
+
+MNL:
+  city: "Manila, Philippines"
+  matchers: "Manila"
+
+MNG:
+  city: "Maningrioa, NT, Australia"
+  matchers: "Maningrioa"
+
+MZL:
+  city: "Manizales, Colombia"
+  matchers: "Manizales"
+
+MJA:
+  city: "Manja, Madagascar"
+  matchers: "Manja"
+
+MHG:
+  city: "Mannheim, Germany"
+  matchers: "Mannheim"
+
+MKW:
+  city: "Manokwari, Indonesia"
+  matchers: "Manokwari"
+
+MSE:
+  city: "Manston, United Kingdom"
+  matchers: "Manston"
+
+MEC:
+  city: "Manta, Ecuador"
+  matchers: "Manta"
+
+MAS:
+  city: "Manus Island, Papua New Guinea"
+  matchers: "Manus Island"
+
+MZO:
+  city: "Manzanillo, Cuba"
+
+ZLO:
+  city: "Manzanillo, Mexico"
+  matchers: "Manzanillo"
+
+MTS:
+  city: "Manzini, Swaziland"
+  matchers: "Manzini"
+
+AMO:
+  city: "Mao, Chad"
+  matchers: "Mao"
+
+MXS:
+  city: "Maota Savaii Is, Western Samoa"
+  matchers: "Maota Savaii Is"
+
+MPM:
+  city: "Maputo, Mozambique"
+  matchers: "Maputo"
+
+MDQ:
+  city: "Mar Del Plata, BA, Argentina"
+  matchers: "Mar Del Plata"
+
+MRE:
+  city: "Mara Lodges, Kenya"
+  matchers: "Mara Lodges"
+
+MAB:
+  city: "Maraba, PA, Brazil"
+  matchers: "Maraba"
+
+MAR:
+  city: "Maracaibo, Venezuela"
+  matchers: "Maracaibo"
+
+MYC:
+  city: "Maracay, Venezuela"
+  matchers: "Maracay"
+
+MEE:
+  city: "Mare, New Caledonia"
+  matchers: "Mare"
+
+MGH:
+  city: "Margate, South Africa"
+  matchers: "Margate"
+
+MBX:
+  city: "Maribor, Slovenia"
+  matchers: "Maribor"
+
+MHQ:
+  city: "Mariehamn, Finland"
+  matchers: "Mariehamn"
+
+JSU:
+  city: "Mariitsoq, Greenland"
+  matchers: "Mariitsoq"
+
+MII:
+  city: "Marilia, SP, Brazil"
+  matchers: "Marilia"
+
+MGF:
+  city: "Maringa, PR, Brazil"
+  matchers: "Maringa"
+
+MPW:
+  city: "Mariupol, Ukraine"
+  matchers: "Mariupol"
+
+WMN:
+  city: "Maroantsetra, Madagascar"
+  matchers: "Maroantsetra"
+
+MVR:
+  city: "Marova, Cameroon"
+  matchers: "Marova"
+
+MRS:
+  city: "Marseille, France"
+  matchers: "Marseille"
+
+MHH:
+  city: "Marsh Harbour, Bahamas"
+  matchers: "Marsh Harbour"
+
+MUR:
+  city: "Marudi, Malaysia"
+  matchers: "Marudi"
+
+MBH:
+  city: "Maryborough, QL, Australia"
+  matchers: "Maryborough"
+
+MBT:
+  city: "Masbate, Philippines"
+  matchers: "Masbate"
+
+MSU:
+  city: "Maseru, Lesotho"
+  matchers: "Maseru"
+
+MHD:
+  city: "Mashad, Iran"
+  matchers: "Mashad"
+
+MAM:
+  city: "Matamoros, Mexico"
+  matchers: "Matamoros"
+
+AMI:
+  city: "Mataram, Indonesia"
+  matchers: "Mataram"
+
+MMJ:
+  city: "Matsumoto, Japan"
+  matchers: "Matsumoto"
+
+MYJ:
+  city: "Matsuyama, Japan"
+  matchers: "Matsuyama"
+
+MUN:
+  city: "Maturin, Venezuela"
+  matchers: "Maturin"
+
+MUK:
+  city: "Mauke Island, Cook Islands"
+  matchers: "Mauke Island"
+
+MNU:
+  city: "Maulmyine, Myanmar"
+  matchers: "Maulmyine"
+
+MOF:
+  city: "Maumere, Indonesia"
+  matchers: "Maumere"
+
+MUB:
+  city: "Maun, Botswana"
+  matchers: "Maun"
+
+MAU:
+  city: "Maupiti, French Polynesia"
+  matchers: "Maupiti"
+
+MRU:
+  city: "Mauritius, Mauritius"
+  matchers: "Mauritius"
+
+MYG:
+  city: "Mayaguana, Bahamas"
+  matchers: "Mayaguana"
+
+MAZ:
+  city: "Mayaguez, Puerto Rico"
+  matchers: "Mayaguez"
+
+MZT:
+  city: "Mazatlan, Mexico"
+  matchers: "Mazatlan"
+
+MDK:
+  city: "Mbandaka, Congo"
+  matchers: "Mbandaka"
+
+MJM:
+  city: "Mbuji Mayi, Congo"
+  matchers: "Mbuji Mayi"
+
+MCV:
+  city: "Mcarthur River, NT, Australia"
+  matchers: "Mcarthur River"
+
+MES:
+  city: "Medan, Indonesia"
+  matchers: "Medan"
+
+EOH:
+  city: "Medellin, Colombia - Enrique Olaya Herrera"
+#  matchers: "Medellin"
+
+MDE:
+  city: "Medellin, Colombia - Jose Marie Cordova"
+#  matchers: "Medellin"
+
+MKR:
+  city: "Meekatharra, WA, Australia"
+  matchers: "Meekatharra"
+
+MEH:
+  city: "Mehamn, Norway"
+  matchers: "Mehamn"
+
+MXZ:
+  city: "Meixian, China"
+  matchers: "Meixian"
+
+MJB:
+  city: "Mejit Island, Marshall Islands"
+  matchers: "Mejit Island"
+
+MKS:
+  city: "Mekane Selam, Ethiopia"
+  matchers: "Mekane Selam"
+
+
+
+MEL:
+  city: "Melbourne, Australia"
+  country: "au"
+  matchers: "Melbourne"
+
+MLN:
+  city: "Melilla, Spain"
+  matchers: "Melilla"
+
+MMB:
+  city: "Memanbetsu, Japan"
+  matchers: "Memanbetsu"
+
+NDM:
+  city: "Mendi, Ethiopia"
+  matchers: "Mendi"
+
+MDU:
+  city: "Mendi, Papua New Guinea"
+
+MDZ:
+  city: "Mendoza, MD, Argentina"
+  matchers: "Mendoza"
+
+MAH:
+  city: "Menorca, Spain"
+  matchers: "Menorca"
+
+MYX:
+  city: "Menyamya, Papua New Guinea"
+  matchers: "Menyamya"
+
+MKQ:
+  city: "Merauke, Indonesia"
+  matchers: "Merauke"
+
+MWE:
+  city: "Merave, Sudan"
+  matchers: "Merave"
+
+RDE:
+  city: "Merdey, Indonesia"
+  matchers: "Merdey"
+
+MID:
+  city: "Merida, Mexico"
+
+MRD:
+  city: "Merida, Venezuela"
+  matchers: "Merida"
+
+MIM:
+  city: "Merimbula, NS, Australia"
+  matchers: "Merimbula"
+
+MUH:
+  city: "Mersa Matruh, Egypt"
+  matchers: "Mersa Matruh"
+
+ETZ:
+  city: "Metz/Nancy, France"
+  matchers: "Metz/Nancy"
+
+MXL:
+  city: "Mexicali, Mexico"
+  matchers: "Mexicali"
 
 MEX:
   city: "Mexico City, Mexico"
+  country: mx
   matchers:
     - "Mexico City"
+    - "Mex City"
 
-# Mfume, Zambia (MFU)
-# Miandrivazo, Madagascar (ZVA)
-# Middle Caicos, Turks and Caicos (MDS)
-# Midway Island, US Minor Outlying Islands (MDY)
-# Mikkeli, Finland (MIK)
-# Mikonos, Greece (JMK)
-# Milan, Italy - Orio Al Serio (BGY)
-# Milan, Italy - Linate (LIN)
-     
+MFU:
+  city: "Mfume, Zambia"
+  matchers: "Mfume"
+
+ZVA:
+  city: "Miandrivazo, Madagascar"
+  matchers: "Miandrivazo"
+
+MDS:
+  city: "Middle Caicos, Turks and Caicos"
+  matchers: 
+    - "Middle Caicos"
+    - "The Middle Caicos"
+
+MDY:
+  city: "Midway Island, US Minor Outlying Islands"
+  matchers: "Midway Island"
+
+MIK:
+  city: "Mikkeli, Finland"
+  matchers: "Mikkeli"
+
+JMK:
+  city: "Mikonos, Greece"
+  matchers:
+    - Mikonos
+    - Mykonos
+
+BGY:
+  city: "Milan, Italy"
+
+LIN:
+  name: "Linate Airport"
+  city: "Milan, Italy"
+  match_priority: 40
+  matchers:
+    - Linate
+    - Milan Linate
+
 MXP:
   name: "Malpensa International Airport"
   city: "Milan, Italy"
@@ -2063,42 +4874,148 @@ MXP:
     - "Milan"
     - "Malpensa"
 
-# Milan, Italy - Parma (PMF)
-# Mildura, VI, Australia (MQL)
-# Mili Island, Marshall Islands (MIJ)
-# Milingimbi, NT, Australia (MGT)
-# Minami Daito, Japan (MMD)
-# Minatitla, Mexico (MTT)
-# Mindiptana, Indonesia (MDP)
-# Mineralnye Vody, Russia (MRV)
-# Minsk, Belarus - Minsk International 1 (MHP)
-# Minsk, Belarus - Minsk International 2 (MSQ)
-# Miri, Malaysia (MYY)
-# Mirnyj, Russia (MJZ)
-# Misawa, Japan (MSJ)
-# Misima Island, Papua New Guinea (MIS)
-# Misurata, Libya (MRA)
-# Mitiaro Island, Cook Islands (MOI)
-# MiyakeJima, Japan (MYE)
-# Miyako Jima, Japan (MMY)
-# Mizan Teferi, Ethiopia (MTF)
-# Mo I Rana, Norway (MQN)
-# Moa, Cuba (MOA)
-# Moala, Fiji (MFJ)
-# Moanamani, Indonesia (ONI)
-# Moanda, Congo (MNB)
-# Moanda, Gabon (MFF)
-# Mogadishu, Somalia (MGQ)
-# Mohenjodaro, Denmark (MJD)
-# Mokpo, South Korea (MPK)
-# Mokuti Lodge, Namibia (OKU)
-# Molde, Norway (MOL)
-# Mombasa, Kenya (MBA)
-# Monastir, Tunisia (MIR)
-# Monbetsu, Japan (MBE)
-# Monclova, Mexico (LOV)
-# Monkey Mia, WA, Australia (MJK)
-# Mono, Solomon Islands (MNY)
+PMF:
+  city: "Parma, Italy"
+  matchers: "Parma"
+
+MQL:
+  city: "Mildura, VI, Australia"
+  matchers: "Mildura"
+
+MIJ:
+  city: "Mili Island, Marshall Islands"
+  matchers: "Mili Island"
+
+MGT:
+  city: "Milingimbi, NT, Australia"
+  matchers: "Milingimbi"
+
+MMD:
+  city: "Minami Daito, Japan"
+  matchers: "Minami Daito"
+
+MTT:
+  city: "Minatitla, Mexico"
+  matchers: "Minatitla"
+
+MDP:
+  city: "Mindiptana, Indonesia"
+  matchers: "Mindiptana"
+
+MRV:
+  city: "Mineralnye Vody, Russia"
+  matchers: "Mineralnye Vody"
+
+MHP:
+  city: "Minsk, Belarus - Minsk International 1"
+  matchers: "Minsk"
+
+MSQ:
+  city: "Minsk, Belarus - Minsk International 2"
+
+MYY:
+  city: "Miri, Malaysia"
+  matchers: "Miri"
+
+MJZ:
+  city: "Mirnyj, Russia"
+  matchers: "Mirnyj"
+
+MSJ:
+  city: "Misawa, Japan"
+  matchers: "Misawa"
+
+MIS:
+  city: "Misima Island, Papua New Guinea"
+  matchers: "Misima Island"
+
+MRA:
+  city: "Misurata, Libya"
+  matchers: "Misurata"
+
+MOI:
+  city: "Mitiaro Island, Cook Islands"
+  matchers: "Mitiaro Island"
+
+MYE:
+  city: "MiyakeJima, Japan"
+  matchers: "MiyakeJima"
+
+MMY:
+  city: "Miyako Jima, Japan"
+  matchers: "Miyako Jima"
+
+MTF:
+  city: "Mizan Teferi, Ethiopia"
+  matchers: "Mizan Teferi"
+
+MQN:
+  city: "Mo I Rana, Norway"
+  matchers: "Mo I Rana"
+
+MOA:
+  city: "Moa, Cuba"
+  matchers: "Moa"
+
+MFJ:
+  city: "Moala, Fiji"
+  matchers: "Moala"
+
+ONI:
+  city: "Moanamani, Indonesia"
+  matchers: "Moanamani"
+
+MNB:
+  city: "Moanda, Congo"
+  matchers: "Moanda, Congo"
+
+MFF:
+  city: "Moanda, Gabon"
+  matchers: "Moanda, Gabon"
+
+MGQ:
+  city: "Mogadishu, Somalia"
+  matchers: "Mogadishu"
+
+MJD:
+  city: "Mohenjodaro, Denmark"
+  matchers: "Mohenjodaro"
+
+MPK:
+  city: "Mokpo, South Korea"
+  matchers: "Mokpo"
+
+OKU:
+  city: "Mokuti Lodge, Namibia"
+  matchers: "Mokuti Lodge"
+
+MOL:
+  city: "Molde, Norway"
+  matchers: "Molde"
+
+MBA:
+  city: "Mombasa, Kenya"
+  matchers: "Mombasa"
+
+MIR:
+  city: "Monastir, Tunisia"
+  matchers: "Monastir"
+
+MBE:
+  city: "Monbetsu, Japan"
+  matchers: "Monbetsu"
+
+LOV:
+  city: "Monclova, Mexico"
+  matchers: "Monclova"
+
+MJK:
+  city: "Monkey Mia, WA, Australia"
+  matchers: "Monkey Mia"
+
+MNY:
+  city: "Mono, Solomon Islands"
+  matchers: "Mono"
 
 ROB:
   city: "Monrovia, Liberia"
@@ -2112,11 +5029,25 @@ MCM:
     - "Monte Carlo"
     - "Monaco"
 
-# Monte Dourado, PA, Brazil (MEU)
-# Montego Bay, Jamaica (MBJ)
-# Monteria, Colombia (MTR)
-# Monterrey, Mexico (MTY)
-# Montes Claros, MG, Brazil (MOC)
+MEU:
+  city: "Monte Dourado, PA, Brazil"
+  matchers: "Monte Dourado"
+
+MBJ:
+  city: "Montego Bay, Jamaica"
+  matchers: "Montego Bay"
+
+MTR:
+  city: "Monteria, Colombia"
+  matchers: "Monteria"
+
+MTY:
+  city: "Monterrey, Mexico"
+  matchers: "Monterrey"
+
+MOC:
+  city: "Montes Claros, MG, Brazil"
+  matchers: "Montes Claros"
 
 MVD:
   city: "Montevideo, Uruguay"
@@ -2124,49 +5055,177 @@ MVD:
     - "Montevideo"
     - "Uruguay"
 
-# Montpellier, France (MPL)
+MPL:
+  city: "Montpellier, France"
+  matchers: "Montpellier"
 
 MNI:
   city: "Montserrat"
   matchers:
     - "Montserrat"
 
-# Moorea, French Polynesia (MOZ)
-# Mopti, Mali (MZI)
-# Mora, Sweden (MXX)
-# Morafenobe, Madagascar (TVA)
-# Morambe, Madagascar (MXM)
-# Moranbah, QL, Australia (MOV)
-# Moree, NS, Australia (MRZ)
-# Morelia, Mexico (MLM)
-# Morioka, Japan (HNA)
-# Mornington, QL, Australia (ONG)
-# Moro, Papua New Guinea (MXH)
-# Morondava, Madagascar (MOQ)
-# Moroni, Comoros (HAH)
-# Moruya, NS, Australia (MYA)
-# Moscow, Russia - all locations (MOW)
-# Moscow, Russia - Bykovo (BKA)
-# Moscow, Russia - Domodedovo (DME)
-# Moscow, Russia - Sheremetyevo (SVO)
-# Moscow, Russia - Vnukovo (VKO)
-# Mosjoen, Norway (MJF)
-# Mostar, Bosnia and Herzegovina (OMO)
-# Mota Lava, Vanuatu (MTV)
-# Mouila, Gabon (MJL)
-# Mount Cook, New Zealand (MON)
-# Mount Gambier, SA, Australia (MGB)
-# Mount Hagen, Papua New Guinea (HGU)
-# Mount Hotham, VI, Australia (MHU)
-# Mount Isa, Australia (ISA)
-# Mount Keith, WA, Australia (WME)
-# Mount Magnet, WA, Australia (MMG)
-# Mount Pleasant, Falkland Islands (MPN)
-# Mpacha, Namibia (MPA)
-# Mtwara, Tanzania (MYW)
-# Mucuri, BA, Brazil (MVS)
-# Mudanjiang, China (MDG)
-# Mudgee, Australia (DGE)
+MOZ:
+  city: "Moorea, French Polynesia"
+  matchers: "Moorea"
+
+MZI:
+  city: "Mopti, Mali"
+  matchers: "Mopti"
+
+MXX:
+  city: "Mora, Sweden"
+  matchers: "Mora"
+
+TVA:
+  city: "Morafenobe, Madagascar"
+  matchers: "Morafenobe"
+
+MXM:
+  city: "Morambe, Madagascar"
+  matchers: "Morambe"
+
+MOV:
+  city: "Moranbah, QL, Australia"
+  matchers: "Moranbah"
+
+MRZ:
+  city: "Moree, NS, Australia"
+  matchers: "Moree"
+
+MLM:
+  city: "Morelia, Mexico"
+  matchers: "Morelia"
+
+HNA:
+  city: "Morioka, Japan"
+  matchers: "Morioka"
+
+ONG:
+  city: "Mornington, QL, Australia"
+  matchers: "Mornington"
+
+MXH:
+  city: "Moro, Papua New Guinea"
+  matchers: "Moro"
+
+MOQ:
+  city: "Morondava, Madagascar"
+  matchers: "Morondava"
+
+HAH:
+  city: "Moroni, Comoros"
+  matchers: "Moroni"
+
+MYA:
+  city: "Moruya, NS, Australia"
+  matchers: "Moruya"
+
+
+MOW:
+  name: "Moscow, Russia (all airports)"
+  city: "Moscow, Russia"
+  matchers:
+    - "Moscow"
+
+BKA:
+  name: "Bykovo Airport"
+  city: "Moscow, Russia"
+  match_priority: 50
+  matchers:
+    - Bykovo
+    - Moscow Bykovo
+
+DME:
+  city: "Moscow, Russia"
+  name: "Domodedovo Airport"
+  match_priority: 50
+  matchers:
+    - "Domodedovo"
+    - "Moscow Domodedovo"
+
+SVO:
+  city: "Moscow, Russia"
+  name: "Sheremetyevo Airport"
+  match_priority: 50
+  matchers:
+    - "Sheremetyevo"
+    - "Moscow Sheremetyevo"
+
+VKO:
+  city: "Moscow, Russia"
+  name: "Vnukovo Airport"
+  match_priority: 50
+  matchers:
+    - "Vnukovo"
+    - "Moscow Vnukovo"
+
+MJF:
+  city: "Mosjoen, Norway"
+  matchers: "Mosjoen"
+
+OMO:
+  city: "Mostar, Bosnia and Herzegovina"
+  matchers: "Mostar"
+
+MTV:
+  city: "Mota Lava, Vanuatu"
+  matchers: "Mota Lava"
+
+MJL:
+  city: "Mouila, Gabon"
+  matchers: "Mouila"
+
+MON:
+  city: "Mount Cook, New Zealand"
+  matchers: "Mount Cook"
+
+MGB:
+  city: "Mount Gambier, SA, Australia"
+  matchers: "Mount Gambier"
+
+HGU:
+  city: "Mount Hagen, Papua New Guinea"
+  matchers: "Mount Hagen"
+
+MHU:
+  city: "Mount Hotham, VI, Australia"
+  matchers: "Mount Hotham"
+
+ISA:
+  city: "Mount Isa, Australia"
+  matchers: "Mount Isa"
+
+WME:
+  city: "Mount Keith, WA, Australia"
+  matchers: "Mount Keith"
+
+MMG:
+  city: "Mount Magnet, WA, Australia"
+  matchers: "Mount Magnet"
+
+MPN:
+  city: "Mount Pleasant, Falkland Islands"
+  matchers: "Mount Pleasant"
+
+MPA:
+  city: "Mpacha, Namibia"
+  matchers: "Mpacha"
+
+MYW:
+  city: "Mtwara, Tanzania"
+  matchers: "Mtwara"
+
+MVS:
+  city: "Mucuri, BA, Brazil"
+  matchers: "Mucuri"
+
+MDG:
+  city: "Mudanjiang, China"
+  matchers: "Mudanjiang"
+
+DGE:
+  city: "Mudgee, Australia"
+  matchers: "Mudgee"
      
 FMO:
   city: "Muenster, Germany"
@@ -2175,16 +5234,27 @@ FMO:
     - "Munster"
     - "Münster"
 
-# Mukan, Malaysia (MKM)
+MKM:
+  city: "Mukan, Malaysia"
+  matchers:
+    - "Mukan"
 
 MLH:
   city: "Mulhouse, France"
   matchers:
     - "Mulhouse"
 
-# Mulia, Indonesia (LII)
-# Multan, Pakistan (MUX)
-# Mulu, Malaysia (MZV)
+LII:
+  city: "Mulia, Indonesia"
+  matchers: "Mulia"
+
+MUX:
+  city: "Multan, Pakistan"
+  matchers: "Multan"
+
+MZV:
+  city: "Mulu, Malaysia"
+  matchers: "Mulu"
 
 BOM:
   city: "Mumbai, India"
@@ -2192,72 +5262,198 @@ BOM:
     - "Bombay"
     - "Mumbai"
 
-# Munda, Solomon Islands (MUA)
+MUA:
+  city: "Munda, Solomon Islands"
+  matchers: Munda
 
 MUC:
   city: "Munich, Germany"
   matchers:
     - Munich
 
-# Murcia, Spain (MJV)
-# Murmansk, Russia (MMK)
-# Murray Island, QL, Australia (MYI)
-# Mus, Turkey (MSR)
-# Muscat, Oman (MCT)
-# Musoma, Tanzania (MUZ)
-# Muzaffarabad, Pakistan (MFG)
-# Mwanza, Tanzania (MWZ)
-# Myeik, Myanmar (MGZ)
-# Myitkyina, Myanmar (MYT)
+MJV:
+  city: "Murcia, Spain"
+  matchers: "Murcia"
+
+MMK:
+  city: "Murmansk, Russia"
+  matchers: "Murmansk"
+
+MYI:
+  city: "Murray Island, QL, Australia"
+  matchers: "Murray Island"
+
+MSR:
+  city: "Mus, Turkey"
+  matchers: "Mus"
+
+MCT:
+  city: "Muscat, Oman"
+  matchers:
+    - "Muscat"
+    - "Oman"
+
+MUZ:
+  city: "Musoma, Tanzania"
+  matchers: "Musoma"
+
+MFG:
+  city: "Muzaffarabad, Pakistan"
+  matchers: "Muzaffarabad"
+
+MWZ:
+  city: "Mwanza, Tanzania"
+  matchers: "Mwanza"
+
+MGZ:
+  city: "Myeik, Myanmar"
+  matchers: "Myeik"
+
+MYT:
+  city: "Myitkyina, Myanmar"
+  matchers: "Myitkyina"
 
 MJT:
   city: "Mytilene, Greece"
   matchers:
     - "Mytilene"
-    
+
 ZZU:
   city: "Mzuzu, Malawi"
   matchers:
     - "Mzuzu"
 
-# Nabire, Indonesia (NBX)
-# Nacala, Mozambique (MNC)
-# Nadar, Morocco (NDR)
-# Nadi, Fiji (NAN)
-# Nadym, Russia (NYM)
-# Naga, Philippines (WNP)
-     
+NBX:
+  city: "Nabire, Indonesia"
+  matchers: "Nabire"
+
+MNC:
+  city: "Nacala, Mozambique"
+  matchers: "Nacala"
+
+NDR:
+  city: "Nadar, Morocco"
+  matchers: "Nadar"
+
+NAN:
+  city: "Nadi, Fiji"
+  matchers: "Nadi"
+
+NYM:
+  city: "Nadym, Russia"
+  matchers: "Nadym"
+
+WNP:
+  city: "Naga, Philippines"
+  matchers: "Naga"
+
 NGS:
   city: "Nagasaki, Japan"
   matchers:
     - "Nagasaki"
 
-# Nagoya, Japan - Chubu CentrAir Intl (NGO)
-# Nagoya, Japan - Nagoya Komaki APT (NGO)
-# Nagpur, India (NAG)
-# Nairobi, Kenya - Jomo Kenyatta Intl (NBO)
-# Nairobi, Kenya - Wilson (WIL)
-# Nakhichevan, Azerbaijan (NAJ)
-# Nakhon Ratchosima, Thailand (NAK)
-# Nakhon Si Thammarat, Thailand (NST)
-# Nalchik, Russia (NAL)
-# Namangan, Uzbekistan (NMA)
-# Namatana, Papua New Guinea (ATN)
-# Namorik Island, Marshall Islands (NDK)
-# Nampula, Mozambique (APL)
-# Namsos, Norway (OSY)
-# Namudi, Papua New Guinea (NDI)
-# Nan, Thailand (NNT)
-# Nanchong, China (NAO)
-# Nanking/Nanjing, China (NKG)
-# Nanning, China (NNG)
-# Nanortalik, Greenland (JNN)
-# Nantes, France - Nantes Atlantique (NTE)
-# Nantes, France - Rail service (QJZ)
-# Nantong, China (NTG)
-# Nanyang, China (NNY)
-# Nanyuki, Kenya (NYK)
-# Napier-Hastings, New Zealand (NPE)
+NGO:
+  city: "Nagoya, Japan"
+  matchers: "Nagoya"
+
+NAG:
+  city: "Nagpur, India"
+  matchers: "Nagpur"
+
+NBO:
+  name: "Jomo Kenyatta International Airport"
+  city: "Nairobi, Kenya"
+  matchers: 
+    - "Nairobi"
+    - "Jomo Kenyatta"
+
+WIL:
+  city: "Nairobi, Kenya"
+  match_priority: 50
+  matchers: 
+    - "Nairobi Wilson"
+
+NAJ:
+  city: "Nakhichevan, Azerbaijan"
+  matchers: "Nakhichevan"
+
+NAK:
+  city: "Nakhon Ratchosima, Thailand"
+  matchers: "Nakhon Ratchosima"
+
+NST:
+  city: "Nakhon Si Thammarat, Thailand"
+  matchers: "Nakhon Si Thammarat"
+
+NAL:
+  city: "Nalchik, Russia"
+  matchers: "Nalchik"
+
+NMA:
+  city: "Namangan, Uzbekistan"
+  matchers: "Namangan"
+
+ATN:
+  city: "Namatana, Papua New Guinea"
+  matchers: "Namatana"
+
+NDK:
+  city: "Namorik Island, Marshall Islands"
+  matchers: "Namorik Island"
+
+APL:
+  city: "Nampula, Mozambique"
+  matchers: "Nampula"
+
+OSY:
+  city: "Namsos, Norway"
+  matchers: "Namsos"
+
+NDI:
+  city: "Namudi, Papua New Guinea"
+  matchers: "Namudi"
+
+NNT:
+  city: "Nan, Thailand"
+  matchers: "Nan"
+
+NAO:
+  city: "Nanchong, China"
+  matchers: "Nanchong"
+
+NKG:
+  city: "Nanking/Nanjing, China"
+  matchers: 
+    - "Nanking"
+    - "Nanjing"
+
+NNG:
+  city: "Nanning, China"
+  matchers: "Nanning"
+
+JNN:
+  city: "Nanortalik, Greenland"
+  matchers: "Nanortalik"
+
+NTE:
+  city: "Nantes, France"
+  matchers: "Nantes"
+
+NTG:
+  city: "Nantong, China"
+  matchers: "Nantong"
+
+NNY:
+  city: "Nanyang, China"
+  matchers: "Nanyang"
+
+NYK:
+  city: "Nanyuki, Kenya"
+  matchers: "Nanyuki"
+
+NPE:
+  city: "Napier-Hastings, New Zealand"
+  matchers: "Napier-Hastings"
 
 NAP:
   city: "Naples, Italy"
@@ -2265,8 +5461,13 @@ NAP:
     - "Naples"
     - "Napoli"
 
-# Narathiwat, Thailand (NAW)
-# Narrabri, NS, Australia (NAA)
+NAW:
+  city: "Narathiwat, Thailand"
+  matchers: "Narathiwat"
+
+NAA:
+  city: "Narrabri, NS, Australia"
+  matchers: "Narrabri"
 
 JNS:
   city: "Narsaq, Greenland"
@@ -2274,33 +5475,95 @@ JNS:
   matchers:
     - "Narsaq"
 
-# Narsarsuaq, Greenland (UAK)
-# Narvik, Norway (NVK)
-# Naryan-Mar, Russia (NNM)
-# Nassau, Bahamas - Paradise Island (NAS)
-# Natadi, Congo (MAT)
-# Natal, RN, Brazil (NAT)
-# Nauru Island, Nauru (INU)
-# Navegantes, SC, Brazil (NVT)
-# Nawabshah, Pakistan (WNS)
-# NayUrengoy, Russia (NUX)
-# Ndola, Zambia (NLA)
-# Neerlerit Inaat, Greenland (CNP)
-# Nefteyugansk, Russia (NFG)
-# Neghelli, Ethiopia (EGL)
+UAK:
+  city: "Narsarsuaq, Greenland"
+  matchers: "Narsarsuaq"
+
+NVK:
+  city: "Narvik, Norway"
+  matchers: "Narvik"
+
+NNM:
+  city: "Naryan-Mar, Russia"
+  matchers: "Naryan-Mar"
+
+NAS:
+  city: "Nassau, Bahamas - Paradise Island"
+  matchers: "Nassau"
+
+MAT:
+  city: "Natadi, Congo"
+  matchers: "Natadi"
+
+NAT:
+  city: "Natal, RN, Brazil"
+  matchers: "Natal"
+
+INU:
+  city: "Nauru Island, Nauru"
+  matchers: "Nauru"
+
+NVT:
+  city: "Navegantes, SC, Brazil"
+  matchers: "Navegantes"
+
+WNS:
+  city: "Nawabshah, Pakistan"
+  matchers: "Nawabshah"
+
+NUX:
+  city: "NayUrengoy, Russia"
+  matchers: "NayUrengoy"
+
+NLA:
+  city: "Ndola, Zambia"
+  matchers: "Ndola"
+
+CNP:
+  city: "Neerlerit Inaat, Greenland"
+  matchers: "Neerlerit Inaat"
+
+NFG:
+  city: "Nefteyugansk, Russia"
+  matchers: "Nefteyugansk"
+
+EGL:
+  city: "Neghelli, Ethiopia"
+  matchers: "Neghelli"
+
 
 NEG:
   city: "Negril, Jamaica"
   matchers:
     - "Negril"
 
-# Neiva, Colombia (NVA)
-# Nejran, Saudi Arabia (EAM)
-# Nelso, New Zealand (NSN)
-# Nelspruit, South Africa (NLP)
-# Nema, Mauritania (EMN)
-# Neryjungri, Russia (NER)
-# Neuquen, NE, Argentina (NQN)
+NVA:
+  city: "Neiva, Colombia"
+  matchers: "Neiva"
+
+EAM:
+  city: "Nejran, Saudi Arabia"
+  matchers: "Nejran"
+
+NSN:
+  city: "Nelso, New Zealand"
+  matchers: "Nelso"
+
+NLP:
+  city: "Nelspruit, South Africa"
+  matchers: "Nelspruit"
+
+EMN:
+  city: "Nema, Mauritania"
+  matchers: "Nema"
+
+NER:
+  city: "Neryjungri, Russia"
+  matchers: "Neryjungri"
+
+NQN:
+  city: "Neuquen, NE, Argentina"
+  matchers: "Neuquen"
 
 NEV:
   city: "Nevis, St. Kitts and Nevis"
@@ -2316,13 +5579,33 @@ NCL:
   matchers:
     - "Newcastle"
 
-# Newman, WA, Australia (ZNE)
-# Newquay, United Kingdom (NQY)
-# Ngaoundere, Cameroon (NGE)
-# Ngau Island, Fiji (NGI)
-# Ngukurr, NT, Australia (RPM)
-# Nha Trang, Viet Nam (NHA)
-# Niamey, Niger (NIM)
+ZNE:
+  city: "Newman, WA, Australia"
+  matchers: "Newman"
+
+NQY:
+  city: "Newquay, United Kingdom"
+  matchers: "Newquay"
+
+NGE:
+  city: "Ngaoundere, Cameroon"
+  matchers: "Ngaoundere"
+
+NGI:
+  city: "Ngau Island, Fiji"
+  matchers: "Ngau Island"
+
+RPM:
+  city: "Ngukurr, NT, Australia"
+  matchers: "Ngukurr"
+
+NHA:
+  city: "Nha Trang, Viet Nam"
+  matchers: "Nha Trang"
+
+NIM:
+  city: "Niamey, Niger"
+  matchers: "Niamey"
 
 NCE:
   city: "Nice, France"
@@ -2332,17 +5615,44 @@ NCE:
 NIC:
   city: "Nicosia, Cyprus"
   matchers:
+    - "Nicosia"
     - "Cyprus"
 
-# Nimes, France (FNI)
-# Ningbo, China (NGB)
-# Nioko, Congo (NIX)
-# Niuafo'ou, Tonga (NFO)
-# Niuatoputapu, Tonga (NTT)
-# Niue Island, Niue (IUE)
-# Nizhnevartovsk, Russia (NJC)
-# Nizhniy Novgorod, Russia (GOJ)
-# Nojabrxsk, Russia (NOJ)
+FNI:
+  city: "Nimes, France"
+  matchers: "Nimes"
+
+NGB:
+  city: "Ningbo, China"
+  matchers: "Ningbo"
+
+NIX:
+  city: "Nioko, Congo"
+  matchers: "Nioko"
+
+NFO:
+  city: "Niuafo'ou, Tonga"
+  matchers: "Niuafo'ou"
+
+NTT:
+  city: "Niuatoputapu, Tonga"
+  matchers: "Niuatoputapu"
+
+IUE:
+  city: "Niue Island, Niue"
+  matchers: "Niue"
+
+NJC:
+  city: "Nizhnevartovsk, Russia"
+  matchers: "Nizhnevartovsk"
+
+GOJ:
+  city: "Nizhniy Novgorod, Russia"
+  matchers: "Nizhniy Novgorod"
+
+NOJ:
+  city: "Nojabrxsk, Russia"
+  matchers: "Nojabrxsk"
 
 NDJ:
   city: "Ndjamena, Chad"
@@ -2394,7 +5704,6 @@ EMA:
 # Nukus, Uzbekistan (NCU)
 # Numbulwar, NT, Australia (NUB)
 # Nunukan, Indonesia (NNX)
-# Nuremberg, Germany - Rail service (ZAQ)
 
 NUE:
   city: "Nuremberg, Germany"
@@ -2426,35 +5735,101 @@ ODS:
   matchers:
     - "Odessa"
 
-# Ohrid, Macedonia (OHD)
-# Oita, Japan (OIT)
-# Okaba, Indonedia (OKQ)
-# Okayama, Japan (OKJ)
-# Okhotsk, Russia (OHO)
+OHD:
+  city: "Ohrid, Macedonia"
+  matchers: "Ohrid"
+
+OIT:
+  city: "Oita, Japan"
+  matchers: "Oita"
+
+OKQ:
+  city: "Okaba, Indonesia"
+  matchers: "Okaba"
+
+OKJ:
+  city: "Okayama, Japan"
+  matchers: "Okayama"
+
+OHO:
+  city: "Okhotsk, Russia"
+  matchers: "Okhotsk"
 
 OKA:
   city: "Okinawa, Japan"
   matchers:
     - "Okinawa"
 
-# Okoshiri, Japan (OIR)
-# Oksibil, Indonesia (OKL)
-# Olbia, Italy (OLB)
-# Olpoi, Vanuatu (OLJ)
-# Olympic Dam, SA, Australia (OLP)
-# Omboue, Gabon (OMB)
-# Omsk, Russia (OMS)
-# Ondangwa, Namibia (OND)
-# Oradea, Romania (OMR)
-# Oran, Algeria (ORN)
-# Orange, New South Wales, Australia (OAG)
-# Oranjemund, Namibia (OMD)
-# Orebro, Sweeden - Obrebro-Bofors (ORB)
-# Orenburg, Russia (REN)
-# Ormara, Pakistan (ORW)
-# Ornskoldsvik, Sweden (OER)
-# Orsk, Russia (OSW)
-# Orsta-Volda, Norway (HOV)
+OIR:
+  city: "Okoshiri, Japan"
+  matchers: "Okoshiri"
+
+OKL:
+  city: "Oksibil, Indonesia"
+  matchers: "Oksibil"
+
+OLB:
+  city: "Olbia, Italy"
+  matchers: "Olbia"
+
+OLJ:
+  city: "Olpoi, Vanuatu"
+  matchers: "Olpoi"
+
+OLP:
+  city: "Olympic Dam, SA, Australia"
+  matchers: "Olympic Dam"
+
+OMB:
+  city: "Omboue, Gabon"
+  matchers: "Omboue"
+
+OMS:
+  city: "Omsk, Russia"
+  matchers: "Omsk"
+
+OND:
+  city: "Ondangwa, Namibia"
+  matchers: "Ondangwa"
+
+OMR:
+  city: "Oradea, Romania"
+  matchers: "Oradea"
+
+ORN:
+  city: "Oran, Algeria"
+  matchers: "Oran"
+
+OAG:
+  city: "Orange, Australia"
+
+OMD:
+  city: "Oranjemund, Namibia"
+  matchers: "Oranjemund"
+
+ORB:
+  city: "Orebro, Sweeden - Obrebro-Bofors"
+  matchers: "Orebro"
+
+REN:
+  city: "Orenburg, Russia"
+  matchers: "Orenburg"
+
+ORW:
+  city: "Ormara, Pakistan"
+  matchers: "Ormara"
+
+OER:
+  city: "Ornskoldsvik, Sweden"
+  matchers: "Ornskoldsvik"
+
+OSW:
+  city: "Orsk, Russia"
+  matchers: "Orsk"
+
+HOV:
+  city: "Orsta-Volda, Norway"
+  matchers: "Orsta-Volda"
 
 OSA:
   name: "Osaka, Japan (all airports)"
@@ -2474,72 +5849,216 @@ KIX:
   matchers:
     - Kansai
 
-# Oshima, Japan (OIM)
-# Osijek, Croatia (OSI)
-# Oskarshamn, Sweden (OSK)
+OIM:
+  city: "Oshima, Japan"
+  matchers: "Oshima"
+
+OSI:
+  city: "Osijek, Croatia"
+  matchers: "Osijek"
+
+OSK:
+  city: "Oskarshamn, Sweden"
+  matchers: "Oskarshamn"
      
 OSL:
   city: "Oslo, Norway"
   matchers:
     - "Oslo"
 
-
-# Oslo, Norway (OSL)
 # Torp Airport Oslo, Norway - Sandefjord (TRF)
-# Ostersund, Sweden (OSD)
-# Ostrava, Czech Republic (OSR)
-# Otu, Colombia (OTU)
-# Ouagadougou, Burkina Faso (OUA)
-# Ouargla, Algeria (OGX)
-# Ouarzazate, Morocco (OZZ)
-# Oudomxay, Laos (ODY)
-# Oujda, Morocco (OUD)
+
+OSD:
+  city: "Ostersund, Sweden"
+  matchers: "Ostersund"
+
+OSR:
+  city: "Ostrava, Czech Republic"
+  matchers: "Ostrava"
+
+OTU:
+  city: "Otu, Colombia"
+  matchers: "Otu"
+
+OUA:
+  city: "Ouagadougou, Burkina Faso"
+  matchers: "Ouagadougou"
+
+OGX:
+  city: "Ouargla, Algeria"
+  matchers: "Ouargla"
+
+OZZ:
+  city: "Ouarzazate, Morocco"
+  matchers: "Ouarzazate"
+
+ODY:
+  city: "Oudomxay, Laos"
+  matchers: "Oudomxay"
+
+OUD:
+  city: "Oujda, Morocco"
+  matchers: "Oujda"
 
 OUL:
   city: "Oulu, Finland"
   matchers: "Oulu"
 
+UVE:
+  city: "Ouvea, New Caledonia"
+  matchers: "Ouvea"
 
-# Ouvea, New Caledonia (UVE)
-# Ovda, Israel (VDA)
-# Oyem, Gabon (OYE)
-# return to top
-# P
-# Paama, Vanuatu (PBJ)
-# Paamiut, Greenland (JFR)
-# Padang, Indonesia (PDG)
-# Paderborn, Germany (PAD)
-# Pago Pago, American Samoa (PPG)
-# Pakse, Laos (PKZ)
-# Pakuba, Uganda (PAF)
-# Palacios, Honduras (PCH)
-# Palang Karaya, Indonesia (PKY)
-# Palanga, Lithuania (PLQ)
-# Palembang, Indonesia (PLM)
-# Palenque, Mexico (PQM)
-# Palermo, Sicily, Italy (PMO)
-# Palma Mallorca, Spain and Canary Islands (PMI)
-# Palmar, Costa Rica (PMZ)
-# Palmas, TO, Brazil (PMW)
-# Palmerston North, New Zealand (PMR)
-# Palu, Indonesia (PLW)
-# Pamplona, Spain (PNA)
-# Panama City, Panama - Tocumen Intl (PTY)
-# Panama City, Panama - Paitilla (PAC)
-# Pangkalanboun, Indonesia (PKN)
-# Pangkalpinang, Indonesia (PGK)
-# Panjger, Pakistan (PJG)
-# Pantelleria, Italy (PNL)
-# Papa Westray, United Kingdom (PPW)
-# Papeete, French Polynesia (PPT)
-# Paphos, Cyprus (PFO)
-# Para Chinar, Pakistan (PAJ)
-# Paraburdoo, WA, Australia (PBO)
-# Paradise Island, Bahamas (PID)
-# Paramaribo, Suriname - Zanderij Intl (PBM)
-# Paramaribo, Suriname - Zorg En Hoop (ORG)
-# Parana, ER, Argentina (PRA)
-# Parasi, Solomon Islands (PRS)
+VDA:
+  city: "Ovda, Israel"
+  matchers: "Ovda"
+
+OYE:
+  city: "Oyem, Gabon"
+  matchers: "Oyem"
+
+PBJ:
+  city: "Paama, Vanuatu"
+  matchers: "Paama"
+
+JFR:
+  city: "Paamiut, Greenland"
+  matchers: "Paamiut"
+
+PDG:
+  city: "Padang, Indonesia"
+  matchers: "Padang"
+
+PAD:
+  city: "Paderborn, Germany"
+  matchers: "Paderborn"
+
+PPG:
+  city: "Pago Pago, American Samoa"
+  matchers: "Pago Pago"
+
+PKZ:
+  city: "Pakse, Laos"
+  matchers: "Pakse"
+
+PAF:
+  city: "Pakuba, Uganda"
+  matchers: "Pakuba"
+
+PCH:
+  city: "Palacios, Honduras"
+  matchers: "Palacios"
+
+PKY:
+  city: "Palang Karaya, Indonesia"
+  matchers: "Palang Karaya"
+
+PLQ:
+  city: "Palanga, Lithuania"
+  matchers: "Palanga"
+
+PLM:
+  city: "Palembang, Indonesia"
+  matchers: "Palembang"
+
+PQM:
+  city: "Palenque, Mexico"
+  matchers: "Palenque"
+
+PMO:
+  city: "Palermo, Sicily, Italy"
+  matchers: "Palermo"
+
+PMI:
+  city: "Palma Mallorca, Spain and Canary Islands"
+  matchers: "Palma Mallorca"
+
+PMZ:
+  city: "Palmar, Costa Rica"
+  matchers: "Palmar"
+
+PMW:
+  city: "Palmas, TO, Brazil"
+  matchers: "Palmas"
+
+PMR:
+  city: "Palmerston North, New Zealand"
+  matchers: "Palmerston North"
+
+PLW:
+  city: "Palu, Indonesia"
+  matchers: "Palu"
+
+PNA:
+  city: "Pamplona, Spain"
+  matchers: "Pamplona"
+
+# FIXME
+PTY:
+  name: Tocumen International Airport""
+  city: "Panama City, Panama"
+  matchers: "Panama City"
+
+PAC:
+  city: "Panama City, Panama - Paitilla"
+
+PKN:
+  city: "Pangkalanboun, Indonesia"
+  matchers: "Pangkalanboun"
+
+PGK:
+  city: "Pangkalpinang, Indonesia"
+  matchers: "Pangkalpinang"
+
+PJG:
+  city: "Panjger, Pakistan"
+  matchers: "Panjger"
+
+PNL:
+  city: "Pantelleria, Italy"
+  matchers: "Pantelleria"
+
+PPW:
+  city: "Papa Westray, United Kingdom"
+  matchers: "Papa Westray"
+
+PPT:
+  city: "Papeete, French Polynesia"
+  matchers: "Papeete"
+
+PFO:
+  city: "Paphos, Cyprus"
+  matchers: "Paphos"
+
+PAJ:
+  city: "Para Chinar, Pakistan"
+  matchers: "Para Chinar"
+
+PBO:
+  city: "Paraburdoo, WA, Australia"
+  matchers: "Paraburdoo"
+
+PID:
+  city: "Paradise Island, Bahamas"
+  matchers: "Paradise Island"
+
+PBM:
+  name: "Zanderij International Airport"
+  city: "Paramaribo, Suriname"
+  matchers: 
+    - "Paramaribo"
+    - "Zanderij"
+
+ORG:
+  name: "Zorg En Hoop Airport"
+  city: "Paramaribo, Suriname"
+
+PRA:
+  city: "Parana, ER, Argentina"
+  matchers: "Parana"
+
+PRS:
+  city: "Parasi, Solomon Islands"
+  matchers: "Parasi"
      
 PAR:
   name: "Paris (all airports)"
@@ -2561,24 +6080,39 @@ ORY:
     - "Orly"
 
 # Paris, France - Beauvais-Tille (BVA)
-# Parma/Milan, Italy (PMF)
 # Parnaiba, PI, Brazil (PHB)
 
 PBH:
   city: "Paro, Bhutan"
   matchers: "Paro"
 
-# Pasni, Pakistan (PSI)
-# Paso de Los Libres, Argentina (AOL)
-# Passo Fundo, RS, Brazil (PFB)
-# Pasto, Colombia (PSO)
-# Patna, India (PAT)
-# Patras, Greece (GPA)
-     
+PSI:
+  city: "Pasni, Pakistan"
+  matchers: "Pasni"
+
+AOL:
+  city: "Paso de Los Libres, Argentina"
+  matchers: "Paso de Los Libres"
+
+PFB:
+  city: "Passo Fundo, RS, Brazil"
+  matchers: "Passo Fundo"
+
+PSO:
+  city: "Pasto, Colombia"
+  matchers: "Pasto"
+
+PAT:
+  city: "Patna, India"
+  matchers: "Patna"
+
+GPA:
+  city: "Patras, Greece"
+  matchers: "Patras"
+
 PUF:
   city: "Pau, France"
   matchers: "Pau"
-
 
 # Pavlodar, Kazakhstan (PWQ)
 # Pechora, Russia (PEX)
@@ -2647,111 +6181,373 @@ HKT:
   matchers:
     - Phuket
 
+PIX:
+  city: "Pico Island, Portugal"
+  matchers: "Pico Island"
 
-# Pico Island, Portugal (PIX)
-# Piedras Negras, Mexico (PDS)
-# Pietermaritzburg, South Africa (PZB)
-# Pietersburb, South Africa (PTG)
-# Pingtung, Taiwan (PIF)
-# Pisa, Italy - Gal Galilei (PSA)
-# Pituffik, Greenland (THU)
-# Piura, Peru (PIU)
-# Placencia, Belize (PLJ)
-# Pleiku, Viet Nam (PXU)
-# Plettenburg Bay, South Africa (PBZ)
-# Plymouth, United Kingdom (PLH)
-# Podgoriea, Serbia and Montenegro - Golubovci (TGD)
-# Pohnpei, Micronesia (PNI)
-# Pointe Noire, Congo (PNR)
-# Pointe-a-Pitre, Guadeloupe (PTP)
-# Poitiers, France - Biard (PIS)
-# Poitiers, France - Rail service (XOP)
-# Pokhara, Nepal (PKR)
-# Poltava, Ukraine (PLV)
-# Polyarnyj, Russia (PYJ)
-# Ponce, Puerto Rico (PSE)
-# Ponta Delgada, Portugal (PDL)
-# Ponta Pora, MS, Brazil (PMG)
-# Pontianak, Indonesia (PNK)
-# Popondetta, Papua New Guinea (PNP)
-# Popraol/Tatry, Slovakia (TAT)
-# Porbandar, India (PBD)
-# Pori, Finland (POR)
-# Porlamar, Venezuela (PMV)
-# Port Antonio, Jamaica (POT)
-# Port Au Prince, Haiti (PAP)
-# Port Augusta, SA, Australia (PUG)
-# Port Berge, Madagascar (WPB)
-# Port Blair, India (IXZ)
-# Port Elizabeth, South Africa (PLZ)
-# Port Gentil, Gabon (POG)
-# Port Harcourt, Nigeria (PHC)
-# Port Headland, WA, Australia (PHE)
-# Port Lincoln, SA, Australia (PLO)
-# Port Macquarie, NS, Australia (PQQ)
-# Port Moresby, Papua New Guinea (POM)
-# Port of Spain, Trinidad (POS)
-# Port Stanley, Falkland Islands (PSY)
-# Port Sudan, Sudan (PZU)
-# Port Vila, Vanuatu (VLI)
-# Portland, VI, Australia (PTJ)
-# Porto Alegre, RS, Brazil (POA)
-# Porto Santo, Portugal (PXO)
-# Porto Seguro, Brazil (BPS)
-# Porto Velho, RO, Brazil (PVH)
-# Porto, Portugal (OPO)
-# Portoviejo, Ecuador (PVO)
-# Posadas, MI, Argentina (PSS)
-# Poza Rico, Mexico (PAZ)
-# Poznan, Poland (POZ)
+PDS:
+  city: "Piedras Negras, Mexico"
+  matchers: "Piedras Negras"
+
+PZB:
+  city: "Pietermaritzburg, South Africa"
+  matchers: "Pietermaritzburg"
+
+PTG:
+  city: "Pietersburb, South Africa"
+  matchers: "Pietersburb"
+
+PIF:
+  city: "Pingtung, Taiwan"
+  matchers: "Pingtung"
+
+PSA:
+  city: "Pisa, Italy - Gal Galilei"
+  matchers: "Pisa"
+
+THU:
+  city: "Pituffik, Greenland"
+  matchers: "Pituffik"
+
+PIU:
+  city: "Piura, Peru"
+  matchers: "Piura"
+
+PLJ:
+  city: "Placencia, Belize"
+  matchers: "Placencia"
+
+PXU:
+  city: "Pleiku, Viet Nam"
+  matchers: "Pleiku"
+
+PBZ:
+  city: "Plettenburg Bay, South Africa"
+  matchers: "Plettenburg Bay"
+
+PLH:
+  city: "Plymouth, United Kingdom"
+  matchers: "Plymouth"
+
+TGD:
+  city: "Podgoriea, Serbia and Montenegro - Golubovci"
+  matchers: "Podgoriea"
+
+PNI:
+  city: "Pohnpei, Micronesia"
+  matchers: "Pohnpei"
+
+PNR:
+  city: "Pointe Noire, Congo"
+  matchers: "Pointe Noire"
+
+PTP:
+  city: "Pointe-a-Pitre, Guadeloupe"
+  matchers: "Pointe-a-Pitre"
+
+PIS:
+  city: "Poitiers, France - Biard"
+  matchers: "Poitiers"
+
+PKR:
+  city: "Pokhara, Nepal"
+  matchers: "Pokhara"
+
+PLV:
+  city: "Poltava, Ukraine"
+  matchers: "Poltava"
+
+PYJ:
+  city: "Polyarnyj, Russia"
+  matchers: "Polyarnyj"
+
+PSE:
+  city: "Ponce, Puerto Rico"
+  matchers: "Ponce"
+
+PDL:
+  city: "Ponta Delgada, Portugal"
+  matchers: "Ponta Delgada"
+
+PMG:
+  city: "Ponta Pora, MS, Brazil"
+  matchers: "Ponta Pora"
+
+PNK:
+  city: "Pontianak, Indonesia"
+  matchers: "Pontianak"
+
+PNP:
+  city: "Popondetta, Papua New Guinea"
+  matchers: "Popondetta"
+
+TAT:
+  city: "Popraol/Tatry, Slovakia"
+  matchers: "Popraol/Tatry"
+
+PBD:
+  city: "Porbandar, India"
+  matchers: "Porbandar"
+
+POR:
+  city: "Pori, Finland"
+  matchers: "Pori"
+
+PMV:
+  city: "Porlamar, Venezuela"
+  matchers: "Porlamar"
+
+POT:
+  city: "Port Antonio, Jamaica"
+  matchers: "Port Antonio"
+
+PAP:
+  city: "Port Au Prince, Haiti"
+  matchers: 
+    - "Port Au Prince"
+    - "Haiti"
+
+PUG:
+  city: "Port Augusta, SA, Australia"
+  matchers: "Port Augusta"
+
+WPB:
+  city: "Port Berge, Madagascar"
+  matchers: "Port Berge"
+
+IXZ:
+  city: "Port Blair, India"
+  matchers: "Port Blair"
+
+PLZ:
+  city: "Port Elizabeth, South Africa"
+  matchers: "Port Elizabeth"
+
+POG:
+  city: "Port Gentil, Gabon"
+  matchers: "Port Gentil"
+
+PHC:
+  city: "Port Harcourt, Nigeria"
+  matchers: "Port Harcourt"
+
+PHE:
+  city: "Port Headland, WA, Australia"
+  matchers: "Port Headland"
+
+PLO:
+  city: "Port Lincoln, SA, Australia"
+  matchers: "Port Lincoln"
+
+PQQ:
+  city: "Port Macquarie, NS, Australia"
+  matchers: "Port Macquarie"
+
+POM:
+  city: "Port Moresby, Papua New Guinea"
+  matchers: "Port Moresby"
+
+PSY:
+  city: "Port Stanley, Falkland Islands"
+  matchers: 
+    - "Port Stanley"
+    - "Falklands"
+    - "The Falklands"
+
+PZU:
+  city: "Port Sudan, Sudan"
+  matchers: "Port Sudan"
+
+VLI:
+  city: "Port Vila, Vanuatu"
+  matchers: "Port Vila"
+
+PTJ:
+  city: "Portland, VI, Australia"
+  matchers: 
+    - "Portland, Australia"
+    - "Portland, Victoria"
+
+POA:
+  city: "Porto Alegre, RS, Brazil"
+  matchers: "Porto Alegre"
+
+PXO:
+  city: "Porto Santo, Portugal"
+  matchers: "Porto Santo"
+
+BPS:
+  city: "Porto Seguro, Brazil"
+  matchers: "Porto Seguro"
+
+PVH:
+  city: "Porto Velho, RO, Brazil"
+  matchers: "Porto Velho"
+
+OPO:
+  city: "Porto, Portugal"
+  matchers: "Porto"
+
+PVO:
+  city: "Portoviejo, Ecuador"
+  matchers: "Portoviejo"
+
+PSS:
+  city: "Posadas, MI, Argentina"
+  matchers: "Posadas"
+
+PAZ:
+  city: "Poza Rico, Mexico"
+  matchers: "Poza Rico"
+
+POZ:
+  city: "Poznan, Poland"
+  matchers: "Poznan"
 
 PRG:
   city: "Prague, Czech Republic"
   matchers:
     - "Prague"
 
-# Praia, Cape Verde (RAI)
-# Pres. Roque Saenz Pena, CH, Argentina (PRQ)
-# Presidente Prudente, SP, Brazil (PPB)
-# Preveza/Lefkas, Greece (PVK)
-# Pristina, Serbia and Montenegro (PRN)
-# Proserpine, QL, Australia (PPP)
-# Providenciales, Turks and Caicos Islands (PLS)
-# Pucallpa, Peru (PCL)
-# Puebla, Mexico (PBC)
-# Puerto Ayacucha, Venezuela (PYH)
-# Puerto Berria, Colombia (PBE)
-# Puerto del Rosario, Spain (FUE)
-# Puerto Deseado, SC, Argentina (PUD)
-# Puerto Escondido, Mexico (PXM)
-# Puerto Jimenez, Costa Rica (PJM)
-# Puerto Lempira, Honduras (PEU)
-# Puerto Madryn, CB, Argentina (PMY)
-# Puerto Maldonado, Peru (PEM)
-# Puerto Montt, Chile (PMC)
-# Puerto Ordaz, Venezuela (PZO)
-# Puerto Plata, Dominican Republic (POP)
-# Puerto Princesa, Philippines (PPS)
-# Puerto Suarez, Bolivia (PSZ)
-# Puerto Vallarta, Mexico (PVR)
-# Pula, Croatia (PUY)
-# Pune, India (PNQ)
-# Punta Arenas, Chile (PUQ)
+RAI:
+  city: "Praia, Cape Verde"
+  matchers: "Praia"
+
+PRQ:
+  city: "Pres. Roque Saenz Pena, CH, Argentina"
+  matchers: "Pres. Roque Saenz Pena"
+
+PPB:
+  city: "Presidente Prudente, SP, Brazil"
+  matchers: "Presidente Prudente"
+
+PVK:
+  city: "Preveza/Lefkas, Greece"
+  matchers: "Preveza/Lefkas"
+
+PRN:
+  city: "Pristina, Serbia and Montenegro"
+  matchers: "Pristina"
+
+PPP:
+  city: "Proserpine, QL, Australia"
+  matchers: "Proserpine"
+
+PLS:
+  city: "Providenciales, Turks and Caicos Islands"
+  matchers: "Providenciales"
+
+PCL:
+  city: "Pucallpa, Peru"
+  matchers: "Pucallpa"
+
+PBC:
+  city: "Puebla, Mexico"
+  matchers: "Puebla"
+
+PYH:
+  city: "Puerto Ayacucha, Venezuela"
+  matchers: "Puerto Ayacucha"
+
+PBE:
+  city: "Puerto Berria, Colombia"
+  matchers: "Puerto Berria"
+
+FUE:
+  city: "Puerto del Rosario, Spain"
+  matchers: "Puerto del Rosario"
+
+PUD:
+  city: "Puerto Deseado, SC, Argentina"
+  matchers: "Puerto Deseado"
+
+PXM:
+  city: "Puerto Escondido, Mexico"
+  matchers: "Puerto Escondido"
+
+PJM:
+  city: "Puerto Jimenez, Costa Rica"
+  matchers: "Puerto Jimenez"
+
+PEU:
+  city: "Puerto Lempira, Honduras"
+  matchers: "Puerto Lempira"
+
+PMY:
+  city: "Puerto Madryn, CB, Argentina"
+  matchers: "Puerto Madryn"
+
+PEM:
+  city: "Puerto Maldonado, Peru"
+  matchers: "Puerto Maldonado"
+
+PMC:
+  city: "Puerto Montt, Chile"
+  matchers: "Puerto Montt"
+
+PZO:
+  city: "Puerto Ordaz, Venezuela"
+  matchers: "Puerto Ordaz"
+
+POP:
+  city: "Puerto Plata, Dominican Republic"
+  matchers: "Puerto Plata"
+
+PPS:
+  city: "Puerto Princesa, Philippines"
+  matchers: "Puerto Princesa"
+
+PSZ:
+  city: "Puerto Suarez, Bolivia"
+  matchers: "Puerto Suarez"
+
+PVR:
+  city: "Puerto Vallarta, Mexico"
+  matchers: "Puerto Vallarta"
+
+PUY:
+  city: "Pula, Croatia"
+  matchers: "Pula"
+
+PNQ:
+  city: "Pune, India"
+  matchers: "Pune"
+
+PUQ:
+  city: "Punta Arenas, Chile"
+  matchers: "Punta Arenas"
 
 PUJ:
   city: "Punta Cana, Dominican Republic"
   matchers:
     - "Punta Cana"
 
-# Punta Del Este, Uruguay (PDP)
-# Punta Gorda, Belize (PND)
-# Punta Islita, Costa Rica (PBP)
-# Puttaparthi, India (PUT)
-# Putussibau, Indonesia (PSU)
-# Pyongyang, North Korea (FNJ)
-# return to top
-# Q
-     
+PDP:
+  city: "Punta Del Este, Uruguay"
+  matchers: "Punta Del Este"
+
+PND:
+  city: "Punta Gorda, Belize"
+  matchers: "Punta Gorda"
+
+PBP:
+  city: "Punta Islita, Costa Rica"
+  matchers: "Punta Islita"
+
+PUT:
+  city: "Puttaparthi, India"
+  matchers: "Puttaparthi"
+
+PSU:
+  city: "Putussibau, Indonesia"
+  matchers: "Putussibau"
+
+FNJ:
+  city: "Pyongyang, North Korea"
+  matchers: 
+    - "Pyongyang"
+    - "North Korea"
+
 AQI:
   city: "Qaisumah, Saudi Arabia"
   matchers:
@@ -2762,18 +6558,53 @@ JJU:
   matchers:
     - "Qaqortoq"
 
-# Qiemo, China (IQM)
-# Qingdao, China (TAO)
-# Qiqihar, China (NDG)
-# Queenstown, New Zealand (ZQN)
-# Quelimane, Mozambique (UEL)
-# Quepos, Costa Rica (XQP)
-# Queretaro, Mexico (QRO)
-# Quetta, Pakistan (UET)
-# Qui Nhon, Viet Nam (UIH)
-# Quibdo, Colombia (UIB)
-# Quimper, France (UIP)
-# Quipi, QL, Australia (ULP)
+IQM:
+  city: "Qiemo, China"
+  matchers: "Qiemo"
+
+TAO:
+  city: "Qingdao, China"
+  matchers: "Qingdao"
+
+NDG:
+  city: "Qiqihar, China"
+  matchers: "Qiqihar"
+
+ZQN:
+  city: "Queenstown, New Zealand"
+  matchers: "Queenstown"
+
+UEL:
+  city: "Quelimane, Mozambique"
+  matchers: "Quelimane"
+
+XQP:
+  city: "Quepos, Costa Rica"
+  matchers: "Quepos"
+
+QRO:
+  city: "Queretaro, Mexico"
+  matchers: "Queretaro"
+
+UET:
+  city: "Quetta, Pakistan"
+  matchers: "Quetta"
+
+UIH:
+  city: "Qui Nhon, Viet Nam"
+  matchers: "Qui Nhon"
+
+UIB:
+  city: "Quibdo, Colombia"
+  matchers: "Quibdo"
+
+UIP:
+  city: "Quimper, France"
+  matchers: "Quimper"
+
+ULP:
+  city: "Quipi, QL, Australia"
+  matchers: "Quipi"
 
 UIO:
   city: "Quito, Ecuador"
@@ -2781,31 +6612,86 @@ UIO:
     - "Quito"
 
 # R
-# Rabaraba, Papua New Guinea (RBP)
+RBP:
+  city: "Rabaraba, Papua New Guinea"
+  matchers: "Rabaraba"
 
 RBA:
   city: "Rabat, Morocco"
   matchers:
     - "Rabat"
 
-# Rabaul, Papua New Guinea (RAB)
-# Rach Gia, Viet Nam (VKG)
-# Raduzhnyi, Russia (RAT)
-# Rafha, Saudi Arabia (RAH)
-# Rafsanjan, Iran (RJN)
-# Raiatea, French Polynesia (RFP)
-# Rajkot, India (RAJ)
-# Rajshahi, Bangladesh (RJH)
-# Ramato, Solomon Islands (RBV)
-# Ramingining, NT, Australia (RAM)
-# Ranchi, India (IXR)
-# Ranong, Thailand (UNN)
-# Rarotonga, Cook Islands (RAR)
-# Ras Al Khaimah, United Arab Emirates (RKT)
-# Rasht, Iran (RAS)
-# Ratanakiri, Cambodia (RBE)
-# Rawala Kot, Pakistan (RAZ)
-# Rebun, Japan (RBJ)
+RAB:
+  city: "Rabaul, Papua New Guinea"
+  matchers: "Rabaul"
+
+VKG:
+  city: "Rach Gia, Viet Nam"
+  matchers: "Rach Gia"
+
+RAT:
+  city: "Raduzhnyi, Russia"
+  matchers: "Raduzhnyi"
+
+RAH:
+  city: "Rafha, Saudi Arabia"
+  matchers: "Rafha"
+
+RJN:
+  city: "Rafsanjan, Iran"
+  matchers: "Rafsanjan"
+
+RFP:
+  city: "Raiatea, French Polynesia"
+  matchers: "Raiatea"
+
+RAJ:
+  city: "Rajkot, India"
+  matchers: "Rajkot"
+
+RJH:
+  city: "Rajshahi, Bangladesh"
+  matchers: "Rajshahi"
+
+RBV:
+  city: "Ramato, Solomon Islands"
+  matchers: "Ramato"
+
+RAM:
+  city: "Ramingining, NT, Australia"
+  matchers: "Ramingining"
+
+IXR:
+  city: "Ranchi, India"
+  matchers: "Ranchi"
+
+UNN:
+  city: "Ranong, Thailand"
+  matchers: "Ranong"
+
+RAR:
+  city: "Rarotonga, Cook Islands"
+  matchers: "Rarotonga"
+
+RKT:
+  city: "Ras Al Khaimah, United Arab Emirates"
+  matchers: "Ras Al Khaimah"
+
+RAS:
+  city: "Rasht, Iran"
+  matchers: "Rasht"
+
+RBE:
+  city: "Ratanakiri, Cambodia"
+  matchers: "Ratanakiri"
+
+RAZ:
+  city: "Rawala Kot, Pakistan"
+  matchers: "Rawala Kot"
+
+RBJ:
+  city: "Rebun, Japan"
+  matchers: "Rebun"
 
 REC:
   city: "Recife, Brazil"
@@ -2820,7 +6706,7 @@ REC:
 # Reus, Spain and Canary Islands (REU)
 
 KEF:
-  name: "Keflavik International Attribute"
+  name: "Keflavik International Airport"
   city: "Reykjavik, Iceland"
   matchers:
     - "Reykjavik"
@@ -3025,25 +6911,85 @@ TMS:
   matchers:
     - "Sao Tome"
 
-# Sao Vicente, Cape Verde (VXE)
-# Sapporo, Japan - Chitose (CTS)
-# Sapporo, Japan - Okadama (OKD)
-# Sara, Vanuatu (SSR)
-# Saratov, Russia (RTW)
-# Sarmi, Indonesia (ZRM)
-# Satu Mare, Romania (SUJ)
-# Satwag, Papua New Guinea (SWG)
-# Sau Luiz, MA, Brazil (SLZ)
-# Saumlaki, Indonesia (SXK)
-# Savannakhet, Laos (ZVK)
-# Savonlinna, Finland (SVL)
-# Savusavu, Fiji (SVU)
-# Sayaboury, Laos (ZBY)
-# Sege, Solomon Islands (EGM)
-# Seiyun, Yemen (GXF)
-# Selje, Norway (QFK)
-# Semarang, Indonesia (SRG)
-# Senggo, Indonesia (ZEG)
+VXE:
+  city: "Sao Vicente, Cape Verde"
+  matchers: "Sao Vicente"
+
+CTS:
+  city: "Sapporo, Japan"
+  name: "Chitose Airport"
+  matchers: 
+    - "Sapporo"
+    - "Chitose"
+
+OKD:
+  city: "Sapporo, Japan"
+  name: "Okadama Airport"
+  matchers: "Okadama"
+
+SSR:
+  city: "Sara, Vanuatu"
+  matchers: "Sara"
+
+RTW:
+  city: "Saratov, Russia"
+  matchers: "Saratov"
+
+ZRM:
+  city: "Sarmi, Indonesia"
+  matchers: "Sarmi"
+
+SUJ:
+  city: "Satu Mare, Romania"
+  matchers: "Satu Mare"
+
+SWG:
+  city: "Satwag, Papua New Guinea"
+  matchers: "Satwag"
+
+SLZ:
+  city: "Sau Luiz, MA, Brazil"
+  matchers: "Sau Luiz"
+
+SXK:
+  city: "Saumlaki, Indonesia"
+  matchers: "Saumlaki"
+
+ZVK:
+  city: "Savannakhet, Laos"
+  matchers: "Savannakhet"
+
+SVL:
+  city: "Savonlinna, Finland"
+  matchers: "Savonlinna"
+
+SVU:
+  city: "Savusavu, Fiji"
+  matchers: "Savusavu"
+
+ZBY:
+  city: "Sayaboury, Laos"
+  matchers: "Sayaboury"
+
+EGM:
+  city: "Sege, Solomon Islands"
+  matchers: "Sege"
+
+GXF:
+  city: "Seiyun, Yemen"
+  matchers: "Seiyun"
+
+QFK:
+  city: "Selje, Norway"
+  matchers: "Selje"
+
+SRG:
+  city: "Semarang, Indonesia"
+  matchers: "Semarang"
+
+ZEG:
+  city: "Senggo, Indonesia"
+  matchers: "Senggo"
 
 SEL:
   name: "Seoul, South Korea (all airports)"
@@ -3505,80 +7451,299 @@ POS:
   city: "Trinidad"
   matchers:
     - "Trinidad"
+    - "Port of Spain"
+    - "Port-of-spain"
 
-# Tripoli, Libya (TIP)
-# Trollhattan, Sweden (THN)
-# Trombetas, PA, Brazil (TMT)
-# Tromso, Norway (TOS)
-# Trondheim, Norway (TRD)
-# Trujillo, Honduras (TJI)
-# Trujillo, Peru (TRU)
-# Truk, Micronesia (TKK)
-# Tsaratanana, Madagascar (TTS)
-# Tsiroanomandidy, Madagascar (WTS)
-# Tsumeb, Namibia (TSB)
-# Tsushima, Japan (TSJ)
-# Tubuai, French Polynesia (TUB)
-# Tucuman, TU, Argentina (TUC)
-# Tucupita, Venezuela (TUV)
-# Tucurui, PA, Brazil (TUR)
-# Tufi, Papua New Guinea (TFI)
-# Tuguegarao, Philippines (TUG)
-# Tulcan, Ecuador (TUA)
-# Tulear, Madagascar (TLE)
-# Tum, Ethiopia (TUJ)
-# Tumaco, Colombia (TCO)
-# Tumbes, Peru (TBP)
-# Tunis, Tunisia (TUN)
-# Tunxi, China (TXN)
-# Turaif, Saudi Arabia (TUI)
-# Turbat, Pakistan (TUK)
-# Turin, Italy (TRN)
-# Turku, Finland (TKU)
-# Tuxtla Gutierrez, Mexico (TGZ)
-# Tyumen, Russia (TJM)
-# return to top
-# U
-# Ube, Japan (UBJ)
-# Uberaba, MG, Brazil (UBA)
-# Uberlandia, MG, Brazil (UDI)
-# Ubon Ratchathani, Thailand (UBP)
-# Udaipur, India (UDR)
-# Udon Thani, Thailand (UTH)
-# Ufa, Russia (UFA)
-# Ujae Island, Marshall Islands (UJE)
-# Ujung Pandang, Indonesia (UPG)
-# Ukhta, Russia (UCT)
-# Ulaanbaatar, Mongolia (ULN)
-# Ulanhot, China (HLH)
-# Ulan-Ude, Russia (UUD)
-# Ulei, Vanuatu (ULB)
-# Uliastai, Mongolia (ULY)
-# Ulithi, Micronesia (ULI)
-# Ulsan, South Korea (USN)
-# Ulundi, South Africa (ULD)
-# Umea, Sweden (UME)
-# Umtata, South Africa (UTT)
-# Upernavik, Greenland (JUV)
-# Upington, South Africa (UTN)
-# Uraj, Russia (URJ)
-# Uralsk, Kazakhstan (URA)
-# Urgench, Uzbekistan (UGC)
-# Urmieh, Iran (OMH)
-# Uroubi, Papua New Guinea (URU)
-# Uruapan, Mexico (UPN)
-# Uruguaiana, RS, Brazil (URG)
-# Urumqi, China (URC)
-# Useless Loop, WA, Australia (USL)
-# Ushuaia, TF, Argentina (USH)
-# Usinsk, Russia (USK)
-# Ust-Kamenogorsk, Kazakhstan (UKK)
-# Ust-Ilimsk, Russia (UIK)
-# Utapao, Thailand (UTP)
-# Utila, Honduras (UII)
-# Utirik Island, Marshall Islands (UTK)
-# Uummannaq, Greeland (UMD)
-# Uzhgorod, Ukraine (UDJ)
+TIP:
+  city: "Tripoli, Libya"
+  matchers: "Tripoli"
+
+THN:
+  city: "Trollhattan, Sweden"
+  matchers: "Trollhattan"
+
+TMT:
+  city: "Trombetas, PA, Brazil"
+  matchers: "Trombetas"
+
+TOS:
+  city: "Tromso, Norway"
+  matchers: "Tromso"
+
+TRD:
+  city: "Trondheim, Norway"
+  matchers: "Trondheim"
+
+TJI:
+  city: "Trujillo, Honduras"
+  matchers: 
+    - "Trujillo, Honduras"
+    - "Trujillo Honduras"
+
+TRU:
+  city: "Trujillo, Peru"
+  matchers: 
+    - "Trujillo, Peru"
+    - "Trujillo Peru"
+
+TKK:
+  city: "Truk, Micronesia"
+  matchers: "Truk"
+
+TTS:
+  city: "Tsaratanana, Madagascar"
+  matchers: "Tsaratanana"
+
+WTS:
+  city: "Tsiroanomandidy, Madagascar"
+  matchers: "Tsiroanomandidy"
+
+TSB:
+  city: "Tsumeb, Namibia"
+  matchers: "Tsumeb"
+
+TSJ:
+  city: "Tsushima, Japan"
+  matchers: "Tsushima"
+
+TUB:
+  city: "Tubuai, French Polynesia"
+  matchers: "Tubuai"
+
+TUC:
+  city: "Tucuman, TU, Argentina"
+  matchers: "Tucuman"
+
+TUV:
+  city: "Tucupita, Venezuela"
+  matchers: "Tucupita"
+
+TUR:
+  city: "Tucurui, PA, Brazil"
+  matchers: "Tucurui"
+
+TFI:
+  city: "Tufi, Papua New Guinea"
+  matchers: "Tufi"
+
+TUG:
+  city: "Tuguegarao, Philippines"
+  matchers: "Tuguegarao"
+
+TUA:
+  city: "Tulcan, Ecuador"
+  matchers: "Tulcan"
+
+TLE:
+  city: "Tulear, Madagascar"
+  matchers: "Tulear"
+
+TUJ:
+  city: "Tum, Ethiopia"
+  matchers: "Tum"
+
+TCO:
+  city: "Tumaco, Colombia"
+  matchers: "Tumaco"
+
+TBP:
+  city: "Tumbes, Peru"
+  matchers: "Tumbes"
+
+TUN:
+  city: "Tunis, Tunisia"
+  matchers: "Tunis"
+
+TXN:
+  city: "Tunxi, China"
+  matchers: "Tunxi"
+
+TUI:
+  city: "Turaif, Saudi Arabia"
+  matchers: "Turaif"
+
+TUK:
+  city: "Turbat, Pakistan"
+  matchers: "Turbat"
+
+TRN:
+  city: "Turin, Italy"
+  matchers: 
+    - "Turin"
+    - "Torino"
+
+TKU:
+  city: "Turku, Finland"
+  matchers: "Turku"
+
+TGZ:
+  city: "Tuxtla Gutierrez, Mexico"
+  matchers: "Tuxtla Gutierrez"
+
+TJM:
+  city: "Tyumen, Russia"
+  matchers: "Tyumen"
+
+UBJ:
+  city: "Ube, Japan"
+  matchers: "Ube"
+
+UBA:
+  city: "Uberaba, MG, Brazil"
+  matchers: "Uberaba"
+
+UDI:
+  city: "Uberlandia, MG, Brazil"
+  matchers: "Uberlandia"
+
+UBP:
+  city: "Ubon Ratchathani, Thailand"
+  matchers: "Ubon Ratchathani"
+
+UDR:
+  city: "Udaipur, India"
+  matchers: "Udaipur"
+
+UTH:
+  city: "Udon Thani, Thailand"
+  matchers: "Udon Thani"
+
+UFA:
+  city: "Ufa, Russia"
+  matchers: "Ufa"
+
+UJE:
+  city: "Ujae Island, Marshall Islands"
+  matchers: "Ujae Island"
+
+UPG:
+  city: "Ujung Pandang, Indonesia"
+  matchers: "Ujung Pandang"
+
+UCT:
+  city: "Ukhta, Russia"
+  matchers: "Ukhta"
+
+ULN:
+  city: "Ulaanbaatar, Mongolia"
+  matchers: "Ulaanbaatar"
+
+HLH:
+  city: "Ulanhot, China"
+  matchers: "Ulanhot"
+
+UUD:
+  city: "Ulan-Ude, Russia"
+  matchers: "Ulan-Ude"
+
+ULB:
+  city: "Ulei, Vanuatu"
+  matchers: "Ulei"
+
+ULY:
+  city: "Uliastai, Mongolia"
+  matchers: "Uliastai"
+
+ULI:
+  city: "Ulithi, Micronesia"
+  matchers: "Ulithi"
+
+USN:
+  city: "Ulsan, South Korea"
+  matchers: "Ulsan"
+
+ULD:
+  city: "Ulundi, South Africa"
+  matchers: "Ulundi"
+
+UME:
+  city: "Umea, Sweden"
+  matchers: "Umea"
+
+UTT:
+  city: "Umtata, South Africa"
+  matchers: "Umtata"
+
+JUV:
+  city: "Upernavik, Greenland"
+  matchers: "Upernavik"
+
+UTN:
+  city: "Upington, South Africa"
+  matchers: "Upington"
+
+URJ:
+  city: "Uraj, Russia"
+  matchers: "Uraj"
+
+URA:
+  city: "Uralsk, Kazakhstan"
+  matchers: "Uralsk"
+
+UGC:
+  city: "Urgench, Uzbekistan"
+  matchers: "Urgench"
+
+OMH:
+  city: "Urmieh, Iran"
+  matchers: "Urmieh"
+
+URU:
+  city: "Uroubi, Papua New Guinea"
+  matchers: "Uroubi"
+
+UPN:
+  city: "Uruapan, Mexico"
+  matchers: "Uruapan"
+
+URG:
+  city: "Uruguaiana, RS, Brazil"
+  matchers: "Uruguaiana"
+
+URC:
+  city: "Urumqi, China"
+  matchers: "Urumqi"
+
+USL:
+  city: "Useless Loop, WA, Australia"
+  matchers: "Useless Loop"
+
+USH:
+  city: "Ushuaia, TF, Argentina"
+  matchers: "Ushuaia"
+
+USK:
+  city: "Usinsk, Russia"
+  matchers: "Usinsk"
+
+UKK:
+  city: "Ust-Kamenogorsk, Kazakhstan"
+  matchers: "Ust-Kamenogorsk"
+
+UIK:
+  city: "Ust-Ilimsk, Russia"
+  matchers: "Ust-Ilimsk"
+
+UTP:
+  city: "Utapao, Thailand"
+  matchers: "Utapao"
+
+UII:
+  city: "Utila, Honduras"
+  matchers: "Utila"
+
+UTK:
+  city: "Utirik Island, Marshall Islands"
+  matchers: "Utirik Island"
+
+UMD:
+  city: "Uummannaq, Greeland"
+  matchers: "Uummannaq"
+
+UDJ:
+  city: "Uzhgorod, Ukraine"
+  matchers: "Uzhgorod"
+
 # return to top
 # V
 # Vaasa, Finland (VAA)
@@ -3611,16 +7776,36 @@ VLC:
 # Vava'u, Tonga (VAV)
 # Vaxjo, Sweden (VXO)
 # V.C. Bird International, Antigua & Barbuda (ANU)
-# Venice, Italy - Marco Polo (VCE)
+
+VCE:
+  city: "Venice, Italy"
+  name: "Marco Polo Airport"
+  matchers:
+    - "Venice"
+    - "Venezia"
+    - "Marco Polo"
+
 # Venice, Italy - Treviso (TSF)
-# Veracruz, Mexico (VER)
+
+VER:
+  city: "Veracruz, Mexico"
+  matchers: "Veracruz"
+
 # Varadero, Cuba (VRA)
-# Verona, Italy (VRN)
+
+VRN:
+  city: "Verona, Italy"
+  matchers: "Verona"
+  
 # Vestmannaeyjar, Iceland (VEY)
 # Victoria Falls, Zimbabwe (VFA)
 # Victoria River Downs, NT, Australia (VCD)
 # Viedma, RN, Argentina (VDM)
-# Vienna, Austria (VIE)
+
+VIE:
+  city: "Vienna, Austria"
+  matchers: "Vienna"
+
 # Vientiane, Laos - Wattay (VTE)
 # Vieques, Puerto Rico (VQS)
 # Vigo, Spain (VGO)
@@ -3630,7 +7815,13 @@ VLC:
 # Villa Gesell, BA, Argentina (VLG)
 # Villa Mercedes, SL, Argentina (VME)
 # Villahermosa, Mexico (VSA)
-# Vilnius, Lithuania (VNO)
+
+VNO:
+  city: "Vilnius, Lithuania"
+  matchers:
+    - "Vilnius"
+    - "Lithuania"
+
 # Vinh City, Viet Nam (VII)
 # Virgin Gorda, British Virgin Islands (VIJ)
 # Visby, Sweden (VBY)
@@ -3640,66 +7831,239 @@ VLC:
 # Vitoria, Spain and Canary Islands (VIT)
 # Vivigani, Papua New Guinea (VIV)
 # Vladikavkaz, Russia (OGZ)
-# Vladivostok, Russia (VVO)
-# Vohemar, Madagascar (VOH)
-# Volgodonsk, Russia (VLK)
-# Volgograd, Russia (VOG)
-# Vopnafjordur, Iceland (VPN)
-# Vorkuta, Russia (VKT)
-# Voronezh, Russia (VOZ)
-# return to top
-# W
-# Wadi Ad Dawasir, Saudi Arabia (WAE)
-# Wadi Halfa, Sudan (WHF)
-# Wagethe, Indonesia (WET)
-# Wagga Wagga, NS, Australia (WGA)
-# Wahai, Indonesia (WBA)
-# Waingapo, Indonesia (WGP)
-# Wakkanai, Japan (WKJ)
-# Walaha, Vanuatu (WLH)
-# Walgett, NS, Australia (WGE)
-# Wallis Island, Wallis and Futuna Islands (WLS)
-# Walvis Bay, Namibia (WVB)
-# Wamena, Indonesia (WMX)
-# Wanaka, New Zealand (WKA)
-# Wanganui, New Zealand (WAG)
-# Wangerooge, Germany (AGE)
-# Wanigela, Papua New Guinea (AGL)
-# Wanxian, China (WXN)
-# Warsaw, Poland (WAW)
-# Wasior, Indonesia (WSR)
-# Wasu, Papua New Guinea (WSU)
-# Waterford, Ireland (WAT)
-# Wau, Papua New Guinea (WUG)
-# Wau, Sudan (WUU)
-# Wedau, Papua New Guinea (WED)
-# Wedjh, Saudi Arabia (EJH)
-# Weihai, China (WEH)
-# Weipa, QL, Australia (WEI)
-# Wellington, New Zealand (WLG)
-# Wenzhou, China (WNZ)
-# Westerland, Germany (GWT)
-# Westport, New Zealand (WSZ)
-# Westray, United Kingdom (WRY)
-# Wewak, Papua New Guinea (WWK)
-# Whakatane, New Zealand (WHK)
-# Whangarei, New Zealand (WRE)
-# Whyalla, SA, Australia (WYA)
-# Wick, United Kingdom (WIC)
-# Wilhelmshaven, Germany (WVN)
-# Wiluna, WA, Australia (WUN)
-# Windarra, QL, Australia (WNR)
-# Winton, QL, Australia (WIN)
-# Woja, Marshall Islands (WJA)
-# Wonan, Taiwan (WOT)
-# WonJu, South Korea (WJU)
-# Wotho Island, Marshall Islands (WTO)
-# Wotje Island, Marshall Islands (WTE)
-# Wroclaw, Poland (WRO)
-# Wudinna, SA, Australia (WUD)
-# Wuhan, China (WUH)
-# Wuyishan, China (WUS)
-# Wyndham, WA, Australia (WYN)
+
+VVO:
+  city: "Vladivostok, Russia"
+  matchers: "Vladivostok"
+
+VOH:
+  city: "Vohemar, Madagascar"
+  matchers: "Vohemar"
+
+VLK:
+  city: "Volgodonsk, Russia"
+  matchers: "Volgodonsk"
+
+VOG:
+  city: "Volgograd, Russia"
+  matchers: "Volgograd"
+
+VPN:
+  city: "Vopnafjordur, Iceland"
+  matchers: "Vopnafjordur"
+
+VKT:
+  city: "Vorkuta, Russia"
+  matchers: "Vorkuta"
+
+VOZ:
+  city: "Voronezh, Russia"
+  matchers: "Voronezh"
+
+WAE:
+  city: "Wadi Ad Dawasir, Saudi Arabia"
+  matchers: "Wadi Ad Dawasir"
+
+WHF:
+  city: "Wadi Halfa, Sudan"
+  matchers: "Wadi Halfa"
+
+WET:
+  city: "Wagethe, Indonesia"
+  matchers: "Wagethe"
+
+WGA:
+  city: "Wagga Wagga, Australia"
+  matchers: "Wagga Wagga"
+
+WBA:
+  city: "Wahai, Indonesia"
+  matchers: "Wahai"
+
+WGP:
+  city: "Waingapo, Indonesia"
+  matchers: "Waingapo"
+
+WKJ:
+  city: "Wakkanai, Japan"
+  matchers: "Wakkanai"
+
+WLH:
+  city: "Walaha, Vanuatu"
+  matchers: "Walaha"
+
+WGE:
+  city: "Walgett, NS, Australia"
+  matchers: "Walgett"
+
+WLS:
+  city: "Wallis Island, Wallis and Futuna Islands"
+  matchers: "Wallis Island"
+
+WVB:
+  city: "Walvis Bay, Namibia"
+  matchers: "Walvis Bay"
+
+WMX:
+  city: "Wamena, Indonesia"
+  matchers: "Wamena"
+
+WKA:
+  city: "Wanaka, New Zealand"
+  matchers: "Wanaka"
+
+WAG:
+  city: "Wanganui, New Zealand"
+  matchers: "Wanganui"
+
+AGE:
+  city: "Wangerooge, Germany"
+  matchers: "Wangerooge"
+
+AGL:
+  city: "Wanigela, Papua New Guinea"
+  matchers: "Wanigela"
+
+WXN:
+  city: "Wanxian, China"
+  matchers: "Wanxian"
+
+WAW:
+  city: "Warsaw, Poland"
+  matchers: "Warsaw"
+
+WSR:
+  city: "Wasior, Indonesia"
+  matchers: "Wasior"
+
+WSU:
+  city: "Wasu, Papua New Guinea"
+  matchers: "Wasu"
+
+WAT:
+  city: "Waterford, Ireland"
+  matchers: "Waterford"
+
+WUG:
+  city: "Wau, Papua New Guinea"
+
+WUU:
+  city: "Wau, Sudan"
+
+WED:
+  city: "Wedau, Papua New Guinea"
+  matchers: "Wedau"
+
+EJH:
+  city: "Wedjh, Saudi Arabia"
+  matchers: "Wedjh"
+
+WEH:
+  city: "Weihai, China"
+  matchers: "Weihai"
+
+WEI:
+  city: "Weipa, QL, Australia"
+  matchers: "Weipa"
+
+WLG:
+  city: "Wellington, New Zealand"
+  matchers: "Wellington"
+
+
+WNZ:
+  city: "Wenzhou, China"
+  matchers: "Wenzhou"
+
+GWT:
+  city: "Westerland, Germany"
+  matchers: "Westerland"
+
+WSZ:
+  city: "Westport, New Zealand"
+  matchers: "Westport"
+
+WRY:
+  city: "Westray, United Kingdom"
+  matchers: "Westray"
+
+WWK:
+  city: "Wewak, Papua New Guinea"
+  matchers: "Wewak"
+
+WHK:
+  city: "Whakatane, New Zealand"
+  matchers: "Whakatane"
+
+WRE:
+  city: "Whangarei, New Zealand"
+  matchers: "Whangarei"
+
+WYA:
+  city: "Whyalla, SA, Australia"
+  matchers: "Whyalla"
+
+WIC:
+  city: "Wick, United Kingdom"
+  matchers: "Wick"
+
+WVN:
+  city: "Wilhelmshaven, Germany"
+  matchers: "Wilhelmshaven"
+
+WUN:
+  city: "Wiluna, WA, Australia"
+  matchers: "Wiluna"
+
+WNR:
+  city: "Windarra, QL, Australia"
+  matchers: "Windarra"
+
+WIN:
+  city: "Winton, QL, Australia"
+  matchers: "Winton"
+
+WJA:
+  city: "Woja, Marshall Islands"
+  matchers: "Woja"
+
+WOT:
+  city: "Wonan, Taiwan"
+  matchers: "Wonan"
+
+WJU:
+  city: "WonJu, South Korea"
+  matchers: "WonJu"
+
+WTO:
+  city: "Wotho Island, Marshall Islands"
+  matchers: "Wotho Island"
+
+WTE:
+  city: "Wotje Island, Marshall Islands"
+  matchers: "Wotje Island"
+
+WRO:
+  city: "Wroclaw, Poland"
+  matchers: "Wroclaw"
+
+WUD:
+  city: "Wudinna, SA, Australia"
+  matchers: "Wudinna"
+
+WUH:
+  city: "Wuhan, China"
+  matchers: "Wuhan"
+
+WUS:
+  city: "Wuyishan, China"
+  matchers: "Wuyishan"
+
+WYN:
+  city: "Wyndham, WA, Australia"
+  matchers: "Wyndham"
+
+
 # return to top
 # X
 # Xiamen, China (XMN)
@@ -3713,39 +8077,132 @@ VLC:
 # return to top
 # Y
 
-# Yakutsk, Russia (YKS)
-# Yalumet, Papua New Guinea (KYX)
-# Yam Island, QL, Australia (XMY)
-# Yamagata, Japan (GAJ)
-# Yan'an, China (ENY)
-# Yanbu, Saudi Arabia (YNB)
-# Yancheng, China (YNZ)
-# Yandina, Solomon Islands (XYA)
-# Yangon, Myanmar (RGN)
-# Yanji, China (YNJ)
-# Yantai, China (YNT)
-# Yaounde, Cameroon (YAO)
-# Yap, Micronesia (YAP)
-# Yaroslavl, Russia (IAR)
-# Yazd, Iran (AZD)
-# Yelimane, Mali (EYL)
-# Yeosu, South Korea (RSU)
-# Yerevan, Armenia (EVN)
-# Yibin, China (YBP)
-# Yichang, China (YIH)
-# Yinchuan, China (INC)
-# Yining, China (YIN)
-# Yiwu, China (YIW)
-# Yogyakarta, Indonesia (JOG)
-# Yonago, Japan (YGJ)
-# Yonaguni Jima, Japan (OGN)
-# Yorke Island, QL, Australia (OKR)
-# Yoronjima, Japan (RNJ)
-# Yulin, China (UYN)
-# Yuzhno-Sakhalinsk, Russia (UUS)
+YKS:
+  city: "Yakutsk, Russia"
+  matchers: "Yakutsk"
+
+KYX:
+  city: "Yalumet, Papua New Guinea"
+  matchers: "Yalumet"
+
+XMY:
+  city: "Yam Island, QL, Australia"
+  matchers: "Yam Island"
+
+GAJ:
+  city: "Yamagata, Japan"
+  matchers: "Yamagata"
+
+ENY:
+  city: "Yan'an, China"
+  matchers: "Yan'an"
+
+YNB:
+  city: "Yanbu, Saudi Arabia"
+  matchers: "Yanbu"
+
+YNZ:
+  city: "Yancheng, China"
+  matchers: "Yancheng"
+
+XYA:
+  city: "Yandina, Solomon Islands"
+  matchers: "Yandina"
+
+RGN:
+  city: "Yangon, Myanmar"
+  matchers: "Yangon"
+
+YNJ:
+  city: "Yanji, China"
+  matchers: "Yanji"
+
+YNT:
+  city: "Yantai, China"
+  matchers: "Yantai"
+
+YAO:
+  city: "Yaounde, Cameroon"
+  matchers: "Yaounde"
+
+YAP:
+  city: "Yap, Micronesia"
+  matchers: "Yap"
+
+IAR:
+  city: "Yaroslavl, Russia"
+  matchers: "Yaroslavl"
+
+AZD:
+  city: "Yazd, Iran"
+  matchers: "Yazd"
+
+EYL:
+  city: "Yelimane, Mali"
+  matchers: "Yelimane"
+
+RSU:
+  city: "Yeosu, South Korea"
+  matchers: "Yeosu"
+
+EVN:
+  city: "Yerevan, Armenia"
+  matchers: "Yerevan"
+
+YBP:
+  city: "Yibin, China"
+  matchers: "Yibin"
+
+YIH:
+  city: "Yichang, China"
+  matchers: "Yichang"
+
+INC:
+  city: "Yinchuan, China"
+  matchers: "Yinchuan"
+
+YIN:
+  city: "Yining, China"
+  matchers: "Yining"
+
+YIW:
+  city: "Yiwu, China"
+  matchers: "Yiwu"
+
+JOG:
+  city: "Yogyakarta, Indonesia"
+  matchers: "Yogyakarta"
+
+YGJ:
+  city: "Yonago, Japan"
+  matchers: "Yonago"
+
+OGN:
+  city: "Yonaguni Jima, Japan"
+  matchers: "Yonaguni Jima"
+
+OKR:
+  city: "Yorke Island, QL, Australia"
+  matchers: "Yorke Island"
+
+RNJ:
+  city: "Yoronjima, Japan"
+  matchers: "Yoronjima"
+
+UYN:
+  city: "Yulin, China"
+  matchers: "Yulin"
+
+UUS:
+  city: "Yuzhno-Sakhalinsk, Russia"
+  matchers: "Yuzhno-Sakhalinsk"
+
 # return to top
 # Z
-# Zadar, Croatia (ZAD)
+
+ZAD:
+  city: "Zadar, Croatia"
+  matchers: "Zadar"
 
 ZAG:
   city: "Zagreb, Croatia"
@@ -3755,21 +8212,58 @@ ZAH:
   city: "Zahedan, Iran"
   matchers: "Zahedan"
 
-# Zakinthos Island, Greece (ZTH)
-# Zamboanga, Philippines (ZAM)
-# Zanzibar, Tanzania - Kisauni (ZNZ)
-# Zaporozhye, Ukraine (OZH)
-# Zaragoza, Spain and Canary Islands (ZAZ)
-# Zhanjiang, China (ZHA)
-# Zhaotong, China (ZAT)
-# Zhengzha, China (CGO)
-# Zhob, Pakistan (PZH)
-# Zhoushan, China (HSN)
-# Zhuhai, China (ZUH)
-# Zielana, Poland (IEG)
+ZTH:
+  city: "Zakinthos Island, Greece"
+  matchers: "Zakinthos Island"
+
+ZAM:
+  city: "Zamboanga, Philippines"
+  matchers: "Zamboanga"
+
+ZNZ:
+  city: "Zanzibar, Tanzania - Kisauni"
+  matchers: "Zanzibar"
+
+OZH:
+  city: "Zaporozhye, Ukraine"
+  matchers: "Zaporozhye"
+
+ZAZ:
+  city: "Zaragoza, Spain and Canary Islands"
+  matchers: "Zaragoza"
+
+ZHA:
+  city: "Zhanjiang, China"
+  matchers: "Zhanjiang"
+
+ZAT:
+  city: "Zhaotong, China"
+  matchers: "Zhaotong"
+
+CGO:
+  city: "Zhengzha, China"
+  matchers: "Zhengzha"
+
+PZH:
+  city: "Zhob, Pakistan"
+  matchers: "Zhob"
+
+HSN:
+  city: "Zhoushan, China"
+  matchers: "Zhoushan"
+
+ZUH:
+  city: "Zhuhai, China"
+  matchers: "Zhuhai"
+
+IEG:
+  city: "Zielana, Poland"
+  matchers: "Zielana"
+
 
 ZIH:
   city: "Zihuatanejo/Ixtapa, Mexico"
+  country: mx
   matchers:
     - Zihuatanejo
     - Ixtapa

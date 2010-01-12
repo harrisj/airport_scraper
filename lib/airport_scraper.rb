@@ -72,20 +72,23 @@ class AirportScraper
     @code_match_regex = /\b([A-Z]{3})\b/
 
     flight_regex = /(flight|flying|plane|jet|turboprop)(\s(back|again|over))?/i
-    airport_regex = /(.+)/
     
     @trans_regex = /(\sto\s)|(\s?->\s?)|(\s?>\s?)|(\s?✈\s?)/
     @via_regex = /,?\s?(via|by way of|on route to)\s/
 
-    @preposition_regex = /\bfrom\s|\bto\s|#{@via_regex}|#{@trans_regex}|\bin\s|\bat\s|@\s/i
+    @preposition_regex = /\sfrom\s|\sto\s|#{@via_regex}|#{@trans_regex}|\sin\s|\sat\s|@\s|\sout of\s/i
+
+    airport_regex = /(.+)/
+    prep_airport_regex = /(.+)(?=#{@preposition_regex})/
     
     @match_regexes = [
+      [/(#{@code_match_regex}(#{@trans_regex}(#{@code_match_regex}))+\b)/, @trans_regex],# (#{@via_regex}#{@code_match_regex}\b)?)/i,
       /((at|@|in) #{airport_regex} airport)/i,
       /((boarding|departing) (to|from|in) #{airport_regex})/i,
       /(touched down in #{airport_regex})\b/i,
       /((to land)|(land(ed|ing|s)) (in|at) #{airport_regex})\b/i,
-      /(#{flight_regex}( (from|in|at|out of) #{airport_regex})? to #{airport_regex}(#{@via_regex}#{airport_regex})?)/i,
-      /(#{@code_match_regex}(#{@trans_regex}#{@code_match_regex})+\b)/ # (#{@via_regex}#{@code_match_regex}\b)?)/i,
+      [/(#{flight_regex}#{@preposition_regex}(#{prep_airport_regex}#{@preposition_regex})*#{airport_regex}+)/i, @trans_regex],
+      #/(#{flight_regex}( (from|in|at|out of) #{airport_regex})? (to|into|towards) #{airport_regex}(#{@via_regex}#{airport_regex})?)/i,
     ]
   end
 
@@ -97,8 +100,16 @@ class AirportScraper
     %w(touched landed landing land lands plane jet turboprop flying flight boarding departing)
   end
 
-  def possible_flight(text)
-    text =~ /(touched down in)|(land(ing|ed)? (in|at))|(on a plane to)|(on a plane from)|((flying|flight) (from|to))|(\b[A-Z]{3} (to|->) [A-Z]{3}\b)/i
+  def possible_flight?(text)
+    @match_regexes.any? do |regex_pair|
+      if regex_pair.is_a? (Array)
+        regex = regex_pair[0]
+      else
+        regex = regex_pair
+      end
+      
+      regex =~ text
+    end
   end
 
   def is_flight(text)
@@ -110,15 +121,25 @@ class AirportScraper
     
     #puts @airport_regex.inspect
 
-    @match_regexes.each do |regex|
-      if text =~ regex
-        str = $1
-        matches = str.split(@preposition_regex)
+    @match_regexes.each do |regex_pair|
       
-        # puts "MATCHES: #{matches.inspect}" unless matches.empty?
+      case regex_pair
+      when Array
+        regex = regex_pair[0]
+        split_regex = regex_pair[1]
+      else
+        regex = regex_pair
+      end
+      
+      text.scan(regex) do |matches|
+        if split_regex
+          matches = matches.compact.map {|m| m.split(split_regex)}.flatten.uniq
+        end
+        
+        #puts "Matches: #{matches.compact.inspect}"
         # puts "Text: #{text}"
         # puts "Regex: #{regex.inspect}"
-        matches.each do |match|
+        matches.compact.each do |match|
           next if match.nil? || match.length < 2
 
           if match =~ /^#{@code_match_regex}/

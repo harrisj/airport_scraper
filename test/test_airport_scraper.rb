@@ -57,14 +57,14 @@ class TestAirportScraper < Test::Unit::TestCase
     end
   end
   
-  context "possible_flight" do
+  context "possible_flight?" do
     setup do
       @scrape = AirportScraper.new
     end
     
     ["on a flight to Rome", "flying to SFO", "just touched down in Vegas", "EWR to NYC", "EWR -> NYC"].each do |phrase|
       should "return true for the phrase '#{phrase}'" do
-        assert @scrape.possible_flight(phrase)
+        assert @scrape.possible_flight?(phrase)
       end
     end
   end
@@ -104,6 +104,31 @@ class TestAirportScraper < Test::Unit::TestCase
           end
         end
       end
+    end
+    
+    context "Matchers" do
+      setup do
+        @scape = AirportScraper.new
+      end
+      
+      should "not have duplicate matchers for two airports" do
+        matchers = {}
+        airports = @scrape.airports
+        
+        airports.values.each do |airport|
+          airport['matchers'].each do |matcher|
+            if matchers[matcher].nil?
+              matchers[matcher] = airport
+            else
+#              if matchers[matcher]['code']['match_priority'] == airport['code']['match_priority']
+                flunk "Matcher '#{matcher}' for more than one airport (#{matchers[matcher]['code']}, #{airport['code']}) at same priority"
+#              end
+            end
+          end
+        end
+      end
+      
+      should_eventually "not have shorter matchers for a name with a match_priority greater than a longer variant"
     end
     
     context "Bad matches" do
